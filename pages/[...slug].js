@@ -17,6 +17,7 @@ import {
   getArticleSlugs,
   getArticleSlugFromString,
   getMenu,
+  ometaDirectory,
   getGDPRBanner,
 } from "../lib/api";
 import { getPreviousNextFromMenu } from "../lib/utils.js";
@@ -54,6 +55,13 @@ import YouTube from "../components/blocks/youTube";
 import Cloud from "../components/blocks/cloud";
 
 import styles from "../components/layouts/container.module.css";
+
+// Content Components
+import Requirements from "../components/content/requirements";
+import MetadataIngestionService from "../components/content/metadata-ingestion-service";
+import ConnectorIntro from "../components/content/connector-intro";
+import IngestionScheduleAndDeploy from "../components/content/ingestion-schedule-and-deploy";
+import ConnectorOutro from "../components/content/connector-outro";
 
 export default function Article({
   data,
@@ -96,6 +104,11 @@ export default function Article({
     InlineCalloutContainer,
     InlineCallout,
     TileContainer,
+    Requirements,
+    MetadataIngestionService,
+    ConnectorIntro,
+    IngestionScheduleAndDeploy,
+    ConnectorOutro,
     Tile,
     RefCard,
     Image,
@@ -261,6 +274,20 @@ export async function getStaticProps(context) {
   const menu = getMenu();
 
   props["streamlit"] = {};
+  // Sort of documentation versions
+  const jsonContents = fs.readFileSync(
+    join(ometaDirectory, "openmetadata.json"),
+    "utf8"
+  );
+  const ometaJSON = jsonContents ? JSON.parse(jsonContents) : {};
+  const all_versions = Object.keys(ometaJSON);
+  const versions = sortBy(all_versions, [
+    (o) => {
+      return parseFloat(o);
+    },
+  ]);
+  const current_version = versions[versions.length - 1];
+
   props["versions"] = all_versions;
   props["versionFromStaticLoad"] = null;
 
