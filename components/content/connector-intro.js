@@ -2,19 +2,35 @@ import TileContainer from "../layouts/tileContainer";
 import Tile from "../blocks/tile";
 import { H1, H2, H3 } from "../blocks/headers";
 
-const ConnectorIntro = ({connector, hasUsage}) => {
+const ConnectorIntro = ({connector, hasUsage, goal}) => {
 
     let toc;
+    let block;
+    let from;
+    let title;
+
+    if (goal == "UI" || goal == null) {
+        title = connector
+        from = "from the OpenMetadata UI"
+    }
+    if (goal == "Airflow") {
+        title = "Run " + connector + " using Airflow SDK"
+        from = "using your own Airflow instance"
+    }
+    if (goal == "CLI") {
+        title = "Run " + connector + " using the metadata CLI"
+        from = "using the metadata CLI"
+    }
 
     const intro = (
         <section>
-            <H1>{connector}</H1>
-            <p>In this section, we provide the guides and references to use the {connector} connector.</p>
+            <H1>{title}</H1>
+            <p>In this section, we provide guides and references to use the {connector} connector.</p>
             <br/>
         </section>
     )
 
-    const outro = (
+    const developers = (
         <section>
           <p>
             If you don't want to use the OpenMetadata Ingestion container to configure the workflows via the UI,
@@ -43,7 +59,7 @@ const ConnectorIntro = ({connector, hasUsage}) => {
     if (hasUsage){
         toc = (
                 <section>
-                <p>Configure and schedule {connector} metadata, usage and profiler workflows from the OpenMetadata UI:</p>
+                <p>Configure and schedule {connector} metadata, usage and profiler workflows {from}:</p>
                 <ul>
                     <li> <a href="#requirements">Requirements</a> </li>
                     <li><a href="#metadata-ingestion">Metadata Ingestion</a> </li>
@@ -67,14 +83,24 @@ const ConnectorIntro = ({connector, hasUsage}) => {
             );
     }
 
+    if (goal == "UI" || goal == null) {
+        block = (
+                <section>
+                {intro}
+                {toc}
+                {developers}
+                </section>
+            )
+    }
 
-    let block = (
-        <section>
-        {intro}
-        {toc}
-        {outro}
-        </section>
-    )
+    if (goal == "Airflow" || goal == "CLI") {
+        block = (
+            <section>
+            {intro}
+            {toc}
+            </section>
+        )
+    }
 
     return block;
 };
