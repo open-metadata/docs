@@ -16,7 +16,6 @@ module.exports = {
           use: 'js-yaml-loader',
         },
     );
-    configuration.resolve.fallback = { fs: false, path: false };
     return configuration;
   },
   async exportPathMap(defaultPathMap) {
