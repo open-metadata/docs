@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
 import { H2, H3 } from '../blocks/headers';
-import YAML from 'yaml';
-import anotherYaml from "/public/ingestion/connectors/bigquery.yaml";
 import yaml from "js-yaml";
+import Code from "../blocks/code";
 
 
 const MetadataIngestionServiceDev = ({ connector, service, goal }) => {
@@ -20,17 +19,15 @@ const MetadataIngestionServiceDev = ({ connector, service, goal }) => {
     'Connection.json';
 
   useEffect(() => {
-    const loadData = async () => {
-      const data = await import(
+    const readYaml = async () => {
+      const data = (await import(
         `/public/ingestion/connectors/${connector.toLowerCase()}.yaml`
-      );
-      // TODO loads double data (?)
+      )).default;
+
       const yamlData = yaml.safeDump(yaml.safeLoad(JSON.stringify(data)));
-      // const yamlData = JSON.stringify(data)
-      // const yamlData = YAML.stringify(data)
       setYaml(yamlData);
     };
-    loadData();
+    readYaml();
   }, [connector]);
 
   return (
@@ -56,7 +53,12 @@ const MetadataIngestionServiceDev = ({ connector, service, goal }) => {
 
       <H3>1. Define the YAML Config</H3>
       <p>This is a sample config for {connector}:</p>
-      <code className="YAML">{yamlConfig}</code>
+
+      <Code
+          language="yaml"
+          code={yamlConfig}
+      />
+
     </section>
   );
 };
