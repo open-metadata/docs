@@ -9,7 +9,7 @@ slug: /metadata-ui/ingestion/workflows/metadata/connectors/database/bigquery
 
 <MetadataIngestionService connector="BigQuery"/>
 
-#### Connection Options
+<h4>Connection Options</h4>
 
 - **Host and Port**: This is the BigQuery APIs URL.
 - **Username (Optional)**: Specify the User to connect to BigQuery. It should have enough privileges to read all the metadata.

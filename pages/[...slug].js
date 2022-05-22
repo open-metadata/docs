@@ -63,6 +63,7 @@ import ConnectorIntro from "../components/content/connector-intro";
 import IngestionScheduleAndDeploy from "../components/content/ingestion-schedule-and-deploy";
 import ConnectorOutro from "../components/content/connector-outro";
 import MetadataIngestionServiceDev from "../components/content/metadata-ingestion-service-dev";
+import MetadataIngestionConfig from "../components/content/metadata-ingestion-config"
 
 export default function Article({
   data,
@@ -111,6 +112,7 @@ export default function Article({
     IngestionScheduleAndDeploy,
     ConnectorOutro,
     MetadataIngestionServiceDev,
+    MetadataIngestionConfig,
     Tile,
     RefCard,
     Image,

@@ -21,7 +21,7 @@ const MetadataIngestionServiceDev = ({ connector, service, goal }) => {
   useEffect(() => {
     const readYaml = async () => {
       const data = (await import(
-        `/public/ingestion/connectors/${connector.toLowerCase()}.yaml`
+        `/public/ingestion/connectors/${connector.toLowerCase()}/ingestion.yaml`
       )).default;
 
       const yamlData = yaml.safeDump(yaml.safeLoad(JSON.stringify(data)));
