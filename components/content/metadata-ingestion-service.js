@@ -48,7 +48,7 @@ const MetadataIngestionService = ({connector}) => {
             <h4>Service Name</h4>
             <p>
                 OpenMetadata uniquely identifies services by their Service Name.
-                Provide a name that distinguishes your deployment from other services, including the other BigQuery services
+                Provide a name that distinguishes your deployment from other services, including the other {connector} services
                 that you might be ingesting metadata from.
             </p>
             <Image
@@ -60,7 +60,7 @@ const MetadataIngestionService = ({connector}) => {
             <H3>5. Configure the Service Connection</H3>
             <p>
                 In this step, we will configure the connection settings required for this connector.
-                Please follow the instructions below to ensure that you've configured the connector to read from your BigQuery service as desired.
+                Please follow the instructions below to ensure that you've configured the connector to read from your {connector} service as desired.
             </p>
             <Image
                 src={"/images/metadata-ui/ingestion/workflows/metadata/connectors/" + connector + "/service-connection.png"}

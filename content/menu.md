@@ -24,6 +24,12 @@ site_menu:
     url: /metadata-ui/ingestion/workflows/metadata/connectors
   - category: OpenMetadata UI / Ingestion / Workflows / Metadata / Connectors / Database
     url: /metadata-ui/ingestion/workflows/metadata/connectors/database
+  - category: OpenMetadata UI / Ingestion / Workflows / Metadata / Connectors / Database / Athena
+    url: /metadata-ui/ingestion/workflows/metadata/connectors/database/athena
+  - category: OpenMetadata UI / Ingestion / Workflows / Metadata / Connectors / Database / Athena / Airflow
+    url: /metadata-ui/ingestion/workflows/metadata/connectors/database/athena/airflow
+  - category: OpenMetadata UI / Ingestion / Workflows / Metadata / Connectors / Database / Athena / CLI
+    url: /metadata-ui/ingestion/workflows/metadata/connectors/database/athena/cli
   - category: OpenMetadata UI / Ingestion / Workflows / Metadata / Connectors / Database / BigQuery
     url: /metadata-ui/ingestion/workflows/metadata/connectors/database/bigquery
   - category: OpenMetadata UI / Ingestion / Workflows / Metadata / Connectors / Database / BigQuery / Airflow
