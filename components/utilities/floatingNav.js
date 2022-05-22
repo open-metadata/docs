@@ -153,7 +153,7 @@ const Heading = ({ heading, index, activeId }) => {
       key={`toc-${index}`}
     >
       <a
-        href={heading.target}
+        href={heading.target.toLowerCase().replaceAll(" ", "-")}
         className={`
           ${styles.Link}
           ${heading.target === activeId ? styles.activeLink : ""}

@@ -1,5 +1,5 @@
 {
-  "name": "streamlit-docs",
+  "name": "openmetadata-docs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -30,6 +30,7 @@
     "fs": "0.0.1-security",
     "gray-matter": "^4.0.3",
     "html-to-text": "^8.0.0",
+    "js-yaml-loader": "^1.2.2",
     "lodash": "^4.17.21",
     "markdown-it": "^12.3.2",
     "netlify-plugin-cache-nextjs": "^1.6.1",

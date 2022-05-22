@@ -10,7 +10,11 @@ module.exports = {
       {
         test: /\.svg$/,
         use: ["@svgr/webpack", "file-loader"],
-      }
+      },
+      {
+          test: /\.ya?ml$/,
+          use: 'js-yaml-loader',
+        },
     );
     return configuration;
   },

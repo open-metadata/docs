@@ -18,6 +18,12 @@ export const H3 = (props) => (
   </HeaderLink>
 );
 
+export const H4 = (props) => (
+  <HeaderLink level={4} name={getName(props)} className={props.className}>
+    {getBody(props)}
+  </HeaderLink>
+);
+
 const getBody = (props) => {
   const length = Object.keys(props).length;
 
