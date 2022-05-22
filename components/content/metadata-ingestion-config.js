@@ -445,8 +445,14 @@ with DAG(
         )
     }
 
-
-
+    const dbt = (
+        <section>
+        <H2>DBT Integration</H2>
+        <p>
+        You can learn more about how to ingest DBT models' definitions and their lineage <a href="/metadata-ui/ingestion/workflows/metadata/dbt">here</a>.
+        </p>
+        </section>
+    )
 
     block = (
         <section>
@@ -457,6 +463,7 @@ with DAG(
         {prepareUsage}
         {prepareProfiler}
         {prepareProfilerIngestion}
+        {dbt}
         </section>
     )
 
