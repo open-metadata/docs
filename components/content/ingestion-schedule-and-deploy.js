@@ -5,7 +5,7 @@ const IngestionScheduleAndDeploy = ({connector}) => {
 
     return (
         <section>
-            <H3>7. Schedule the Ingestion and Deploy</H3>
+            <H3>6. Schedule the Ingestion and Deploy</H3>
             <p>
                 Scheduling can be set up at an hourly, daily, or weekly cadence. The timezone is in UTC. Select a Start Date to schedule for ingestion. It is optional to add an End Date.
             </p>
@@ -24,7 +24,7 @@ const IngestionScheduleAndDeploy = ({connector}) => {
                 After configuring the workflow, you can click on Deploy to create the pipeline.
             </p>
 
-            <H3>8. View the Ingestion Pipeline</H3>
+            <H3>7. View the Ingestion Pipeline</H3>
             <p>
                 Once the workflow has been successfully deployed, you can view the Ingestion Pipeline running from the Service Page.
             </p>
@@ -34,7 +34,7 @@ const IngestionScheduleAndDeploy = ({connector}) => {
                 caption="View the Ingestion Pipeline from the Service Page"
             />
 
-            <H3>9. Workflow Deployment Error</H3>
+            <H3>8. Workflow Deployment Error</H3>
             <p>
                 If there were any errors during the workflow deployment process, the Ingestion Pipeline Entity will still be created, but no workflow will be present in the Ingestion container.
             </p>
