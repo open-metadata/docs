@@ -46,8 +46,8 @@ export default function Home({ window, menu, gdpr_data }) {
           rel="canonical"
           href={`https://${process.env.NEXT_PUBLIC_HOSTNAME}`}
         />
-        <meta content="Streamlit Docs" property="og:title" />
-        <meta content="Streamlit Docs" name="twitter:title" />
+        <meta content="OpenMetadata Docs" property="og:title" />
+        <meta content="OpenMetadata Docs" name="twitter:title" />
         {description && (
           <React.Fragment>
             <meta content={description} name="description" />
@@ -56,7 +56,7 @@ export default function Home({ window, menu, gdpr_data }) {
           </React.Fragment>
         )}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://docs.streamlit.io/" />
+        <meta property="og:url" content="https://docs.open-metadata.org/" />
         <meta content="summary_large_image" name="twitter:card" />
         <meta
           property="og:image"
@@ -81,38 +81,15 @@ export default function Home({ window, menu, gdpr_data }) {
 
             <SummaryTiles />
 
-            {/* <H2 className='no-b-m'>What's new</H2>
-
-            <TileContainer>
-              <Tile size="half" background="unset" color="unset" dark={{ background: "unset", color: 'white', border_color: 'gray-90' }} border_color="gray-40" img="/logo.svg" title="Feature title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend a facilisis sagittis, vitae nibh massa in facilisis et. Pretium eget non cursus purus tempus porta sodales." link="/tutorials/get-started" />
-              <Tile size="half" background="unset" color="unset" dark={{ background: "unset", color: 'white', border_color: 'gray-90' }} border_color="gray-40" icon="visibility" title="Feature title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend a facilisis sagittis, vitae nibh massa in facilisis et. Pretium eget non cursus purus tempus porta sodales." link="/tutorials/get-started" />
-              <Tile size="half" background="unset" color="unset" dark={{ background: "unset", color: 'white', border_color: 'gray-90' }} border_color="gray-40" icon="edit" title="Feature title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend a facilisis sagittis, vitae nibh massa in facilisis et. Pretium eget non cursus purus tempus porta sodales." link="/tutorials/get-started" />
-              <Tile size="half" background="unset" color="unset" dark={{ background: "unset", color: 'white', border_color: 'gray-90' }} border_color="gray-40" img="/logo.svg" title="Feature title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend a facilisis sagittis, vitae nibh massa in facilisis et. Pretium eget non cursus purus tempus porta sodales." link="/tutorials/get-started" />
-            </TileContainer> */}
-
-            {/* <NewsContainer>
-              <NewsEntry
-                date="2022-02-20T16:30:00.000Z"
-                title="Announcement: Streamlit Cloud Maintenance"
-                text="Streamlit Cloud will have a maintenance event on Sunday, February 20th at 7:00 am PST. The maintenance event will last for no more than 5 minutes."
-                link="https://discuss.streamlit.io/c/official-announcements/"
-              />
-              <NewsEntry date="2022-02-17T16:08:45.000Z" title="Calculating distances in cosmology with Streamlit" text="Learn how three friends made the cosmology on-the-go app CosmΩracle." link="https://blog.streamlit.io/calculating-distances-in-cosmology-with-streamlit/" />
-              <NewsEntry date="2021-02-07T16:30:00.000Z" title="Monthly Rewind > January 2022" text="Your January look-back at new features and great community content." link="https://blog.streamlit.io/monthly-rewind-january-2022/" />
-              <Button link="https://blog.streamlit.io/">View all updates</Button>
-            </NewsContainer> */}
-
-            <H2>How to use our docs</H2>
+            <H2>Using the docs</H2>
             <InlineCalloutContainer>
               <InlineCallout
                 color="violet-70"
                 icon="description"
-                bold="Streamlit library"
-                href="/library/get-started"
+                bold="Deployment"
+                href="/deployment"
               >
-                includes our Get started guide, API reference, and more advanced
-                features of the core library including caching, theming, and
-                Streamlit Components.
+                Learn how to set up OpenMetadata in Bare Metal, Docker or Kubernetes and how to secure the server and APIs.
               </InlineCallout>
               <InlineCallout
                 color="l-blue-70"
@@ -145,107 +122,27 @@ export default function Home({ window, menu, gdpr_data }) {
 
             <NewsContainer>
               <NewsEntry
-                date="2022-05-03T16:05:00.000Z"
-                title="Wissam Siblini uses Streamlit for pathology detection in chest radiographs"
-                text="Learn how Wissam detected thoracic pathologies in medical images."
-                link="https://blog.streamlit.io/wissam-siblini-uses-streamlit-for-pathology-detection-in-chest-radiographs/"
+                date="2022-04-26T16:05:00.000Z"
+                title="OpenMetadata 0.10.0 release"
+                text="Backend APIs, Support for database schema objects, Hard deletion of entities, Refactor service connectors, DBT changes, Security updates, and more."
+                link="https://blog.open-metadata.org/openmetadata-0-10-0-release-82c4f5533c3f"
               />
               <NewsEntry
-                date="2022-04-28T16:05:00.000Z"
-                title="The Stable solves its data scalability problem with Streamlit"
-                text="How Mark von Oven of The Stable helped his Analytics team go from idea to app in just a few days."
-                link="https://blog.streamlit.io/the-stable-solves-its-data-scalability-problem-with-streamlit/"
+                date="2022-03-07T16:05:00.000Z"
+                title="ML is not just about ML"
+                text="Understanding our dependencies and the role they play is crucial. If we can also bring this same knowledge to the users of the models and open a channel for sharing and collaborating, we are heading on the path to success."
+                link="https://blog.open-metadata.org/ml-is-not-just-about-ml-c08eab242e84"
               />
               <NewsEntry
-                date="2022-04-21T16:05:00.000Z"
-                title="How to build a real-time live dashboard with Streamlit"
-                text="5 easy steps to make your own data dashboard."
-                link="https://blog.streamlit.io/how-to-build-a-real-time-live-dashboard-with-streamlit/"
+                date="2021-12-02T16:05:00.000Z"
+                title="Why OpenMetadata is the Right Choice for you"
+                text="OpenMetadata is a fresh start on how to do Metadata right from first principles."
+                link="https://blog.open-metadata.org/why-openmetadata-is-the-right-choice-for-you-59e329163cac"
               />
               <Button link="https://blog.streamlit.io/">
                 View all updates
               </Button>
             </NewsContainer>
-
-            <H2 className="no-b-m">What's new</H2>
-
-            <TileContainer>
-              <Tile
-                size="half"
-                background="unset"
-                color="unset"
-                dark={{
-                  background: "unset",
-                  color: "white",
-                  border_color: "gray-90",
-                }}
-                border_color="gray-40"
-                icon="photo_camera"
-                title="st.camera_input"
-                text="You can now upload images to your apps straight from your camera with the new st.camera_input feature. It's great for computer vision apps."
-                link="/library/api-reference/widgets/st.camera_input"
-              />
-              <Tile
-                size="half"
-                background="unset"
-                color="unset"
-                dark={{
-                  background: "unset",
-                  color: "white",
-                  border_color: "gray-90",
-                }}
-                border_color="gray-40"
-                icon="login"
-                title="Sign in with email"
-                text="You can now sign in to Streamlit Cloud by using an email! Read more about how to use this feature in our docs."
-                link="/streamlit-cloud/get-started#log-in-to-sharestreamlitio"
-              />
-              <Tile
-                size="half"
-                background="unset"
-                color="unset"
-                dark={{
-                  background: "unset",
-                  color: "white",
-                  border_color: "gray-90",
-                }}
-                border_color="gray-40"
-                icon="star"
-                title="App favoriting"
-                text="Streamlit Cloud supports a 'favorite' feature that lets you quickly access your apps from the app dashboard. Favorited apps appear with a yellow star ⭐ beside them."
-                link="/streamlit-cloud/get-started/manage-your-app#app-favoriting"
-              />
-              <Tile
-                size="half"
-                background="unset"
-                color="unset"
-                dark={{
-                  background: "unset",
-                  color: "white",
-                  border_color: "gray-90",
-                }}
-                border_color="gray-40"
-                icon="expand_more"
-                title="Expand and collapse JSON elements with kwarg"
-                text="st.json now supports a keyword-only argument, expanded, on whether the JSON should be expanded by default (defaults to True)."
-                link="/library/api-reference/data/st.json"
-              />
-              {/* <Tile
-                size="half"
-                background="unset"
-                color="unset"
-                dark={{
-                  background: "unset",
-                  color: "white",
-                  border_color: "gray-90",
-                }}
-                border_color="gray-40"
-                img="/logo.svg"
-                title="Clear memo + singleton caches procedurally"
-                text="Do you need more control over cache invalidation? Any function annotated with @st.experimental_memo or @st.experimental_singleton gets its own clear() function automatically."
-                link="/library/advanced-features/experimental-cache-primitives#clear-memo-and-singleton-caches-procedurally"
-              /> */}
-            </TileContainer>
 
           </article>
 
