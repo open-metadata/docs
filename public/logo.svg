@@ -1,4 +1,4 @@
-<svg width="50" height="50" viewBox="0 0 250 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="40" height="40" viewBox="0 0 250 300" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M250 63H0V237.5V238H0.00391658C0.541243 272.288 56.298 300 125 300C193.702 300 249.459 272.288 249.996 238H250V237.5V63Z" fill="url(#paint0_linear)"/>
 <ellipse cx="125" cy="62.5" rx="125" ry="62.5" fill="#8D6AF1"/>
 <ellipse cx="125.5" cy="63.25" rx="62.5" ry="31.25" fill="white"/>
