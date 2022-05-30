@@ -1,5 +1,13 @@
 ---
 site_menu:
+  - category: Quickstart
+    url: /quick-start
+    color: lightBlue-70
+    icon: beach_access
+  - category: Quickstart / Get started
+    url: /quick-start/get-started
+  - category: Quickstart / Get started / Main concepts
+    url: /quick-start/get-started/main-concepts
 
   - category: Deployment
     url: /deployment
