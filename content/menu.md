@@ -4,10 +4,8 @@ site_menu:
     url: /quick-start
     color: lightBlue-70
     icon: beach_access
-  - category: Quickstart / Get started
-    url: /quick-start/get-started
-  - category: Quickstart / Get started / Main concepts
-    url: /quick-start/get-started/main-concepts
+  - category: Quickstart / Local Deployment
+    url: /quick-start/local-deploy
 
   - category: Deployment
     url: /deployment
@@ -78,16 +76,26 @@ site_menu:
     color: violet-70
     icon: book
   - category: Main Concepts / Get started
-    url: /main-concepts/get-started
-  - category: Main Concepts / Get started / Main concepts
-    url: /main-concepts/get-started/main-concepts
+    url: /main-concepts/get-started 
+  - category: Main Concepts / High Level Design
+    url: /main-concepts/high-level-design
+  - category: Main Concepts / Metadata Standard
+    url: /main-concepts/metadata-standard
+  - category: Main Concepts / Metadata Standard / Entities
+    url: /main-concepts/metadata-standard/entities
+  - category: Main Concepts / Metadata Standard / API's
+    url: /main-concepts/metadata-standard/apis
 
   - category: Developers
     url: /developers
     color: violet-70
     icon: favorite_border
-  - category: Developers / Get started
-    url: /developers/get-started
-  - category: Developers / Get started / Main concepts
-    url: /developers/get-started/main-concepts
+  - category: Developers / Contribute
+    url: /developers/contribute
+  - category: Developers / Ingestion Workflows
+    url: /developers/ingestion-workflows
+  - category: Developers / Webhooks
+    url: /developers/webhooks
+  - category: Developers / OpenMetadata SDK
+    url: /developers/sdk
 ---
