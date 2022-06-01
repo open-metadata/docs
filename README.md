@@ -6,6 +6,8 @@ Based on the great work of Streamlit's [documentation framework](https://github.
 
 To build the docs, clone this repo, install the NPM dependencies, and start the development server.
 
+You might need to run `brew install node next` before.
+
 1. Clone this repo:
 
 ```bash
@@ -39,6 +41,26 @@ This repo follows a typical Next.js project structure. To contribute, you'll onl
 - `public/` Contains all the images and YAML files.
 - `scripts/` Contains JS files.
 - `styles/` Contains CSS files for styling and layout.
+
+## How to add new docs
+
+This is the docs' organisation:
+
+![docs](images/docs-structure.drawio.png)
+
+To add a new page:
+1. Add the entry under `site_menu` in `content/menu.md`. Make sure you're following the right structure in the `category` (using names) and `url` (building the path).
+2. In the file path, create a markdown file. You can name it either as `index.md`, if it is the presentation of a section, or `something.md` if it is a detailed entry.
+3. Each `md` file will have the following header (example from `content/metadata-ui/ingestion/lineage.md`):
+    ```
+    ---
+    title: Entity Lineage
+    slug: /metadata-ui/ingestion/lineage
+    ---
+    ```
+   The title will be the Page title, and the `slug` will need to match the `url` specified in the `menu.md`.
+4. If you need to add any image, they should be placed under `public/images/`, using the same directory structure as the `md` file. You can then add them with `![name](path)` with normal markdown.
+    The path will start from `images`, e.g., `/images/metadata-ui/ingestion/workflows/metadata/connectors/schedule.png`
 
 ## Hot to add a new connector
 
