@@ -1,6 +1,6 @@
 ---
 title: Run Athena Connector using the CLI
-slug: /metadata-ui/ingestion/workflows/metadata/connectors/database/athena/cli
+slug: /metadata-ui/connectors/database/athena/cli
 ---
 
 <ConnectorIntro connector="Athena" goal="CLI" />

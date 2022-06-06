@@ -28,20 +28,23 @@ site_menu:
     url: /metadata-ui/ingestion/workflows/metadata
   - category: OpenMetadata UI / Ingestion / Workflows / Metadata / Connectors
     url: /metadata-ui/ingestion/workflows/metadata/connectors
-  - category: OpenMetadata UI / Ingestion / Workflows / Metadata / Connectors / Database
-    url: /metadata-ui/ingestion/workflows/metadata/connectors/database
-  - category: OpenMetadata UI / Ingestion / Workflows / Metadata / Connectors / Database / Athena
-    url: /metadata-ui/ingestion/workflows/metadata/connectors/database/athena
-  - category: OpenMetadata UI / Ingestion / Workflows / Metadata / Connectors / Database / Athena / Airflow
-    url: /metadata-ui/ingestion/workflows/metadata/connectors/database/athena/airflow
-  - category: OpenMetadata UI / Ingestion / Workflows / Metadata / Connectors / Database / Athena / CLI
-    url: /metadata-ui/ingestion/workflows/metadata/connectors/database/athena/cli
-  - category: OpenMetadata UI / Ingestion / Workflows / Metadata / Connectors / Database / BigQuery
-    url: /metadata-ui/ingestion/workflows/metadata/connectors/database/bigquery
-  - category: OpenMetadata UI / Ingestion / Workflows / Metadata / Connectors / Database / BigQuery / Airflow
-    url: /metadata-ui/ingestion/workflows/metadata/connectors/database/bigquery/airflow
-  - category: OpenMetadata UI / Ingestion / Workflows / Metadata / Connectors / Database / BigQuery / CLI
-    url: /metadata-ui/ingestion/workflows/metadata/connectors/database/bigquery/cli
+
+  - category: OpenMetadata UI / Connectors
+    url: /metadata-ui/connectors
+  - category: OpenMetadata UI / Connectors / Database
+    url: /metadata-ui/connectors/database
+  - category: OpenMetadata UI / Connectors / Database / Athena
+    url: /metadata-ui/connectors/database/athena
+  - category: OpenMetadata UI / Connectors / Database / Athena / Airflow
+    url: /metadata-ui/connectors/database/athena/airflow
+  - category: OpenMetadata UI / Connectors / Database / Athena / CLI
+    url: /metadata-ui/connectors/database/athena/cli
+  - category: OpenMetadata UI / Connectors / Database / BigQuery
+    url: /metadata-ui/connectors/database/bigquery
+  - category: OpenMetadata UI / Connectors / Database / BigQuery / Airflow
+    url: /metadata-ui/connectors/database/bigquery/airflow
+  - category: OpenMetadata UI / Connectors / Database / BigQuery / CLI
+    url: /metadata-ui/connectors/database/bigquery/cli
 
   - category: OpenMetadata UI / Ingestion / Workflows/ Metadata / DBT
     url: /metadata-ui/ingestion/workflows/metadata/dbt

@@ -1,6 +1,6 @@
 ---
 title: Athena
-slug: /metadata-ui/ingestion/workflows/metadata/connectors/database/athena
+slug: /metadata-ui/connectors/database/athena
 ---
 
 <ConnectorIntro connector="Athena" />

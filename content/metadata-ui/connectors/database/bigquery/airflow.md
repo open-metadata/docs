@@ -1,6 +1,6 @@
 ---
 title: Run BigQuery Connector using Airflow SDK
-slug: /metadata-ui/ingestion/workflows/metadata/connectors/database/bigquery/airflow
+slug: /metadata-ui/connectors/database/bigquery/airflow
 ---
 
 <ConnectorIntro connector="BigQuery" goal="Airflow" hasUsage="true" />

@@ -1,6 +1,6 @@
 ---
 title: BigQuery
-slug: /metadata-ui/ingestion/workflows/metadata/connectors/database/bigquery
+slug: /metadata-ui/connectors/database/bigquery
 ---
 
 <ConnectorIntro connector="BigQuery" hasUsage="true" />
