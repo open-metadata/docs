@@ -99,6 +99,12 @@ site_menu:
     url: /metadata-ui/connectors/database/azuresql/airflow
   - category: OpenMetadata UI / Connectors / Database / AzureSQL / CLI
     url: /metadata-ui/connectors/database/azuresql/cli
+  - category: OpenMetadata UI / Connectors / Database / Databricks
+    url: /metadata-ui/connectors/database/databricks
+  - category: OpenMetadata UI / Connectors / Database / Databricks / Airflow
+    url: /metadata-ui/connectors/database/databricks/airflow
+  - category: OpenMetadata UI / Connectors / Database / Databricks / CLI
+    url: /metadata-ui/connectors/database/databricks/cli
   
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
