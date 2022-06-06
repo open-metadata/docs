@@ -129,6 +129,12 @@ site_menu:
     url: /metadata-ui/connectors/database/dynamodb/airflow
   - category: OpenMetadata UI / Connectors / Database / DynamoDB / CLI
     url: /metadata-ui/connectors/database/dynamodb/cli
+  - category: OpenMetadata UI / Connectors / Database / Hive
+    url: /metadata-ui/connectors/database/hive
+  - category: OpenMetadata UI / Connectors / Database / Hive / Airflow
+    url: /metadata-ui/connectors/database/hive/airflow
+  - category: OpenMetadata UI / Connectors / Database / Hive / CLI
+    url: /metadata-ui/connectors/database/hive/cli
 
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
