@@ -4,7 +4,6 @@ source:
   serviceConnection:
     config:
       type: Athena
-      database: database_name
       awsConfig:
         awsAccessKeyId: access key id
         awsSecretAccessKey: access secret key

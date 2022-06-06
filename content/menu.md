@@ -69,6 +69,12 @@ site_menu:
     url: /metadata-ui/connectors/database/mssql/airflow
   - category: OpenMetadata UI / Connectors / Database / MSSQL / CLI
     url: /metadata-ui/connectors/database/mssql/cli
+  - category: OpenMetadata UI / Connectors / Database / Postgres
+    url: /metadata-ui/connectors/database/postgres
+  - category: OpenMetadata UI / Connectors / Database / Postgres / Airflow
+    url: /metadata-ui/connectors/database/postgres/airflow
+  - category: OpenMetadata UI / Connectors / Database / Postgres / CLI
+    url: /metadata-ui/connectors/database/postgres/cli
   
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard

@@ -7,7 +7,6 @@ source:
       username: openmetadata_user
       password: openmetadata_password
       hostPort: localhost:5432
-      database: pagila
   sourceConfig:
     config:
       type: Profiler
