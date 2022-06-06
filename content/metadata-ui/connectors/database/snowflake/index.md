@@ -11,7 +11,7 @@ slug: /metadata-ui/connectors/database/snowflake
 
 <h4>Connection Options</h4>
 
-- **Username**: Specify the User to connect to Snoflake. It should have enough privileges to read all the metadata.
+- **Username**: Specify the User to connect to Snowflake. It should have enough privileges to read all the metadata.
 - **Password**: Password to connect to Snowflake.
 - **Account**: Enter the details for the Snowflake Account.
 - **Role (Optional)**: Enter the details of the Snowflake Account Role. This is an optional detail.

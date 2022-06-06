@@ -51,6 +51,12 @@ site_menu:
     url: /metadata-ui/connectors/database/snowflake/airflow
   - category: OpenMetadata UI / Connectors / Database / Snowflake / CLI
     url: /metadata-ui/connectors/database/snowflake/cli
+  - category: OpenMetadata UI / Connectors / Database / Redshift
+    url: /metadata-ui/connectors/database/redshift
+  - category: OpenMetadata UI / Connectors / Database / Redshift / Airflow
+    url: /metadata-ui/connectors/database/redshift/airflow
+  - category: OpenMetadata UI / Connectors / Database / Redshift / CLI
+    url: /metadata-ui/connectors/database/redshift/cli
   
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard

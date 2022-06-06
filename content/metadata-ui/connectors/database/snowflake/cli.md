@@ -11,7 +11,7 @@ slug: /metadata-ui/connectors/database/snowflake/cli
 
 <h4>Source Configuration - Service Connection</h4>
 
-- **username**: Specify the User to connect to Snoflake. It should have enough privileges to read all the metadata.
+- **username**: Specify the User to connect to Snowflake. It should have enough privileges to read all the metadata.
 - **password**: Password to connect to Snowflake.
 - **account**: Enter the details for the Snowflake Account.
 - **role**: Enter the details of the Snowflake Account Role. This is an optional detail.
