@@ -55,7 +55,7 @@ const Header = () => {
       <nav className={styles.Navigation} id="main-header">
         <Link href="/">
           <a className={classNames(styles.LogoContainer, "not-link")}>
-            <img src="/logo.svg" alt="" />
+            <img src="/logo.svg" alt="" style={{"height":"36px"}} />
             <h4 className={styles.LogoText}>Documentation</h4>
           </a>
         </Link>
