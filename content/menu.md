@@ -75,6 +75,12 @@ site_menu:
     url: /metadata-ui/connectors/database/postgres/airflow
   - category: OpenMetadata UI / Connectors / Database / Postgres / CLI
     url: /metadata-ui/connectors/database/postgres/cli
+  - category: OpenMetadata UI / Connectors / Database / MySQL
+    url: /metadata-ui/connectors/database/mysql
+  - category: OpenMetadata UI / Connectors / Database / MySQL / Airflow
+    url: /metadata-ui/connectors/database/mysql/airflow
+  - category: OpenMetadata UI / Connectors / Database / MySQL / CLI
+    url: /metadata-ui/connectors/database/mysql/cli
   
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
