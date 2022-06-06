@@ -63,6 +63,12 @@ site_menu:
     url: /metadata-ui/connectors/database/glue/airflow
   - category: OpenMetadata UI / Connectors / Database / Glue / CLI
     url: /metadata-ui/connectors/database/glue/cli
+  - category: OpenMetadata UI / Connectors / Database / MSSQL
+    url: /metadata-ui/connectors/database/mssql
+  - category: OpenMetadata UI / Connectors / Database / MSSQL / Airflow
+    url: /metadata-ui/connectors/database/mssql/airflow
+  - category: OpenMetadata UI / Connectors / Database / MSSQL / CLI
+    url: /metadata-ui/connectors/database/mssql/cli
   
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
