@@ -105,6 +105,12 @@ site_menu:
     url: /metadata-ui/connectors/database/databricks/airflow
   - category: OpenMetadata UI / Connectors / Database / Databricks / CLI
     url: /metadata-ui/connectors/database/databricks/cli
+  - category: OpenMetadata UI / Connectors / Database / DB2
+    url: /metadata-ui/connectors/database/db2
+  - category: OpenMetadata UI / Connectors / Database / DB2 / Airflow
+    url: /metadata-ui/connectors/database/db2/airflow
+  - category: OpenMetadata UI / Connectors / Database / DB2 / CLI
+    url: /metadata-ui/connectors/database/db2/cli
   
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
