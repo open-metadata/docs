@@ -93,6 +93,12 @@ site_menu:
     url: /metadata-ui/connectors/database/clickhouse/airflow
   - category: OpenMetadata UI / Connectors / Database / Clickhouse / CLI
     url: /metadata-ui/connectors/database/clickhouse/cli
+  - category: OpenMetadata UI / Connectors / Database / AzureSQL
+    url: /metadata-ui/connectors/database/azuresql
+  - category: OpenMetadata UI / Connectors / Database / AzureSQL / Airflow
+    url: /metadata-ui/connectors/database/azuresql/airflow
+  - category: OpenMetadata UI / Connectors / Database / AzureSQL / CLI
+    url: /metadata-ui/connectors/database/azuresql/cli
   
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
