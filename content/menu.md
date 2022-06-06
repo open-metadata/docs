@@ -111,7 +111,13 @@ site_menu:
     url: /metadata-ui/connectors/database/db2/airflow
   - category: OpenMetadata UI / Connectors / Database / DB2 / CLI
     url: /metadata-ui/connectors/database/db2/cli
-  
+  - category: OpenMetadata UI / Connectors / Database / DeltaLake
+    url: /metadata-ui/connectors/database/deltalake
+  - category: OpenMetadata UI / Connectors / Database / DeltaLake / Airflow
+    url: /metadata-ui/connectors/database/deltalake/airflow
+  - category: OpenMetadata UI / Connectors / Database / DeltaLake / CLI
+    url: /metadata-ui/connectors/database/deltalake/cli
+
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
   - category: OpenMetadata UI / Connectors / Dashboard / Looker
