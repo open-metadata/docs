@@ -135,6 +135,12 @@ site_menu:
     url: /metadata-ui/connectors/database/hive/airflow
   - category: OpenMetadata UI / Connectors / Database / Hive / CLI
     url: /metadata-ui/connectors/database/hive/cli
+  - category: OpenMetadata UI / Connectors / Database / Presto
+    url: /metadata-ui/connectors/database/presto
+  - category: OpenMetadata UI / Connectors / Database / Presto / Airflow
+    url: /metadata-ui/connectors/database/presto/airflow
+  - category: OpenMetadata UI / Connectors / Database / Presto / CLI
+    url: /metadata-ui/connectors/database/presto/cli
 
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
