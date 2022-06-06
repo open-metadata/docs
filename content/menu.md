@@ -123,6 +123,12 @@ site_menu:
     url: /metadata-ui/connectors/database/druid/airflow
   - category: OpenMetadata UI / Connectors / Database / Druid / CLI
     url: /metadata-ui/connectors/database/druid/cli
+  - category: OpenMetadata UI / Connectors / Database / DynamoDB
+    url: /metadata-ui/connectors/database/dynamodb
+  - category: OpenMetadata UI / Connectors / Database / DynamoDB / Airflow
+    url: /metadata-ui/connectors/database/dynamodb/airflow
+  - category: OpenMetadata UI / Connectors / Database / DynamoDB / CLI
+    url: /metadata-ui/connectors/database/dynamodb/cli
 
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
