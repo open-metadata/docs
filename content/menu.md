@@ -45,6 +45,12 @@ site_menu:
     url: /metadata-ui/connectors/database/bigquery/airflow
   - category: OpenMetadata UI / Connectors / Database / BigQuery / CLI
     url: /metadata-ui/connectors/database/bigquery/cli
+  - category: OpenMetadata UI / Connectors / Database / Snowflake
+    url: /metadata-ui/connectors/database/snowflake
+  - category: OpenMetadata UI / Connectors / Database / Snowflake / Airflow
+    url: /metadata-ui/connectors/database/snowflake/airflow
+  - category: OpenMetadata UI / Connectors / Database / Snowflake / CLI
+    url: /metadata-ui/connectors/database/snowflake/cli
   
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
