@@ -87,6 +87,12 @@ site_menu:
     url: /metadata-ui/connectors/database/oracle/airflow
   - category: OpenMetadata UI / Connectors / Database / Oracle / CLI
     url: /metadata-ui/connectors/database/oracle/cli
+  - category: OpenMetadata UI / Connectors / Database / Clickhouse
+    url: /metadata-ui/connectors/database/clickhouse
+  - category: OpenMetadata UI / Connectors / Database / Clickhouse / Airflow
+    url: /metadata-ui/connectors/database/clickhouse/airflow
+  - category: OpenMetadata UI / Connectors / Database / Clickhouse / CLI
+    url: /metadata-ui/connectors/database/clickhouse/cli
   
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
