@@ -3,7 +3,7 @@ title: Run BigQuery Connector using the CLI
 slug: /metadata-ui/connectors/database/bigquery/cli
 ---
 
-<ConnectorIntro connector="BigQuery" goal="CLI" hasUsage="true" />
+<ConnectorIntro connector="BigQuery" goal="CLI" hasUsage="true" hasProfiler="true" hasDBT="true" />
 
 <Requirements />
 
@@ -44,4 +44,4 @@ credentials:
     - In case you are using Single-Sign-On (SSO) for authentication, add the `authenticator` details in the Connection Arguments as a Key-Value pair as follows: `"authenticator" : "sso_login_url"`
     - In case you authenticate with SSO using an external browser popup, then add the `authenticator` details in the Connection Arguments as a Key-Value pair as follows: `"authenticator" : "externalbrowser"`
 
-<MetadataIngestionConfig service="database" connector="BigQuery" goal="CLI" hasUsage="true"/>
+<MetadataIngestionConfig service="database" connector="BigQuery" goal="CLI" hasUsage="true" hasProfiler="true" hasDBT="true"/>

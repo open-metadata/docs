@@ -2,10 +2,9 @@ import { useEffect, useState } from 'react';
 import { H2, H3, H4 } from '../blocks/headers';
 import YAML from 'yaml';
 import yaml from "js-yaml";
-import CodeTile from "../blocks/codeTile";
 import Code from "../blocks/code";
 
-const MetadataIngestionConfig = ({ service, connector, goal, hasUsage }) => {
+const MetadataIngestionConfig = ({ service, connector, goal, hasUsage, hasProfiler, hasDBT }) => {
 
    // Prepare connector URL
      const urlRoot =
@@ -34,12 +33,15 @@ const MetadataIngestionConfig = ({ service, connector, goal, hasUsage }) => {
             const usageYamlData = yaml.safeDump(yaml.safeLoad(JSON.stringify(usage)));
             setUsageYaml(usageYamlData);
           }
-
-          const profiler = (await import(
-            `/public/ingestion/connectors/${connector.toLowerCase()}/profiler.yaml`
-          )).default;
-          const profilerYamlData = yaml.safeDump(yaml.safeLoad(JSON.stringify(profiler)));
-          setProfilerYaml(profilerYamlData);
+          
+          if (hasProfiler) {
+            const profiler = (await import(
+                `/public/ingestion/connectors/${connector.toLowerCase()}/profiler.yaml`
+              )).default;
+              const profilerYamlData = yaml.safeDump(yaml.safeLoad(JSON.stringify(profiler)));
+              setProfilerYaml(profilerYamlData);
+          }
+          
         };
         readYaml();
       }, [connector, hasUsage]);
@@ -51,7 +53,7 @@ const MetadataIngestionConfig = ({ service, connector, goal, hasUsage }) => {
     let prepareProfiler;
     let prepareProfilerIngestion;
 
-    const sourceConfig = (
+    const databaseSourceConfig = (
         <section>
         <H4>Source Configuration - Source Config</H4>
         <p>
@@ -59,12 +61,9 @@ const MetadataIngestionConfig = ({ service, connector, goal, hasUsage }) => {
         <a href={sourceConfigUrl}>here</a>:
         </p>
         <ul>
-        <li><code>enableDataProfiler</code>: true or false, to run the profiler (not the tests) during the metadata ingestion.</li>
         <li><code>markDeletedTables</code>: To flag tables as soft-deleted if they are not present anymore in the source system.</li>
         <li><code>includeTables</code>: true or false, to ingest table data. Default is true.</li>
         <li><code>includeViews</code>: true or false, to ingest views definitions.</li>
-        <li><code>generateSampleData</code>: To ingest sample data based on sampleDataQuery.</li>
-        <li><code>sampleDataQuery</code>: Defaults to select * from {}.{} limit 50.</li>
         <li>
         <code>schemaFilterPattern</code> and <code>tableFilternPattern</code>: Note that the schemaFilterPattern and tableFilterPattern both support regex as include or exclude. E.g.,
 
@@ -77,7 +76,84 @@ const MetadataIngestionConfig = ({ service, connector, goal, hasUsage }) => {
     - type_test
 `}
         />
+        </li>
+        </ul>
+        </section>
+    )
 
+    const dashboardSourceConfig = (
+        <section>
+        <H4>Source Configuration - Source Config</H4>
+        <p>
+        The <code>sourceConfig</code> is defined{' '}
+        <a href={sourceConfigUrl}>here</a>:
+        </p>
+        <ul>
+        <li><code>dbServiceName</code>: Database Service Name for the creation of lineage, if the source supports it.</li>
+        <li>
+        <code>dashboardFilterPattern</code> and <code>chartFilterPattern</code>: Note that the dashboardFilterPattern and chartFilterPattern both support regex as include or exclude. E.g.,
+
+        <Code
+            language="YAML"
+            code={
+`dashboardFilterPattern:
+  includes:
+    - users
+    - type_test
+`}
+        />
+        </li>
+        </ul>
+        </section>
+    )
+
+    const messagingSourceConfig = (
+        <section>
+        <H4>Source Configuration - Source Config</H4>
+        <p>
+        The <code>sourceConfig</code> is defined{' '}
+        <a href={sourceConfigUrl}>here</a>:
+        </p>
+        <ul>
+        <li><code>generateSampleData</code>: Option to turn on/off generating sample data during metadata extraction.</li>
+        <li>
+        <code>topicFilterPattern</code>: Note that the topicFilterPattern supports regex as include or exclude. E.g.,
+
+        <Code
+            language="YAML"
+            code={
+`topicFilterPattern:
+  includes:
+    - users
+    - type_test
+`}
+        />
+        </li>
+        </ul>
+        </section>
+    )
+
+    const pipelineSourceConfig = (
+        <section>
+        <H4>Source Configuration - Source Config</H4>
+        <p>
+        The <code>sourceConfig</code> is defined{' '}
+        <a href={sourceConfigUrl}>here</a>:
+        </p>
+        <ul>
+        <li><code>includeLineage</code>: Optional configuration to turn off fetching lineage from pipelines.</li>
+        <li>
+        <code>pipelineFilterPattern</code>: Note that the pipelineFilterPattern supports regex as include or exclude. E.g.,
+
+        <Code
+            language="YAML"
+            code={
+`pipelineFilterPattern:
+  includes:
+    - users
+    - type_test
+`}
+        />
         </li>
         </ul>
         </section>
@@ -325,7 +401,7 @@ with DAG(
         <Code
             language="yaml"
             code={`fqnFilterPattern:
-  includes:
+    includes:
     - service.database.schema.*`}
         />
         <H4>Processor</H4>
@@ -334,23 +410,23 @@ with DAG(
         <Code
             language="yaml"
             code={`processor:
-  type: orm-profiler
-  config:
+    type: orm-profiler
+    config:
     test_suite:
-      name: <Test Suite name>
-      tests:
+        name: <Test Suite name>
+        tests:
         - table: <Table FQN>
-          table_tests:
+            table_tests:
             - testCase:
                 config:
-                  value: 100
+                    value: 100
                 tableTestType: tableRowCountToEqual
-          column_tests:
+            column_tests:
             - columnName: <Column Name>
-              testCase:
+                testCase:
                 config:
-                  minValue: 0
-                  maxValue: 99
+                    minValue: 0
+                    maxValue: 99
                 columnTestType: columnValuesToBeBetween
 `}
         />
@@ -364,6 +440,7 @@ with DAG(
         </p>
         </section>
     )
+    
 
     if (goal == "Airflow") {
         prepareProfilerIngestion = (
@@ -456,14 +533,21 @@ with DAG(
 
     block = (
         <section>
-        {sourceConfig}
+        
+        {service === "database" ? databaseSourceConfig : null}
+        {service === "dashboard" ? dashboardSourceConfig : null}
+        {service === "messaging" ? messagingSourceConfig : null}
+        {service === "pipeline" ? pipelineSourceConfig : null}
+
         {sinkConfig}
         {workflowConfig}
+
         {prepareIngestion}
-        {prepareUsage}
-        {prepareProfiler}
-        {prepareProfilerIngestion}
-        {dbt}
+        
+        {hasUsage ? prepareUsage : null}
+        {hasProfiler ? prepareProfiler : null}
+        {hasProfiler ? prepareProfilerIngestion : null}
+        {hasDBT ? dbt : null}
         </section>
     )
 

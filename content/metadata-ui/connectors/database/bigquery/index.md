@@ -3,7 +3,7 @@ title: BigQuery
 slug: /metadata-ui/connectors/database/bigquery
 ---
 
-<ConnectorIntro connector="BigQuery" hasUsage="true" />
+<ConnectorIntro connector="BigQuery" hasUsage="true" hasProfiler="true" hasDBT="true" />
 
 <Requirements />
 
@@ -38,4 +38,4 @@ slug: /metadata-ui/connectors/database/bigquery
 
 <IngestionScheduleAndDeploy />
 
-<ConnectorOutro connector="BigQuery" hasUsage="true" />
+<ConnectorOutro connector="BigQuery" hasUsage="true" hasProfiler="true" hasDBT="true" />

@@ -3,7 +3,7 @@ title: Run Athena Connector using the CLI
 slug: /metadata-ui/connectors/database/athena/cli
 ---
 
-<ConnectorIntro connector="Athena" goal="CLI" />
+<ConnectorIntro connector="Athena" goal="CLI" hasProfiler="true" hasDBT="true"/>
 
 <Requirements />
 
@@ -44,4 +44,4 @@ credentials:
     - In case you are using Single-Sign-On (SSO) for authentication, add the `authenticator` details in the Connection Arguments as a Key-Value pair as follows: `"authenticator" : "sso_login_url"`
     - In case you authenticate with SSO using an external browser popup, then add the `authenticator` details in the Connection Arguments as a Key-Value pair as follows: `"authenticator" : "externalbrowser"`
 
-<MetadataIngestionConfig service="database" connector="BigQuery" goal="CLI"/>
+<MetadataIngestionConfig service="database" connector="BigQuery" goal="CLI" hasProfiler="true" hasDBT="true"/>

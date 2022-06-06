@@ -3,7 +3,7 @@ title: Athena
 slug: /metadata-ui/connectors/database/athena
 ---
 
-<ConnectorIntro connector="Athena" />
+<ConnectorIntro connector="Athena" hasProfiler="true" hasDBT="true"/>
 
 <Requirements />
 
@@ -28,4 +28,4 @@ slug: /metadata-ui/connectors/database/athena
 
 <IngestionScheduleAndDeploy />
 
-<ConnectorOutro connector="Athena" />
+<ConnectorOutro connector="Athena" hasProfiler="true" hasDBT="true" />

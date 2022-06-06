@@ -45,6 +45,24 @@ site_menu:
     url: /metadata-ui/connectors/database/bigquery/airflow
   - category: OpenMetadata UI / Connectors / Database / BigQuery / CLI
     url: /metadata-ui/connectors/database/bigquery/cli
+  
+  - category: OpenMetadata UI / Connectors / Dashboard
+    url: /metadata-ui/connectors/dashboard
+  - category: OpenMetadata UI / Connectors / Dashboard / Looker
+    url: /metadata-ui/connectors/dashboard/looker
+  - category: OpenMetadata UI / Connectors / Dashboard / Looker / Airflow
+    url: /metadata-ui/connectors/dashboard/looker/airflow
+  - category: OpenMetadata UI / Connectors / Dashboard / Looker / CLI
+    url: /metadata-ui/connectors/dashboard/looker/cli
+
+  - category: OpenMetadata UI / Connectors / Messaging
+    url: /metadata-ui/connectors/messaging
+  - category: OpenMetadata UI / Connectors / Messaging / Kafka
+    url: /metadata-ui/connectors/messaging/kafka
+  - category: OpenMetadata UI / Connectors / Messaging / Kafka / Airflow
+    url: /metadata-ui/connectors/messaging/kafka/airflow
+  - category: OpenMetadata UI / Connectors / Messaging / Kafka / CLI
+    url: /metadata-ui/connectors/messaging/kafka/cli
 
   - category: OpenMetadata UI / Ingestion / Workflows/ Metadata / DBT
     url: /metadata-ui/ingestion/workflows/metadata/dbt
