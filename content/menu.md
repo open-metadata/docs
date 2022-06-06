@@ -57,6 +57,12 @@ site_menu:
     url: /metadata-ui/connectors/database/redshift/airflow
   - category: OpenMetadata UI / Connectors / Database / Redshift / CLI
     url: /metadata-ui/connectors/database/redshift/cli
+  - category: OpenMetadata UI / Connectors / Database / Glue
+    url: /metadata-ui/connectors/database/glue
+  - category: OpenMetadata UI / Connectors / Database / Glue / Airflow
+    url: /metadata-ui/connectors/database/glue/airflow
+  - category: OpenMetadata UI / Connectors / Database / Glue / CLI
+    url: /metadata-ui/connectors/database/glue/cli
   
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
