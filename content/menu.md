@@ -117,6 +117,12 @@ site_menu:
     url: /metadata-ui/connectors/database/deltalake/airflow
   - category: OpenMetadata UI / Connectors / Database / DeltaLake / CLI
     url: /metadata-ui/connectors/database/deltalake/cli
+  - category: OpenMetadata UI / Connectors / Database / Druid
+    url: /metadata-ui/connectors/database/druid
+  - category: OpenMetadata UI / Connectors / Database / Druid / Airflow
+    url: /metadata-ui/connectors/database/druid/airflow
+  - category: OpenMetadata UI / Connectors / Database / Druid / CLI
+    url: /metadata-ui/connectors/database/druid/cli
 
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
