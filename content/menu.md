@@ -81,6 +81,12 @@ site_menu:
     url: /metadata-ui/connectors/database/mysql/airflow
   - category: OpenMetadata UI / Connectors / Database / MySQL / CLI
     url: /metadata-ui/connectors/database/mysql/cli
+  - category: OpenMetadata UI / Connectors / Database / Oracle
+    url: /metadata-ui/connectors/database/oracle
+  - category: OpenMetadata UI / Connectors / Database / Oracle / Airflow
+    url: /metadata-ui/connectors/database/oracle/airflow
+  - category: OpenMetadata UI / Connectors / Database / Oracle / CLI
+    url: /metadata-ui/connectors/database/oracle/cli
   
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
