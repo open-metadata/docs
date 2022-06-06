@@ -1,12 +1,20 @@
-<svg width="40" height="40" viewBox="0 0 250 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M250 63H0V237.5V238H0.00391658C0.541243 272.288 56.298 300 125 300C193.702 300 249.459 272.288 249.996 238H250V237.5V63Z" fill="url(#paint0_linear)"/>
-<ellipse cx="125" cy="62.5" rx="125" ry="62.5" fill="#8D6AF1"/>
-<ellipse cx="125.5" cy="63.25" rx="62.5" ry="31.25" fill="white"/>
-<path d="M85 214.793V254.384C85 258.223 80.8526 260.63 77.5193 258.725L45.5193 240.44C43.9614 239.549 43 237.893 43 236.098V141.887C43 137.988 47.2635 135.589 50.5956 137.613L121.936 180.942C123.514 181.901 125.492 181.912 127.081 180.97L200.45 137.476C203.783 135.5 208 137.902 208 141.777V237.975C208 239.835 206.968 241.541 205.32 242.404L173.32 259.166C169.991 260.91 166 258.495 166 254.737V214.577C166 210.747 161.869 208.339 158.536 210.226L127.026 228.07C125.464 228.954 123.548 228.934 122.006 228.016L92.5565 210.496C89.2236 208.513 85 210.915 85 214.793Z" fill="white"/>
-<defs>
-    <linearGradient id="paint0_linear" x1="125" y1="90" x2="125" y2="300" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#35198E"/>
-        <stop offset="1" stop-color="#8D6AF1"/>
-    </linearGradient>
-</defs>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 15 18" style="enable-background:new 0 0 15 18;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#8D6AF1;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
+</style>
+<path class="st0" d="M7.5,7.5c4.14,0,7.5-1.68,7.5-3.75S11.65,0,7.5,0C3.36,0,0,1.68,0,3.75S3.36,7.5,7.5,7.5z M7.53,5.67
+	c2.07,0,3.75-0.84,3.75-1.87c0-1.04-1.68-1.87-3.75-1.87S3.78,2.77,3.78,3.8S5.46,5.67,7.53,5.67z"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="7.5" y1="508.8835" x2="7.5" y2="496.2835" gradientTransform="matrix(1 0 0 -1 0 514.2835)">
+	<stop  offset="0" style="stop-color:#35198E"/>
+	<stop  offset="1" style="stop-color:#8D6AF1"/>
+</linearGradient>
+<path class="st1" d="M0,3.78L0,3.78C0.03,5.84,3.38,7.5,7.5,7.5s7.47-1.66,7.5-3.72l0,0v10.5l0,0C14.97,16.34,11.62,18,7.5,18
+	S0.03,16.34,0,14.28l0,0C0,14.28,0,3.78,0,3.78z M5.11,15.72v-3.3c0-0.03,0.03-0.05,0.05-0.03l2.3,1.37c0.01,0.01,0.02,0.01,0.04,0
+	l2.42-1.37c0.02-0.01,0.05,0,0.05,0.03v3.3c0,0.03,0.03,0.04,0.05,0.03l2.45-1.28c0.01-0.01,0.02-0.02,0.02-0.03v-6.4
+	c0-0.03-0.03-0.05-0.05-0.03L7.5,10.94c-0.01,0.01-0.02,0.01-0.04,0L2.64,8.01C2.62,8,2.59,8.01,2.59,8.04v6.28
+	c0,0.01,0.01,0.02,0.02,0.03l2.45,1.4C5.07,15.76,5.11,15.75,5.11,15.72z"/>
 </svg>
