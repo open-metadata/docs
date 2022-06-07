@@ -147,6 +147,12 @@ site_menu:
     url: /metadata-ui/connectors/database/trino/airflow
   - category: OpenMetadata UI / Connectors / Database / Trino / CLI
     url: /metadata-ui/connectors/database/trino/cli
+  - category: OpenMetadata UI / Connectors / Database / Salesforce
+    url: /metadata-ui/connectors/database/salesforce
+  - category: OpenMetadata UI / Connectors / Database / Salesforce / Airflow
+    url: /metadata-ui/connectors/database/salesforce/airflow
+  - category: OpenMetadata UI / Connectors / Database / Salesforce / CLI
+    url: /metadata-ui/connectors/database/salesforce/cli
 
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
