@@ -243,6 +243,10 @@ site_menu:
     url: /metadata-ui/users
   - category: OpenMetadata UI / Data Quality
     url: /metadata-ui/data-quality
+  - category: OpenMetadata UI / Data Quality / Tests
+    url: /metadata-ui/data-quality/tests
+  - category: OpenMetadata UI / Data Quality / Metrics
+    url: /metadata-ui/data-quality/metrics
 
 
 
