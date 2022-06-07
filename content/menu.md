@@ -192,6 +192,12 @@ site_menu:
     url: /metadata-ui/connectors/dashboard/tableau/airflow
   - category: OpenMetadata UI / Connectors / Dashboard / Tableau / CLI
     url: /metadata-ui/connectors/dashboard/tableau/cli
+  - category: OpenMetadata UI / Connectors / Dashboard / PowerBI
+    url: /metadata-ui/connectors/dashboard/powerbi
+  - category: OpenMetadata UI / Connectors / Dashboard / PowerBI / Airflow
+    url: /metadata-ui/connectors/dashboard/powerbi/airflow
+  - category: OpenMetadata UI / Connectors / Dashboard / PowerBI / CLI
+    url: /metadata-ui/connectors/dashboard/powerbi/cli
 
   - category: OpenMetadata UI / Connectors / Messaging
     url: /metadata-ui/connectors/messaging
