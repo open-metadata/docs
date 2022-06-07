@@ -165,6 +165,12 @@ site_menu:
     url: /metadata-ui/connectors/database/vertica/airflow
   - category: OpenMetadata UI / Connectors / Database / Vertica / CLI
     url: /metadata-ui/connectors/database/vertica/cli
+  - category: OpenMetadata UI / Connectors / Database / MariaDB
+    url: /metadata-ui/connectors/database/mariadb
+  - category: OpenMetadata UI / Connectors / Database / MariaDB / Airflow
+    url: /metadata-ui/connectors/database/mariadb/airflow
+  - category: OpenMetadata UI / Connectors / Database / MariaDB / CLI
+    url: /metadata-ui/connectors/database/mariadb/cli
 
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
