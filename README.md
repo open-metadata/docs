@@ -29,6 +29,12 @@ make up
 
 The docs will be viewable at [http://localhost:3000](http://localhost:3000). Note that any time you modify the source files in the `content/` folder, you'll need to refresh your browser tab to view the changes. You **do not** need to restart the development server.
 
+## Troubleshoot
+
+If you are having trouble bringing the server up, a couple of things to check:
+- `node` version ~16.15
+- try `npm install --force` & `npm install --legacy-peer-deps`
+
 ## File and folder structure
 
 This repo follows a typical Next.js project structure. To contribute, you'll only edit Markdown files within the `content/` folder.
