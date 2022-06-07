@@ -204,6 +204,12 @@ site_menu:
     url: /metadata-ui/connectors/dashboard/superset/airflow
   - category: OpenMetadata UI / Connectors / Dashboard / Superset / CLI
     url: /metadata-ui/connectors/dashboard/superset/cli
+  - category: OpenMetadata UI / Connectors / Dashboard / Metabase
+    url: /metadata-ui/connectors/dashboard/metabase
+  - category: OpenMetadata UI / Connectors / Dashboard / Metabase / Airflow
+    url: /metadata-ui/connectors/dashboard/metabase/airflow
+  - category: OpenMetadata UI / Connectors / Dashboard / Metabase / CLI
+    url: /metadata-ui/connectors/dashboard/metabase/cli
 
   - category: OpenMetadata UI / Connectors / Messaging
     url: /metadata-ui/connectors/messaging
