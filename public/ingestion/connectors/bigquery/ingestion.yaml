@@ -19,12 +19,9 @@ source:
           clientX509CertUrl: "<client certificate URL>"
   sourceConfig:
     config:
-      enableDataProfiler: true
       markDeletedTables: true
       includeTables: true
       includeViews: true
-      generateSampleData: true
-      sampleDataQuery: "<query to fetch table data>"
       schemaFilterPattern: "<schema name regex list>"
       tableFilterPattern: "<table name regex list>"
       dbtConfigSource: "<configs for gcs, s3, local or file server to get the DBT files"

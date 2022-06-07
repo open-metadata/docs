@@ -2,9 +2,7 @@ import TileContainer from "../layouts/tileContainer";
 import Tile from "../blocks/tile";
 import { H1, H2, H3 } from "../blocks/headers";
 
-const ConnectorOutro = ({connector, hasUsage}) => {
-
-    let usage;
+const ConnectorOutro = ({connector, hasUsage, hasProfiler, hasDBT}) => {
 
     const profiler = (
         <section>
@@ -30,28 +28,25 @@ const ConnectorOutro = ({connector, hasUsage}) => {
         </section>
     )
 
-    if (hasUsage){
-        usage = (
-                <section>
-                    <H2>Query Usage and Lineage Ingestion</H2>
-                    <Tile
-                         icon="manage_accounts"
-                         title="Usage Workflow"
-                         text="Learn more about how to configure the Usage Workflow to ingest Query and Lineage information from the UI."
-                         link="/metadata-ui/ingestion/workflows/usage"
-                     />
-                </section>
-            );
-    } else {
-        usage = null;
-    }
+    const usage = (
+            <section>
+                <H2>Query Usage and Lineage Ingestion</H2>
+                <Tile
+                        icon="manage_accounts"
+                        title="Usage Workflow"
+                        text="Learn more about how to configure the Usage Workflow to ingest Query and Lineage information from the UI."
+                        link="/metadata-ui/ingestion/workflows/usage"
+                    />
+            </section>
+        );
+
 
 
     let block = (
         <section>
-        {usage}
-        {profiler}
-        {dbt}
+        {hasUsage ? usage : null}
+        {hasProfiler ? profiler : null}
+        {hasDBT ? dbt : null}
         </section>
     )
 

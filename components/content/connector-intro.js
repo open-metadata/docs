@@ -2,7 +2,7 @@ import TileContainer from "../layouts/tileContainer";
 import Tile from "../blocks/tile";
 import { H1, H2, H3 } from "../blocks/headers";
 
-const ConnectorIntro = ({connector, hasUsage, goal}) => {
+const ConnectorIntro = ({connector, hasUsage, hasProfiler, hasDBT, goal}) => {
 
     let toc;
     let block;
@@ -56,32 +56,18 @@ const ConnectorIntro = ({connector, hasUsage, goal}) => {
         </section>
     )
 
-    if (hasUsage){
-        toc = (
-                <section>
-                <p>Configure and schedule {connector} metadata, usage and profiler workflows {from}:</p>
-                <ul>
-                    <li> <a href="#requirements">Requirements</a> </li>
-                    <li><a href="#metadata-ingestion">Metadata Ingestion</a> </li>
-                    <li><a href="#query-usage-and-lineage-ingestion">Query Usage and Lineage Ingestion</a> </li>
-                    <li><a href="#data-profiler-and-quality-tests">Data Profiler and Quality Tests</a> </li>
-                    <li><a href="#dbt-integration">DBT Integration</a> </li>
-                </ul>
-                </section>
-            );
-    } else {
-        toc = (
-              <section>
-              <p>Configure and schedule {connector} metadata and profiler workflows from the OpenMetadata UI:</p>
-              <ul>
-                  <li> <a href="#requirements">Requirements</a> </li>
-                  <li><a href="#metadata-ingestion">Metadata Ingestion</a> </li>
-                  <li><a href="#data-profiler-and-quality-tests">Data Profiler and Quality Tests</a> </li>
-                  <li><a href="#dbt-integration">DBT Integration</a> </li>
-              </ul>
-              </section>
-            );
-    }
+    toc = (
+        <section>
+        <p>Configure and schedule {connector} metadata and profiler workflows from the OpenMetadata UI:</p>
+        <ul>
+            <li><a href="#requirements">Requirements</a></li>
+            <li><a href="#metadata-ingestion">Metadata Ingestion</a> </li>
+            {hasUsage ? <li><a href="#query-usage-and-lineage-ingestion">Query Usage and Lineage Ingestion</a></li> : null}
+            {hasProfiler ?  <li><a href="#data-profiler-and-quality-tests">Data Profiler and Quality Tests</a> </li>: null}
+            {hasDBT ? <li><a href="#dbt-integration">DBT Integration</a> </li> : null}
+        </ul>
+        </section>
+      );
 
     if (goal == "UI" || goal == null) {
         block = (
