@@ -159,6 +159,12 @@ site_menu:
     url: /metadata-ui/connectors/database/singlestore/airflow
   - category: OpenMetadata UI / Connectors / Database / SingleStore / CLI
     url: /metadata-ui/connectors/database/singlestore/cli
+  - category: OpenMetadata UI / Connectors / Database / Vertica
+    url: /metadata-ui/connectors/database/vertica
+  - category: OpenMetadata UI / Connectors / Database / Vertica / Airflow
+    url: /metadata-ui/connectors/database/vertica/airflow
+  - category: OpenMetadata UI / Connectors / Database / Vertica / CLI
+    url: /metadata-ui/connectors/database/vertica/cli
 
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
