@@ -198,6 +198,12 @@ site_menu:
     url: /metadata-ui/connectors/dashboard/powerbi/airflow
   - category: OpenMetadata UI / Connectors / Dashboard / PowerBI / CLI
     url: /metadata-ui/connectors/dashboard/powerbi/cli
+  - category: OpenMetadata UI / Connectors / Dashboard / Superset
+    url: /metadata-ui/connectors/dashboard/superset
+  - category: OpenMetadata UI / Connectors / Dashboard / Superset / Airflow
+    url: /metadata-ui/connectors/dashboard/superset/airflow
+  - category: OpenMetadata UI / Connectors / Dashboard / Superset / CLI
+    url: /metadata-ui/connectors/dashboard/superset/cli
 
   - category: OpenMetadata UI / Connectors / Messaging
     url: /metadata-ui/connectors/messaging
