@@ -153,6 +153,12 @@ site_menu:
     url: /metadata-ui/connectors/database/salesforce/airflow
   - category: OpenMetadata UI / Connectors / Database / Salesforce / CLI
     url: /metadata-ui/connectors/database/salesforce/cli
+  - category: OpenMetadata UI / Connectors / Database / SingleStore
+    url: /metadata-ui/connectors/database/singlestore
+  - category: OpenMetadata UI / Connectors / Database / SingleStore / Airflow
+    url: /metadata-ui/connectors/database/singlestore/airflow
+  - category: OpenMetadata UI / Connectors / Database / SingleStore / CLI
+    url: /metadata-ui/connectors/database/singlestore/cli
 
   - category: OpenMetadata UI / Connectors / Dashboard
     url: /metadata-ui/connectors/dashboard
