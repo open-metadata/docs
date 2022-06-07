@@ -180,6 +180,12 @@ site_menu:
     url: /metadata-ui/connectors/dashboard/looker/airflow
   - category: OpenMetadata UI / Connectors / Dashboard / Looker / CLI
     url: /metadata-ui/connectors/dashboard/looker/cli
+  - category: OpenMetadata UI / Connectors / Dashboard / Redash
+    url: /metadata-ui/connectors/dashboard/redash
+  - category: OpenMetadata UI / Connectors / Dashboard / Redash / Airflow
+    url: /metadata-ui/connectors/dashboard/redash/airflow
+  - category: OpenMetadata UI / Connectors / Dashboard / Redash / CLI
+    url: /metadata-ui/connectors/dashboard/redash/cli
 
   - category: OpenMetadata UI / Connectors / Messaging
     url: /metadata-ui/connectors/messaging
