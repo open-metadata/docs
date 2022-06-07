@@ -186,6 +186,12 @@ site_menu:
     url: /metadata-ui/connectors/dashboard/redash/airflow
   - category: OpenMetadata UI / Connectors / Dashboard / Redash / CLI
     url: /metadata-ui/connectors/dashboard/redash/cli
+  - category: OpenMetadata UI / Connectors / Dashboard / Tableau
+    url: /metadata-ui/connectors/dashboard/tableau
+  - category: OpenMetadata UI / Connectors / Dashboard / Tableau / Airflow
+    url: /metadata-ui/connectors/dashboard/tableau/airflow
+  - category: OpenMetadata UI / Connectors / Dashboard / Tableau / CLI
+    url: /metadata-ui/connectors/dashboard/tableau/cli
 
   - category: OpenMetadata UI / Connectors / Messaging
     url: /metadata-ui/connectors/messaging
