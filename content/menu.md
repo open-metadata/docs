@@ -235,6 +235,8 @@ site_menu:
     url: /metadata-ui/ingestion/versioning/change-feeds
   - category: OpenMetadata UI / Ingestion / Versioning / Change Events
     url: /metadata-ui/ingestion/versioning/change-events
+  - category: OpenMetadata UI / Ingestion / Versioning / Event Notification via Webhooks
+    url: /metadata-ui/ingestion/versioning/event-notification-via-webhooks
 
 
   - category: OpenMetadata UI / Discovery & Collaboration
