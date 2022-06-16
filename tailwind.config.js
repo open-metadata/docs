@@ -55,7 +55,9 @@ module.exports = {
       "8xl": ["6rem", { lineHeight: "0.95", letterSpacing: "-0.035em" }],
       "9xl": ["8rem", { lineHeight: "0.95", letterSpacing: "-0.035em" }],
     },
-
+    m: {
+      '-25px': '-25px'
+    },
     colors: {
       red: {
         10: "#fff0f0",
@@ -166,6 +168,10 @@ module.exports = {
         100: "#0e1117",
       },
       white: "#ffffff",
+      light_purple: "#F9F8FD",
+      "color_violet": "#7147E8",
+      lt_gray: "#E6E2EF",
+      "color_condense_violet": "#8D6AF1",
     },
 
     extend: {

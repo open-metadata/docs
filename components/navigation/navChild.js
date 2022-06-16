@@ -3,6 +3,7 @@ import Link from "next/link";
 import classNames from "classnames";
 
 import useVersion from "../../lib/useVersion.js";
+import { ReactComponent as SvgArrow } from "../../images/icons/arrow.svg"
 
 import styles from "./navChild.module.css";
 
@@ -48,7 +49,7 @@ const NavChild = ({ slug, page, color, className }) => {
 
   if (page.children?.length > 0 && visibleItems.length > 0) {
     accordion = (
-      <div className={styles.Accordion}>
+      <div className={`${styles.Accordion} -ml-[${55 + 24}px] pl-[${55 + 24}px]`}>
         <i
           className={classNames(
             styles.AccordionIcon,
@@ -56,11 +57,15 @@ const NavChild = ({ slug, page, color, className }) => {
           )}
           onClick={toggleAccordion}
         >
-          {opened ? "remove" : "add"}
+          {opened ? <span>
+            <SvgArrow className="rotate-90 duration-100" />
+          </span> : <SvgArrow />}
+
         </i>
       </div>
     );
   }
+
 
   let link;
   let icon;
@@ -82,34 +87,27 @@ const NavChild = ({ slug, page, color, className }) => {
   }
 
   link = (
-    <span className={styles.LinkContainer}>
-      <Link href={url}>
-        <a className={classNames("not-link", styles.Link)} target={target}>
+    <Link href={url} className="cursor-pointer">
+      <span className={`${classNames(styles.LinkContainer, styles.PageName, active && styles.ActivePage)} font-[500] text-[#76746F]`}>
+        {/* <span className={styles.LinkContainer}> */}
+        <a className={classNames("not-link", styles.Link)} target={target} >
+
           <span
-            className={classNames(
-              styles.Circle,
-              active ? styles.ActiveCircle : "",
-              color === "violet-70"
-                ? styles.LibraryCircle
-                : color === "l-blue-70"
-                ? styles.CloudCircle
-                : styles.KBCircle
-            )}
-          />
-          <span
-            className={classNames(styles.PageName, active && styles.ActivePage)}
+            className={`${classNames(styles.PageName, active && styles.ActivePage)} font-[500] text-[#76746F]`}
+
           >
             {page.name}
+            {icon}
           </span>
-          {icon}
         </a>
-      </Link>
-      {accordion}
-    </span>
+        {accordion}
+      </span>
+    </Link>
+
   );
 
   return (
-    <li className={classNames(styles.Container, className)}>
+    <li className={`${classNames(styles.Container, className)} leading-none`}>
       {link}
       {subNav}
     </li>

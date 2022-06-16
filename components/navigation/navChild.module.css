@@ -1,18 +1,23 @@
 .Container {
-  @apply text-sm tracking-tight dark:text-white mb-4;
+  @apply text-sm tracking-tight dark:text-white mb-2;
+  @apply leading-none;
 }
 
 .List {
-  @apply list-none mt-4;
+  @apply list-none mt-2 mr-0 ml-1 pl-2;
 }
 
 .Accordion {
-  @apply border rounded-md transition-all ml-2 flex items-center justify-center hover:opacity-50 h-4 w-4;
+  @apply flex items-center justify-center hover:opacity-50 h-4 w-4;
 }
 
 .AccordionIcon {
   @apply relative z-10 cursor-pointer text-sm;
   @apply text-gray-80 !important;
+}
+
+.AccordionIcon close {
+  transform: rotate(0deg);
 }
 
 .ExternalIcon {
@@ -27,7 +32,7 @@
 }
 
 .LinkContainer {
-  @apply flex items-center hover:opacity-70;
+  @apply flex items-center cursor-pointer hover:bg-lt_gray justify-between -ml-[100%] pl-[100%] -mr-[100%] pr-[100%] group-hover:bg-lt_gray;
 }
 
 .Link {
@@ -39,12 +44,12 @@
   @apply absolute w-2 h-2 -left-4 rounded-full hidden;
 }
 
-.ActiveCircle {
-  @apply block;
+:global(.dark) .PageName:not(.ActivePage) {
+  @apply text-[#fff] !important;
 }
 
-:global(.dark) .PageName:not(.ActivePage) {
-  @apply text-gray-40 !important;
+:global(.dark) .LinkContainer ul {
+  @apply text-[#fff] !important;
 }
 
 .ActivePage {
@@ -52,15 +57,10 @@
   @apply text-gray-90 !important;
 }
 
-/* Colors for circles */
-.LibraryCircle {
-  @apply bg-indigo-70;
+span.ActivePage {
+  @apply bg-lt_gray;
 }
 
-.CloudCircle {
-  @apply bg-lightBlue-70;
-}
-
-.KBCircle {
-  @apply bg-orange-70;
+:global(.dark) .LinkContainer {
+  @apply fill-white;
 }

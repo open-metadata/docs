@@ -1,6 +1,6 @@
 .Container {
-  @apply fixed lg:sticky top-auto lg:top-12 left-0 xl:left-auto px-0 h-screen z-20 w-10/12 md:w-9/12 xl:w-screen max-w-xs md:max-w-none overflow-y-auto shadow-lg lg:shadow-none transition-all;
-  @apply bg-white !important;
+  @apply fixed lg:sticky top-auto pl-2 pr-2 lg:top-12 left-0 xl:left-auto px-0 h-screen z-20 w-10/12 md:w-9/12 xl:w-screen max-w-xs md:max-w-none overflow-y-auto shadow-lg lg:shadow-none transition-all;
+  @apply bg-light_purple !important;
 }
 
 :global(.dark) .Container {
@@ -29,7 +29,7 @@
 }
 
 .NavList {
-  @apply list-none overscroll-contain m-0 px-2 lg:px-0;
+  @apply list-none overscroll-contain px-2 lg:px-0;
 }
 
 .TopGradient {
