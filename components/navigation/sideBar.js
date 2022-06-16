@@ -84,7 +84,7 @@ const SideBar = ({ menu, slug }) => {
       page={page}
       depth={page.depth + 1}
       condensed={isCondensed}
-      // className={isOver && styles.OverNavItem}
+    // className={isOver && styles.OverNavItem}
     />
   ));
 
@@ -103,12 +103,12 @@ const SideBar = ({ menu, slug }) => {
           isSticky === "window"
             ? styles.WindowStickyGradient
             : isSticky === "scrollbar"
-            ? styles.ScrollBarStickyGradient
-            : styles.StandardGradient
+              ? styles.ScrollBarStickyGradient
+              : styles.StandardGradient
         )}
       />
       <nav onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <ul className={styles.NavList}>{navItems}</ul>
+        <ul className={`${styles.NavList} mx-0`}>{navItems}</ul>
       </nav>
     </section>
   );

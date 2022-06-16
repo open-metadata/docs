@@ -1,5 +1,5 @@
 .Container {
-  @apply grid grid-cols-1 lg:grid-cols-4 gap-4 container mx-auto px-2 xl:px-4;
+  @apply grid grid-cols-1 lg:grid-cols-4 gap-4 container mx-auto ml-0;
 }
 
 .InnerContainer {

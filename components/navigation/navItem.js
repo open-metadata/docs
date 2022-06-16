@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import classNames from "classnames";
-
+import { ReactComponent as SvgIcons } from "../../images/icons/developer.svg";
 import { urlInChildren } from "../../lib/utils.js";
 import NavChild from "./navChild";
 
@@ -19,8 +19,8 @@ const NavItem = ({ page, slug, condensed, className }) => {
     page.color === "violet-70"
       ? styles.LibraryCategory
       : page.color === "l-blue-70"
-      ? styles.CloudCategory
-      : styles.KBCategory;
+        ? styles.CloudCategory
+        : styles.KBCategory;
   color = isCondensed || active ? color : "";
 
   navBox = (
@@ -37,18 +37,18 @@ const NavItem = ({ page, slug, condensed, className }) => {
           page.color === "violet-70"
             ? styles.LibraryIcon
             : page.color === "l-blue-70"
-            ? styles.CloudIcon
-            : styles.KBIcon
+              ? styles.CloudIcon
+              : styles.KBIcon
         )}
       >
-        <i className={styles.Icon}>{page.icon}</i>
+        <SvgIcons className="dev_icon" />
       </div>
       <p
-        className={classNames(
+        className={`${classNames(
           styles.CategoryName,
           isCondensed ? styles.CondensedCategoryName : "",
           color
-        )}
+        )} text-sm uppercase font-[500]`}
       >
         {page.name}
       </p>

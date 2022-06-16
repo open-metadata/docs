@@ -3,7 +3,7 @@
 }
 
 .HeadingIconContainer {
-  @apply flex items-center p-2 mr-4 xl:mr-4 mb-0 rounded-md;
+  @apply flex items-center p-2 mr-1 xl:mr-2 mb-0 rounded-md;
 }
 
 .CondensedHeadingContainer {
@@ -19,21 +19,13 @@
 }
 
 /* Colors for heading icons */
-.LibraryIcon {
-  @apply bg-indigo-70;
-}
-
 .CloudIcon {
   @apply bg-lightBlue-70;
 }
 
-.KBIcon {
-  @apply bg-orange-70;
-}
-
 .CategoryName {
-  @apply m-0 xl:my-0 font-bold font-sans xl:text-base xl:leading-6;
-  @apply text-gray-80 !important;
+  @apply m-0 sm:my-0 font-sans;
+  @apply text-color_violet !important;
 }
 
 :global(.dark) .CategoryName {
@@ -41,7 +33,7 @@
 }
 
 .CondensedCategoryName {
-  @apply lg:my-1 lg:text-xs lg:leading-tight lg:tracking-tight;
+  @apply lg:my-1 lg:text-xs  lg:tracking-tight;
 }
 
 /* Colors for active categories */
@@ -54,22 +46,30 @@
 }
 
 .KBCategory {
-  @apply text-orange-70 !important;
+  @apply text-color_condense_violet !important;
 }
 
 /* Subnav styles */
 .SubNav {
-  @apply block pl-14 m-0 mt-4 list-none;
+  @apply block pl-12 m-0  list-none;
 }
 
 .CondensedSubNav {
-  @apply lg:hidden;
+  @apply lg:hidden ;
 }
 
 .ExpandedSubNav {
   @apply lg:block;
 }
 
+:global(.dark) .HeadingContainer{
+  @apply stroke-white
+}
+
+:global(.dark) .dev_icon {
+  @apply fill-white
+}
+
 .NavItem {
-  @apply mb-8;
+  @apply mb-4 mt-1 w-full;
 }
