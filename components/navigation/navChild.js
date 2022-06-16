@@ -49,7 +49,7 @@ const NavChild = ({ slug, page, color, className }) => {
 
   if (page.children?.length > 0 && visibleItems.length > 0) {
     accordion = (
-      <div className={`${styles.Accordion} -ml-[${55 + 24}px] pl-[${55 + 24}px]`}>
+      <div className={`${styles.Accordion} -ml-[79px] pl-[79px]`}>
         <i
           className={classNames(
             styles.AccordionIcon,
@@ -57,9 +57,9 @@ const NavChild = ({ slug, page, color, className }) => {
           )}
           onClick={toggleAccordion}
         >
-          {opened ? <span>
+          {opened ?
             <SvgArrow className="rotate-90 duration-100" />
-          </span> : <SvgArrow />}
+            : <SvgArrow />}
 
         </i>
       </div>
@@ -89,7 +89,6 @@ const NavChild = ({ slug, page, color, className }) => {
   link = (
     <Link href={url} className="cursor-pointer">
       <span className={`${classNames(styles.LinkContainer, styles.PageName, active && styles.ActivePage)} font-[500] text-[#76746F]`}>
-        {/* <span className={styles.LinkContainer}> */}
         <a className={classNames("not-link", styles.Link)} target={target} >
 
           <span
