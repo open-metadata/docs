@@ -4,11 +4,11 @@
 }
 
 .stickyContainer {
-  @apply fixed h-12 border-b-gray-30 top-0;
+  @apply sticky h-20 border-b-gray-30 top-0;
 }
 
 .standardContainer {
-  @apply border-b-gray-80 h-20;
+  @apply border-b-gray-60 h-20;
 }
 
 :global(.dark) .Container {
@@ -41,7 +41,7 @@
 }
 
 .NavigationContainer {
-  @apply flex items-center flex-auto justify-self-end gap-4 lg:gap-6;
+  @apply flex items-center flex-auto justify-self-end gap-8 lg:gap-8 ml-6;
 }
 
 .Container nav section i {

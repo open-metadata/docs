@@ -3,10 +3,12 @@ import React, { useState, useEffect } from "react";
 import classNames from "classnames";
 import Link from "next/link";
 import dynamic from "next/dynamic";
-
 // import Navigation from
 import MobileNav from "./mobileNav";
-
+import { ReactComponent as SvgLogo } from "../../images/icons/omd.svg";
+import { ReactComponent as Github } from "../../images/icons/github.svg";
+import { ReactComponent as Slack } from "../../images/icons/slack.svg";
+import { ReactComponent as Cloud } from "../../images/icons/cloud.svg";
 import styles from "./header.module.css";
 
 const ThemeToggle = dynamic(() => import("../utilities/themeToggle"), {
@@ -55,13 +57,28 @@ const Header = () => {
       <nav className={styles.Navigation} id="main-header">
         <Link href="/">
           <a className={classNames(styles.LogoContainer, "not-link")}>
-            <img src="/logo.svg" alt="" style={{"height":"36px"}} />
-            <h4 className={styles.LogoText}>Documentation</h4>
+            <SvgLogo />
           </a>
         </Link>
+
         <section className={styles.NavigationContainer}>
           <Search />
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
+          <a href="https://slack.open-metadata.org" target="_blank">
+            <Slack className="h-6" />
+          </a>
+          <a href="https://github.com/open-metadata/" target="_blank">
+            <Github />
+          </a>
+          <a
+            className="btn fw-500 btn-primary rounded-pill"
+            href="https://share.hsforms.com/1fstvMCeZRZKTYA4nG1VTPgcq0j9"
+            target="_blank"
+          >
+            <button className="bg-[#7147e8]  pl-[1.125] pr-[1.125] rounded-full w-[55.5px] h-[44px] justify-center">
+              <Cloud className="m-auto" />
+            </button>
+          </a>
           {mobileNav}
         </section>
       </nav>

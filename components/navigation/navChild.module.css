@@ -8,7 +8,7 @@
 }
 
 .Accordion {
-  @apply flex items-center justify-center hover:opacity-50 h-4 w-4;
+  @apply flex items-center justify-center hover:opacity-50 h-4 w-4 mr-2;
 }
 
 .AccordionIcon {

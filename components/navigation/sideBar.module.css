@@ -42,7 +42,7 @@
 }
 
 .ScrollBarStickyGradient {
-  @apply top-24 h-6;
+  @apply top-24 h-6 hidden;
 }
 
 :global(.dark) .TopGradient {
