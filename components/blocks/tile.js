@@ -56,11 +56,11 @@ const Tile = ({
   const bordercolor =
     background === "yellow-70"
       ? styles.YellowBackground
+      : background === "blue-70"
+      ? styles.BlueBackground
       : background === "violet-70"
       ? styles.VioletBackground
-      : background === "purple-70"
-      ? styles.PurpleBackground
-      : styles.NewBackground;
+      : styles.VioletBackground;
 
   const backgroundColor = styles.TransparentBackground;
 

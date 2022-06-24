@@ -46,11 +46,11 @@
   @apply border border-[#EAA623] !important;
 }
 
-.VioletBackground {
+.BlueBackground {
   @apply border border-lightBlue-70;
 }
 
-.PurpleBackground {
+.VioletBackground {
   @apply border border-color_violet;
 }
 
@@ -70,21 +70,12 @@
   @apply text-[#EAA623] !important;
 }
 
-.VioletBackground i,
-.VioletBackground h4{
+.BlueBackground i,
+.BlueBackground h4{
   @apply text-lightBlue-70 !important;
 }
 
-.PurpleBackground i,
-.PurpleBackground h4{
-  @apply text-color_violet !important;
-}
-
-.NewBackground{
-  @apply border border-color_violet;
-}
-
-.NewBackground i,
-.NewBackground h4{
+.VioletBackground i,
+.VioletBackground h4{
   @apply text-color_violet !important;
 }

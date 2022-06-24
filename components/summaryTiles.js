@@ -17,8 +17,8 @@ const SummaryTiles = () => {
         icon="memory"
         title="API reference"
         text="Learn about our APIs, with actionable explanations of specific functions and features."
-        background="violet-70"
-        bordercolor="violet-70"
+        background="blue-70"
+        bordercolor="blue-70"
         link="/library/api-reference"
       />
 
@@ -26,8 +26,8 @@ const SummaryTiles = () => {
         icon="collections"
         title="App gallery"
         text="Try out awesome apps created by our users, and curated from our forums or Twitter."
-        background="purple-70"
-        bordercolor="purple-70"
+        background="violet-70"
+        bordercolor="violet-70"
         link="https://streamlit.io/gallery"
       />
     </TileContainer>

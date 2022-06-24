@@ -50,17 +50,17 @@
 }
 
 .KBText {
-  @apply text-lg text-orange-70 !important;
+  @apply text-lg text-[#EAA623] !important;
 }
 
 .YellowBackground {
-  @apply border border-color_violet rounded-[10px];
+  @apply border border-[#EAA623] rounded-[10px] !important;
 }
 
 .VioletBackground {
-  @apply border border-lightBlue-70 rounded-[10px];
+  @apply border border-color_violet  rounded-[10px];
 }
 
-.PurpleBackground {
-  @apply  border border-[#EAA623] rounded-[10px];
+.BlueBackground {
+  @apply  border border-lightBlue-70  rounded-[10px];
 }

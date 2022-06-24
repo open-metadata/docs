@@ -4,26 +4,45 @@ import classNames from "classnames";
 import styles from "./inlineCallout.module.css";
 
 const InlineCallout = ({ children, icon, color, bold, href }) => {
-  const backgroundColor =
-    color === "violet-70"
-      ? styles.LibraryBackground
-      : color === "l-blue-70"
-      ? styles.CloudBackground
-      : styles.KBBackground;
-  const textColor =
-    color === "violet-70"
-      ? styles.LibraryText
-      : color === "l-blue-70"
-      ? styles.CloudText
-      : styles.KBText;
-  const bordercolor =
-    color === "violet-70"
-      ? styles.YellowBackground
-      : color === "l-blue-70"
-      ? styles.VioletBackground
-      : color === "orange-70"
-      ? styles.PurpleBackground
-      : styles.TransparentBackground;
+  let bordercolor = "";
+  switch (color) {
+    case "violet-70":
+      bordercolor = styles.VioletBackground;
+      break;
+    case "l-blue-70":
+      bordercolor = styles.BlueBackground;
+      break;
+    case "yellow-70":
+      bordercolor = styles.YellowBackground;
+      break;
+    default:
+      bordercolor = styles.TransparentBackground;
+  }
+
+  let backgroundColor = "";
+  switch (color) {
+    case "violet-70":
+      backgroundColor = styles.LibraryBackground;
+      break;
+    case "l-blue-70":
+      backgroundColor = styles.CloudBackground;
+      break;
+    default:
+      backgroundColor = styles.KBBackground;
+  }
+
+  let textColor = "";
+  switch (color) {
+    case "violet-70":
+      textColor = styles.LibraryText;
+      break;
+    case "l-blue-70":
+      textColor = styles.CloudText;
+      break;
+    default:
+      textColor = styles.KBText;
+  }
+
   return (
     <section className={classNames(styles.Container, bordercolor)}>
       <Link href={href}>

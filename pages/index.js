@@ -105,7 +105,7 @@ export default function Home({ window, menu, gdpr_data }) {
                 with live code updates.
               </InlineCallout>
               <InlineCallout
-                color="orange-70"
+                color="yellow-70"
                 icon="school"
                 bold="Knowledge base"
                 href="/knowledge-base"
