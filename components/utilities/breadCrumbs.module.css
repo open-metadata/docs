@@ -1,6 +1,6 @@
 /* TODO: Remove !important when done moving to Tailwind */
 .Container {
-  @apply flex flex-wrap list-none ml-0 pl-0 mt-0 mb-1;
+  @apply flex flex-wrap list-none ml-0 pl-0 mt-4 mb-1;
 }
 
 .InnerContainer {
@@ -9,11 +9,11 @@
 
 .Link {
   @apply hover:opacity-70;
-  @apply text-gray-70 !important;
+  @apply text-[#76746F] text-[16px] !important;
 }
 
 .ActiveLink {
-  @apply font-bold;
+  @apply font-bold text-[#3B454E];
 }
 
 :global(.dark) .Link {

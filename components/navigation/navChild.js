@@ -3,7 +3,7 @@ import Link from "next/link";
 import classNames from "classnames";
 
 import useVersion from "../../lib/useVersion.js";
-import { ReactComponent as SvgArrow } from "../../images/icons/arrow.svg"
+import { ReactComponent as SvgArrow } from "../../images/icons/arrow.svg";
 
 import styles from "./navChild.module.css";
 
@@ -57,15 +57,15 @@ const NavChild = ({ slug, page, color, className }) => {
           )}
           onClick={toggleAccordion}
         >
-          {opened ?
+          {opened ? (
             <SvgArrow className="rotate-90 duration-100" />
-            : <SvgArrow />}
-
+          ) : (
+            <SvgArrow />
+          )}
         </i>
       </div>
     );
   }
-
 
   let link;
   let icon;
@@ -88,12 +88,19 @@ const NavChild = ({ slug, page, color, className }) => {
 
   link = (
     <Link href={url} className="cursor-pointer">
-      <span className={`${classNames(styles.LinkContainer, styles.PageName, active && styles.ActivePage)} font-[500] text-[#76746F]`}>
-        <a className={classNames("not-link", styles.Link)} target={target} >
-
+      <span
+        className={`${classNames(
+          styles.LinkContainer,
+          styles.PageName,
+          active && styles.ActivePage
+        )} font-[500] text-[#76746F]`}
+      >
+        <a className={classNames("not-link", styles.Link)} target={target}>
           <span
-            className={`${classNames(styles.PageName, active && styles.ActivePage)} font-[500] text-[#76746F]`}
-
+            className={`${classNames(
+              styles.PageName,
+              active && styles.ActivePage
+            )} font-[500] text-[#76746F]`}
           >
             {page.name}
             {icon}
@@ -102,7 +109,6 @@ const NavChild = ({ slug, page, color, className }) => {
         {accordion}
       </span>
     </Link>
-
   );
 
   return (

@@ -1,5 +1,5 @@
 .Container {
-  @apply mb-4 pb-4 border-b border-b-gray-30;
+  @apply mb-2 pb-4 border-b border-b-gray-30;
 }
 
 .Date {
@@ -18,7 +18,7 @@
 }
 
 .Text {
-  @apply text-sm tracking-tight leading-normal;
+  @apply text-[16px] tracking-tight leading-normal;
   @apply text-gray-90 !important;
 }
 

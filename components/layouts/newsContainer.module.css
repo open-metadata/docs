@@ -1,5 +1,5 @@
 .Container {
-  @apply mb-12;
+  @apply mb-6;
 }
 
 .Container article:last-child {

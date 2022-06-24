@@ -6,6 +6,10 @@
   @apply flex items-center p-2 mr-1 xl:mr-2 mb-0 rounded-md;
 }
 
+.HeadingContainer i{
+  @apply text-color_violet mr-[-5px]
+}
+
 .CondensedHeadingContainer {
   @apply lg:flex-wrap lg:justify-center lg:text-center lg:w-10;
 }
@@ -14,9 +18,7 @@
   @apply lg:mr-0;
 }
 
-.Icon {
-  @apply text-white !important;
-}
+
 
 /* Colors for heading icons */
 .CloudIcon {

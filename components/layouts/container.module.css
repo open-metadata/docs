@@ -3,18 +3,21 @@
 }
 
 .InnerContainer {
-  @apply col-span-full lg:col-start-2 lg:col-end-5;
+  @apply col-span-full lg:col-start-2 lg:col-end-5 w-[68rem];
 }
 
 .ArticleContainer {
   @apply relative;
 }
 
+.updates_button{
+  @apply bg-[#1890FF] !important;
+}
 /* Links inside markdown */
 .ArticleContainer p a,
 .ArticleContainer ol li a,
 .ArticleContainer ul li a {
-  @apply border-b border-b-gray-90 hover:border-red-60 hover:opacity-80;
+  @apply border-b border-b-gray-90 hover:border-color_violet hover:text-color_violet hover:opacity-80;
 }
 
 :global(.dark) .ArticleContainer p a,

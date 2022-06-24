@@ -2,15 +2,15 @@
 site_menu:
   - category: Quickstart
     url: /quick-start
-    color: lightBlue-70
-    icon: beach_access
+    color: violet-70
+    icon: av_timer
   - category: Quickstart / Local Deployment
     url: /quick-start/local-deploy
 
   - category: Deployment
     url: /deployment
-    color: lightBlue-70
-    icon: beach_access
+    color: violet-70
+    icon: cloud_download
   - category: Deployment / Get started
     url: /deployment/get-started
   - category: Deployment / Get started / Main concepts
@@ -18,8 +18,8 @@ site_menu:
 
   - category: OpenMetadata UI
     url: /metadata-ui
-    color: orange-70
-    icon: cast_connected
+    color: violet-70
+    icon: storage
   - category: OpenMetadata UI / Ingestion
     url: /metadata-ui/ingestion
   - category: OpenMetadata UI / Ingestion / Workflows
@@ -222,7 +222,7 @@ site_menu:
 
   - category: OpenMetadata UI / Ingestion / Workflows/ Metadata / DBT
     url: /metadata-ui/ingestion/workflows/metadata/dbt
-  
+
   - category: OpenMetadata UI / Ingestion / Workflows / Usage
     url: /metadata-ui/ingestion/workflows/usage
   - category: OpenMetadata UI / Ingestion / Workflows / Profiler
@@ -238,7 +238,6 @@ site_menu:
   - category: OpenMetadata UI / Ingestion / Versioning / Event Notification via Webhooks
     url: /metadata-ui/ingestion/versioning/event-notification-via-webhooks
 
-
   - category: OpenMetadata UI / Discovery & Collaboration
     url: /metadata-ui/discovery-collaboration
   - category: OpenMetadata UI / Teams & Users
@@ -250,16 +249,12 @@ site_menu:
   - category: OpenMetadata UI / Data Quality / Metrics
     url: /metadata-ui/data-quality/metrics
 
-
-
-
-
   - category: Main Concepts
     url: /main-concepts
     color: violet-70
-    icon: book
+    icon: developer_board
   - category: Main Concepts / Get started
-    url: /main-concepts/get-started 
+    url: /main-concepts/get-started
   - category: Main Concepts / High Level Design
     url: /main-concepts/high-level-design
   - category: Main Concepts / Metadata Standard
@@ -272,7 +267,7 @@ site_menu:
   - category: Developers
     url: /developers
     color: violet-70
-    icon: favorite_border
+    icon: developer_mode
   - category: Developers / Contribute
     url: /developers/contribute
   - category: Developers / Ingestion Workflows

@@ -346,7 +346,6 @@ st.altair_chart(chart_data)`}
           <TilesContainer>
             <Tile
               size={"half"}
-              background={"unset"}
               color={"unset"}
               dark={{
                 background: "unset",
@@ -359,7 +358,6 @@ st.altair_chart(chart_data)`}
             />
             <Tile
               size={"half"}
-              background={"unset"}
               color={"unset"}
               dark={{
                 background: "unset",
@@ -372,7 +370,6 @@ st.altair_chart(chart_data)`}
             />
             <Tile
               size={"half"}
-              background={"unset"}
               color={"unset"}
               dark={{
                 background: "unset",
@@ -385,7 +382,6 @@ st.altair_chart(chart_data)`}
             />
             <Tile
               size={"half"}
-              background={"unset"}
               color={"unset"}
               dark={{
                 background: "unset",

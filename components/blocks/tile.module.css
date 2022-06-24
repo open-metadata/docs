@@ -1,13 +1,13 @@
 .Container {
-  @apply rounded-md overflow-hidden flex justify-between flex-col cursor-pointer transform transition duration-100 ease-in-out hover:shadow-md hover:opacity-90;
+  @apply rounded-md overflow-hidden flex justify-between flex-col cursor-pointer transform transition duration-100 ease-in-out;
 }
 
 .Container:hover {
   transform: scale(1.01);
-}
+} 
 
 .Link {
-  @apply p-4;
+  @apply p-3 flex;
 }
 
 .Title {
@@ -16,11 +16,11 @@
 }
 
 .Text {
-  @apply text-sm tracking-tight text-white leading-normal !important;
+  @apply text-[16px] tracking-tight text-white leading-normal !important;
 }
 
 .Icon {
-  @apply text-3xl mt-3 mb-3;
+  @apply text-3xl mr-2;
   @apply text-white !important;
 }
 
@@ -42,16 +42,16 @@
 }
 
 /* Color modifiers */
-.OrangeBackground {
-  @apply bg-orange-70;
-}
-
-.VioletBackground {
-  @apply bg-indigo-70;
+.YellowBackground {
+  @apply border border-[#EAA623] !important;
 }
 
 .BlueBackground {
-  @apply bg-lightBlue-70;
+  @apply border border-lightBlue-70;
+}
+
+.VioletBackground {
+  @apply border border-color_violet;
 }
 
 .TransparentBackground i,
@@ -64,4 +64,18 @@
 :global(.dark) .TransparentBackground h4,
 :global(.dark) .TransparentBackground p {
   @apply text-white !important;
+}
+.YellowBackground i,
+.YellowBackground h4{
+  @apply text-[#EAA623] !important;
+}
+
+.BlueBackground i,
+.BlueBackground h4{
+  @apply text-lightBlue-70 !important;
+}
+
+.VioletBackground i,
+.VioletBackground h4{
+  @apply text-color_violet !important;
 }
