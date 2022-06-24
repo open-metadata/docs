@@ -2,10 +2,12 @@ import Link from "next/link";
 
 import styles from "./button.module.css";
 
-const Button = ({ children, link }) => {
+const Button = ({ children, link, blueButton }) => {
   return (
     <Link href={link}>
-      <button className={styles.Button}>{children}</button>
+      <button className={blueButton ? styles.blueButton : styles.Button}>
+        {children}
+      </button>
     </Link>
   );
 };

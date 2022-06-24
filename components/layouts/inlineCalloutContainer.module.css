@@ -1,7 +1,4 @@
 .Container {
-  @apply mb-24;
+  @apply block grid-cols-3 gap-2 mb-6 border-[#B02AAC]
 }
 
-.Container > section:last-child {
-  @apply border-none mb-8 pb-0;
-}

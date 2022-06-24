@@ -16,8 +16,16 @@ const InlineCallout = ({ children, icon, color, bold, href }) => {
       : color === "l-blue-70"
       ? styles.CloudText
       : styles.KBText;
+  const bordercolor =
+    color === "violet-70"
+      ? styles.YellowBackground
+      : color === "l-blue-70"
+      ? styles.VioletBackground
+      : color === "orange-70"
+      ? styles.PurpleBackground
+      : styles.TransparentBackground;
   return (
-    <section className={styles.Container}>
+    <section className={classNames(styles.Container, bordercolor)}>
       <Link href={href}>
         <a
           className={classNames(

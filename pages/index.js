@@ -29,7 +29,6 @@ import InlineCallout from "../components/blocks/inlineCallout";
 import NoteSplit from "../components/blocks/noteSplit";
 
 import { attributes } from "../content/index.md";
-
 import styles from "../components/layouts/container.module.css";
 
 export default function Home({ window, menu, gdpr_data }) {
@@ -74,7 +73,9 @@ export default function Home({ window, menu, gdpr_data }) {
           <article>
             <H1>OpenMetadata Documentation</H1>
             <p>
-              Unlock the value of data assets with an end-to-end metadata management solution that includes data discovery, governance, data quality, observability, and people collaboration.
+              Unlock the value of data assets with an end-to-end metadata
+              management solution that includes data discovery, governance, data
+              quality, observability, and people collaboration.
             </p>
 
             <Spacer size="2rem" />
@@ -89,7 +90,8 @@ export default function Home({ window, menu, gdpr_data }) {
                 bold="Deployment"
                 href="/deployment"
               >
-                Learn how to set up OpenMetadata in Bare Metal, Docker or Kubernetes and how to secure the server and APIs.
+                Learn how to set up OpenMetadata in Bare Metal, Docker or
+                Kubernetes and how to secure the server and APIs.
               </InlineCallout>
               <InlineCallout
                 color="l-blue-70"
@@ -139,14 +141,14 @@ export default function Home({ window, menu, gdpr_data }) {
                 text="OpenMetadata is a fresh start on how to do Metadata right from first principles."
                 link="https://blog.open-metadata.org/why-openmetadata-is-the-right-choice-for-you-59e329163cac"
               />
-              <Button link="https://blog.streamlit.io/">
+              <Button blueButton link="https://blog.streamlit.io/">
                 View all updates
               </Button>
             </NewsContainer>
-
           </article>
 
-          {// <SocialCallouts />
+          {
+            // <SocialCallouts />
           }
 
           <ArrowLinkContainer>
@@ -157,6 +159,7 @@ export default function Home({ window, menu, gdpr_data }) {
             />
           </ArrowLinkContainer>
         </section>
+
         <Footer />
       </section>
     </Layout>

@@ -1,5 +1,5 @@
 .Container {
-  @apply flex items-start sm:items-center mb-8 pb-8 border-b border-b-gray-30;
+  @apply flex items-start  mb-4  border-b border-b-gray-30 px-3 py-4;
 }
 
 .IconContainer {
@@ -12,7 +12,7 @@
 }
 
 .Text {
-  @apply text-base leading-normal tracking-tight;
+  @apply text-[16px] leading-normal tracking-tight;
   @apply text-gray-90 !important;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .Link {
-  @apply font-bold border-none hover:border-none hover:opacity-70;
+  @apply flex font-bold border-none hover:border-none hover:opacity-70;
 }
 
 /* Colors for each category */
@@ -34,21 +34,33 @@
 }
 
 .CloudBackground {
-  @apply bg-lightBlue-70;
+  @apply bg-lightBlue-70 ;
 }
 
 .KBBackground {
-  @apply bg-orange-70;
+  @apply bg-orange-70 ;
 }
 
 .LibraryText {
-  @apply text-indigo-70 !important;
+  @apply text-lg text-indigo-70 !important;
 }
 
 .CloudText {
-  @apply text-lightBlue-70 !important;
+  @apply text-lg text-lightBlue-70 !important;
 }
 
 .KBText {
-  @apply text-orange-70 !important;
+  @apply text-lg text-orange-70 !important;
+}
+
+.YellowBackground {
+  @apply border border-color_violet rounded-[10px];
+}
+
+.VioletBackground {
+  @apply border border-lightBlue-70 rounded-[10px];
+}
+
+.PurpleBackground {
+  @apply  border border-[#EAA623] rounded-[10px];
 }

@@ -53,21 +53,24 @@ const Tile = ({
     );
   }
 
-  const backgroundColor =
-    background === "orange-70"
-      ? styles.OrangeBackground
+  const bordercolor =
+    background === "yellow-70"
+      ? styles.YellowBackground
       : background === "violet-70"
       ? styles.VioletBackground
-      : background === "unset"
-      ? styles.TransparentBackground
-      : styles.BlueBackground;
+      : background === "purple-70"
+      ? styles.PurpleBackground
+      : styles.NewBackground;
+
+  const backgroundColor = styles.TransparentBackground;
 
   return (
     <div
       className={classNames(
         styles.Container,
         tileSize || "third",
-        backgroundColor
+        backgroundColor,
+        bordercolor
       )}
     >
       <Link href={link || "/"}>

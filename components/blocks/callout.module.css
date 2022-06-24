@@ -3,7 +3,7 @@
 }
 
 .Container p {
-  @apply text-base leading-relaxed tracking-tight;
+  @apply text-[14px] leading-relaxed tracking-tight;
   @apply text-gray-90 !important;
 }
 
