@@ -47,7 +47,7 @@
 
 /* Hits */
 .HitContainer {
-  @apply m-0 p-4;
+  @apply m-0 p-4 flex cursor-pointer;
 }
 
 .ActiveHit {
@@ -67,7 +67,7 @@
 }
 
 .IconContainer {
-  @apply relative overflow-hidden rounded-md bg-yellow-90 w-10 h-10;
+  @apply relative overflow-hidden rounded-md bg-yellow-90 w-10 h-10 text-gray-70 pt-2;
 }
 
 .ImageContainer {
@@ -80,7 +80,7 @@
 }
 
 .TextContainer {
-  @apply pr-8 flex-1;
+  @apply pr-8 flex-1 pl-4 pt-2 ;
 }
 
 .HitCategory {
@@ -89,7 +89,7 @@
 }
 
 .HitTitle {
-  @apply my-0 text-lg font-bold;
+  @apply flex my-0 text-lg font-bold;
   @apply text-gray-90 !important;
 }
 
