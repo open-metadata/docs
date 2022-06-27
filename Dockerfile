@@ -3,9 +3,10 @@ FROM node:16.15.1-slim AS builder
 WORKDIR /docs
 COPY . .
 
+RUN mkdir -p public/ingestion/connectors
+
 # RUN yarn build && yarn install --production --ignore-scripts --prefer-offline
-RUN npm ci --legacy-peer-deps --force
-RUN npm run build --legacy-peer-deps
+RUN npm install && npm run build
 
 FROM builder as runner
 
