@@ -1,5 +1,9 @@
 const fs = require("fs");
 
+{
+  swcMinify: false
+}
+
 module.exports = {
   webpack: (configuration) => {
     configuration.module.rules.push(
