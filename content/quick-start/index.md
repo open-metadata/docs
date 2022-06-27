@@ -1,6 +1,7 @@
 ---
 title: Quickstart
 slug: /quick-start
+description: quick start guide to help you
 ---
 
 # Quickstart

@@ -18,18 +18,10 @@ build:
 export:
 	npm run export
 
-.PHONY: lint
-lint:
-	npm run lint
-
 .PHONY: search
 search:
-	node ./scripts/build-search-index.js
-
-.PHONY: docstrings_image
-docstrings_image:
-	cd python && docker build -t streamlit-docstring-generator .
-
-.PHONY: docstrings
-docstrings: docstrings_image
-	docker-compose -f python/compose.yml -p streamlit-docs up
+	python -m venv search-venv; \
+		. search-venv/bin/activate; \
+		pip install -r requirements.txt; \
+		python scripts/build_search_index.py; \
+		rm -rf search-venv;
