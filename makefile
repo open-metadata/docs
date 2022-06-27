@@ -22,7 +22,7 @@ export:
 search:
 	python -m venv search-venv; \
 		. search-venv/bin/activate; \
-		pip install -r requirements.txt; \
+		pip install -r scripts/requirements.txt; \
 		python scripts/build_search_index.py; \
 		rm -rf search-venv;
 
