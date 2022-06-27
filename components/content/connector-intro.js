@@ -2,11 +2,13 @@ import TileContainer from "../layouts/tileContainer";
 import Tile from "../blocks/tile";
 import { H1, H2, H3 } from "../blocks/headers";
 
-const ConnectorIntro = ({ connector, hasUsage, hasProfiler, hasDBT, goal }) => {
+const ConnectorIntro = ({ service, connector, hasUsage, hasProfiler, hasDBT, goal }) => {
   let toc;
   let block;
   let from;
   let title;
+
+  const serviceType = service ? service : "database"
 
   if (goal == "UI" || goal == null) {
     title = connector;
@@ -46,7 +48,8 @@ const ConnectorIntro = ({ connector, hasUsage, hasProfiler, hasDBT, goal }) => {
           title="Ingest with Airflow"
           text="Configure the ingestion using Airflow SDK"
           link={
-            "/metadata-ui/ingestion/workflows/metadata/connectors/database/" +
+            "/metadata-ui/connectors/" +
+            serviceType + "/" +
             connector.toLowerCase() +
             "/airflow"
           }
@@ -57,7 +60,8 @@ const ConnectorIntro = ({ connector, hasUsage, hasProfiler, hasDBT, goal }) => {
           title="Ingest with the CLI"
           text="Run a one-time ingestion using the metadata CLI"
           link={
-            "/metadata-ui/ingestion/workflows/metadata/connectors/database/" +
+            "/metadata-ui/connectors/" +
+            serviceType + "/" +
             connector.toLowerCase() +
             "/cli"
           }

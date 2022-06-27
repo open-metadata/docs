@@ -23,7 +23,7 @@ const MetadataIngestionService = ({ connector }) => {
       <H3>2. Create a New Service</H3>
       <p>Click on the Add New Service button to start the Service creation.</p>
       <Image
-        src="/images/metadata-ui/ingestion/workflows/metadata/connectors/create-service.png"
+        src="/images/metadata-ui/connectors/create-service.png"
         alt="Create a new service"
         caption="Add a new Service from the Services page"
       />
@@ -32,7 +32,7 @@ const MetadataIngestionService = ({ connector }) => {
       <p>Select {connector} as the service type and click Next.</p>
       <Image
         src={
-          "/images/metadata-ui/ingestion/workflows/metadata/connectors/" +
+          "/images/metadata-ui/connectors/" +
           connector +
           "/select-service.png"
         }
@@ -53,7 +53,7 @@ const MetadataIngestionService = ({ connector }) => {
       </p>
       <Image
         src={
-          "/images/metadata-ui/ingestion/workflows/metadata/connectors/" +
+          "/images/metadata-ui/connectors/" +
           connector +
           "/add-new-service.png"
         }
@@ -70,7 +70,7 @@ const MetadataIngestionService = ({ connector }) => {
       </p>
       <Image
         src={
-          "/images/metadata-ui/ingestion/workflows/metadata/connectors/" +
+          "/images/metadata-ui/connectors/" +
           connector +
           "/service-connection.png"
         }
@@ -83,7 +83,7 @@ const MetadataIngestionService = ({ connector }) => {
       </p>
       <Image
         src={
-          "/images/metadata-ui/ingestion/workflows/metadata/connectors/test-connection.png"
+          "/images/metadata-ui/connectors/test-connection.png"
         }
         alt="Test Connection"
         caption="Test the connection and save the Service"
