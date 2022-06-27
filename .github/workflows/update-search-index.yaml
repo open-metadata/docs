@@ -12,7 +12,7 @@
 name: Update search index
 on:
   push:
-    branches: [main]
+    branches: [publish]
     paths:
       - content/**
 
