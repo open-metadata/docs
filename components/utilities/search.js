@@ -153,15 +153,13 @@ const Search = () => {
       >
         <>
           {" "}
-          <section className={styles.IconContainer}>
-            <div className={classNames(styles.ImageContainer, `icon-${id}`)}>
-              {id}
-            </div>{" "}
-          </section>
           <section className={styles.TextContainer}>
-            <h5 className={styles.HitTitle}>
-              <Highlight hit={props.hit} attribute="title"></Highlight>
-            </h5>
+            <a href={props.hit.objectID}>
+              <h5 className={styles.HitTitle}>
+                <Highlight hit={props.hit} attribute="title"></Highlight>
+              </h5>
+            </a>
+            
           </section>
         </>
       </article>
@@ -249,7 +247,7 @@ const Search = () => {
                 >
                   <div className="ais-InstantSearch">
                     <InstantSearch
-                      indexName="documentation"
+                      indexName="openmetadata"
                       searchClient={searchClient}
                     >
                       <div className="right-panel">

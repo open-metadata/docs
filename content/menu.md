@@ -276,4 +276,8 @@ site_menu:
     url: /developers/webhooks
   - category: Developers / OpenMetadata SDK
     url: /developers/sdk
+  - category: Developers / OpenMetadata SDK / Python SDK
+    url: /developers/sdk/python
+  - category: Developers / OpenMetadata SDK / Python SDK / ML Model Python SDK
+    url: /developers/sdk/python/ml-model-sdk
 ---

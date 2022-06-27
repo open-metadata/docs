@@ -1,6 +1,6 @@
 ---
 title: Python Build a Connector
-slug: /developers/python-connector
+slug: /developers/sdk/python/build-connector
 ---
 
 # Python Build a Connector
