@@ -25,3 +25,7 @@ search:
 		pip install -r requirements.txt; \
 		python scripts/build_search_index.py; \
 		rm -rf search-venv;
+
+.PHONY: docker-build
+docker-build:
+	docker build -t openmetadata-docs:local .

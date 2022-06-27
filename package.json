@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "node ./scripts/build-search-index.js && next-sitemap",
+    "postbuild": "next-sitemap",
     "start": "next start",
-    "export": "next build && next export && node ./scripts/build-search-index.js && next-sitemap",
+    "export": "next build && next export && next-sitemap",
     "prepare": "husky install"
   },
   "dependencies": {
