@@ -33,3 +33,7 @@ jobs:
     - name: Run index update
       run: |
         make search
+      env:
+        ALGOLIA_CLIENT_ID: ${{ secrets.ALGOLIA_CLIENT_ID }}
+        ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+        ALGOLIA_INDEX: ${{ secrets.ALGOLIA_INDEX }}
