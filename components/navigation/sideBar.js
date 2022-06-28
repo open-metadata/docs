@@ -63,8 +63,8 @@ const SideBar = ({ menu, slug }) => {
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("ChangeTheme", handleTheme);
 
-    bus.on("streamlit_nav_open", () => setIsOpen(true));
-    bus.on("streamlit_nav_closed", () => setIsOpen(false));
+    bus.on("nav_open", () => setIsOpen(true));
+    bus.on("nav_closed", () => setIsOpen(false));
 
     checkExpanded();
     setHasSlug(window.location.href);

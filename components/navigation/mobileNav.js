@@ -8,7 +8,7 @@ const MobileNav = () => {
   const [nav, setNav] = useState(false);
 
   const toggleMobileNav = () => {
-    bus.emit(nav ? "streamlit_nav_closed" : "streamlit_nav_open");
+    bus.emit(nav ? "nav_closed" : "nav_open");
     if (nav) {
       document.documentElement.classList.remove("nav-open");
     } else {
@@ -19,7 +19,7 @@ const MobileNav = () => {
 
   const handleRouteChange = () => {
     if (nav) {
-      bus.emit(nav ? "streamlit_nav_closed" : "streamlit_nav_open");
+      bus.emit(nav ? "nav_closed" : "nav_open");
       if (nav) {
         document.documentElement.classList.remove("nav-open");
       } else {

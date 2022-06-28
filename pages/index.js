@@ -12,15 +12,12 @@ import ArrowLinkContainer from "../components/navigation/arrowLinkContainer";
 import ArrowLink from "../components/navigation/arrowLink";
 
 import GDPRBanner from "../components/utilities/gdpr";
-// import SocialCallouts from "../components/utilities/socialCallout";
 import Spacer from "../components/utilities/spacer";
 
 import SummaryTiles from "../components/summaryTiles";
 
 import NewsContainer from "../components/layouts/newsContainer";
-import InlineCalloutContainer from "../components/layouts/inlineCalloutContainer";
-import TileContainer from "../components/layouts/tileContainer";
-import Tile from "../components/blocks/tile";
+import YouTube from "../components/blocks/youTube";
 
 import { H1, H2 } from "../components/blocks/headers";
 import NewsEntry from "../components/blocks/newsEntry";
@@ -66,7 +63,9 @@ export default function Home({ window, menu, gdpr_data }) {
           content={`https://${process.env.NEXT_PUBLIC_HOSTNAME}/sharing-image-twitter.jpg`}
         />
       </Head>
-      <GDPRBanner {...gdpr_data} />
+      
+      {/*<GDPRBanner {...gdpr_data} />*/}
+      
       <section className={styles.Container}>
         <SideBar menu={menu} slug={[]} />
         <section className={styles.InnerContainer}>
@@ -82,45 +81,19 @@ export default function Home({ window, menu, gdpr_data }) {
 
             <SummaryTiles />
 
-            <H2>Using the docs</H2>
-            <InlineCalloutContainer>
-              <InlineCallout
-                color="violet-70"
-                icon="description"
-                bold="Deployment"
-                href="/deployment"
-              >
-                Learn how to set up OpenMetadata in Bare Metal, Docker or
-                Kubernetes and how to secure the server and APIs.
-              </InlineCallout>
-              <InlineCallout
-                color="l-blue-70"
-                icon="cloud"
-                bold="Streamlit Cloud"
-                href="/streamlit-cloud"
-              >
-                empowers your data team to directly serve the needs of the rest
-                of the company. Quickly go from data to app, from prototype to
-                production. Share apps in one click and collaborate instantly
-                with live code updates.
-              </InlineCallout>
-              <InlineCallout
-                color="yellow-70"
-                icon="school"
-                bold="Knowledge base"
-                href="/knowledge-base"
-              >
-                is a self-serve library of tips, step-by-step tutorials, and
-                articles that answer your questions about creating and deploying
-                Streamlit apps.
-              </InlineCallout>
-              {/* <InlineCallout color="green-70" icon="code" bold="Cookbook" href="/cookbook">
-                provides short code snippets that you can copy in for specific use cases.
-              </InlineCallout>
-              <InlineCallout color="red-70" icon="question_answer" bold="Support" href="/support">
-                are the bread and butter of how our APIs and configuration files work and will give you short, actionable explanations of specific functions and features.
-              </InlineCallout> */}
-            </InlineCalloutContainer>
+            <H2>Overview</H2>
+            <p>
+            OpenMetadata enables <b>metadata management</b> end-to-end, giving you the ability to unlock the value of data assets in the common use cases of data discovery and governance,
+            but also in emerging use cases related to data quality, observability, and people collaboration.
+            </p>
+            <p>
+            Learn how OpenMetadata tries to solve the metadata problem and the features it provides in the following video 👇
+            </p>
+
+            <YouTube videoId="pF8L_mAtexo" start="0:00" end="9:29" />
+            
+
+            <br></br>
 
             <NewsContainer>
               <NewsEntry
@@ -141,19 +114,15 @@ export default function Home({ window, menu, gdpr_data }) {
                 text="OpenMetadata is a fresh start on how to do Metadata right from first principles."
                 link="https://blog.open-metadata.org/why-openmetadata-is-the-right-choice-for-you-59e329163cac"
               />
-              <Button blueButton link="https://blog.streamlit.io/">
+              <Button blueButton link="https://blog.open-metadata.org/">
                 View all updates
               </Button>
             </NewsContainer>
           </article>
 
-          {
-            // <SocialCallouts />
-          }
-
           <ArrowLinkContainer>
             <ArrowLink
-              link="/library/get-started"
+              link="/quick-start"
               type="next"
               content="Get started"
             />

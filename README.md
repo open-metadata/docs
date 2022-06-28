@@ -1,7 +1,5 @@
 # OpenMetadata Docs
 
-Based on the great work of Streamlit's [documentation framework](https://github.com/streamlit/docs).
-
 ## Building
 
 To build the docs, clone this repo, install the NPM dependencies, and start the development server.
@@ -77,3 +75,8 @@ To add a new page:
 5. Add the Connection Options in each markdown file.
 6. Add the `ingestion.yaml`, `usage.yaml` (if required) and `profiler.yaml` under `/public/ingestion/connectors/{connector}`.
 7. Add screenshots of `add-new-service.png`, `select-service.png` and `service-connection.png` under `/public/images/metadata-ui/ingestion/workflows/metadata/connectors/{connector}`.
+
+
+## Kudos
+
+This repo has been inspired on Streamlit's [documentation framework](https://github.com/streamlit/docs)!

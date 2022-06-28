@@ -16,6 +16,7 @@ const Tile = ({
   title,
   text,
   borderColor,
+  newTab,
 }) => {
   const [theme, setTheme] = useState("light-mode");
 
@@ -74,16 +75,28 @@ const Tile = ({
       )}
     >
       <Link href={link || "/"}>
-        <a className={classNames("not-link", styles.Link)}>
+        {
+          newTab ?
+          <a className={classNames("not-link", styles.Link)} target="_blank" rel="noopener noreferrer" >
           {image}
           <div>
-            <h4 className={styles.Title}>{title || "Install Streamlit"}</h4>
+            <h4 className={styles.Title}>{title}</h4>
             <p className={styles.Text}>
-              {text ||
-                "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."}
+              {text}
             </p>
           </div>
         </a>
+          : <a className={classNames("not-link", styles.Link)} >
+          {image}
+          <div>
+            <h4 className={styles.Title}>{title}</h4>
+            <p className={styles.Text}>
+              {text}
+            </p>
+          </div>
+        </a>
+        }
+        
       </Link>
     </div>
   );
