@@ -55,7 +55,7 @@ function useWindowSize() {
   return windowSize;
 }
 
-function StreamlitDocs({ Component, pageProps }) {
+function Docs({ Component, pageProps }) {
   const size = useWindowSize();
   return (
     <AppContextProvider>
@@ -67,4 +67,4 @@ function StreamlitDocs({ Component, pageProps }) {
   );
 }
 
-export default StreamlitDocs;
+export default Docs;

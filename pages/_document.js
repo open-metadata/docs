@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
-export default function StreamlitDocument() {
+export default function OMDocument() {
   return (
     <Html>
       <Head />
