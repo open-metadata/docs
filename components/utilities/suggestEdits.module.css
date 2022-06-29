@@ -3,11 +3,11 @@
 }
 
 .Icon {
-  @apply mr-2;
-  @apply text-gray-70 !important;
+  @apply mr-1;
+  @apply text-color_violet !important;
 }
 
 .Link {
-  @apply border-b border-b-gray-70 hover:border-b-red-50;
-  @apply text-gray-70 !important;
+  @apply border-b hover:border-color_violet;
+  @apply text-color_violet !important;
 }
