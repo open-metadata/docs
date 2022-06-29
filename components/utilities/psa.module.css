@@ -7,7 +7,7 @@
 }
 
 .Icon {
-  @apply text-5xl mr-8;
+  @apply text-6xl mb-7 mr-2;
   @apply text-gray-90 !important;
 }
 
@@ -32,8 +32,7 @@
 }
 
 .Link {
-  @apply border-b border-b-gray-90 hover:opacity-70 hover:border-b-red-70;
-  @apply text-gray-90 !important;
+  @apply border-b border-b-gray-90 hover:opacity-70 hover:text-color_violet hover:border-color_violet;
 }
 
 :global(.dark) .Link {

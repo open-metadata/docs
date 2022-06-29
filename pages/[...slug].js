@@ -60,7 +60,7 @@ import ConnectorIntro from "../components/content/connector-intro";
 import IngestionScheduleAndDeploy from "../components/content/ingestion-schedule-and-deploy";
 import ConnectorOutro from "../components/content/connector-outro";
 import MetadataIngestionServiceDev from "../components/content/metadata-ingestion-service-dev";
-import MetadataIngestionConfig from "../components/content/metadata-ingestion-config"
+import MetadataIngestionConfig from "../components/content/metadata-ingestion-config";
 
 export default function Article({
   data,
@@ -199,7 +199,7 @@ export default function Article({
             >
               <div className={classNames("content", styles.ContentContainer)}>
                 <MDXRemote {...source} components={components} />
-                <Helpful slug={slug} sourcefile={suggestEditURL} />
+                {/* <Helpful slug={slug} sourcefile={suggestEditURL} /> */}
               </div>
             </article>
             <Psa />

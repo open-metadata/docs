@@ -7,7 +7,7 @@ const SuggestEdits = ({ sourcefile }) => {
         <i className={styles.Icon}>edit</i>
         <a
           className={styles.Link}
-          href={sourcefile}
+          href="https://github.com/open-metadata/OpenMetadata/issues/new/choose"
           target="_blank"
           rel="noopener noreferrer"
         >
