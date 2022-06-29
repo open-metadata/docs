@@ -18,8 +18,13 @@
   @apply flex flex-row items-center pt-4 md:pt-0;
 }
 
-.Button {
-  @apply ml-0 md:ml-6 mb-0 py-2 px-3 flex items-center bg-gray-20 font-bold rounded-md border-none cursor-pointer hover:opacity-90 hover:scale-105 hover:shadow-lg;
+.Button_green {
+  @apply bg-[#00837633] ml-0 md:ml-6 w-16 h-16 mb-0 py-2 px-3 flex items-center font-bold rounded-full border-none cursor-pointer hover:opacity-90 hover:scale-105 hover:shadow-lg;
+  @apply text-gray-90 !important;
+}
+
+.Button_red {
+  @apply bg-[#FF4C3B33] ml-0 md:ml-6 w-16 h-16 mb-0 py-2 px-3 flex items-center font-bold rounded-full border-none cursor-pointer hover:opacity-90 hover:scale-105 hover:shadow-lg;
   @apply text-gray-90 !important;
 }
 
@@ -33,7 +38,7 @@
 }
 
 .Icon {
-  @apply text-base mr-2;
+  @apply text-xl m-auto;
   @apply text-gray-50 !important;
 }
 
