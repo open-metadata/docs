@@ -17,11 +17,9 @@ import {
   getArticleSlugs,
   getArticleSlugFromString,
   getMenu,
-  ometaDirectory,
   getGDPRBanner,
 } from "../lib/api";
 import { getPreviousNextFromMenu } from "../lib/utils.js";
-import useVersion from "../lib/useVersion.js";
 import { useAppContext } from "../context/AppContext";
 import Layout from "../components/layouts/globalTemplate";
 import Footer from "../components/navigation/footer";
@@ -52,7 +50,6 @@ import InlineCallout from "../components/blocks/inlineCallout";
 import Tip from "../components/blocks/tip";
 import Warning from "../components/blocks/warning";
 import YouTube from "../components/blocks/youTube";
-import Cloud from "../components/blocks/cloud";
 
 import styles from "../components/layouts/container.module.css";
 
@@ -68,30 +65,19 @@ import MetadataIngestionConfig from "../components/content/metadata-ingestion-co
 export default function Article({
   data,
   source,
-  streamlit,
   slug,
   menu,
   currMenuItem,
   prevMenuItem,
   nextMenuItem,
-  versionFromStaticLoad,
-  versions,
   paths,
   gdpr_data,
   filename,
 }) {
-  let versionWarning;
-  let currentLink;
   let suggestEditURL;
   const { sourceFile } = useAppContext();
 
-  suggestEditURL =
-    Object.keys(streamlit).length > 0 && sourceFile
-      ? sourceFile
-      : "https://github.com/streamlit/docs/tree/main" +
-        filename.substring(filename.indexOf("/content/"));
-  const maxVersion = versions[versions.length - 1];
-  const version = useVersion(versionFromStaticLoad, versions, currMenuItem);
+  suggestEditURL = "https://github.com/open-metadata/docs/issues";
 
   const components = {
     Note,
@@ -100,7 +86,6 @@ export default function Article({
     Code,
     Warning,
     YouTube,
-    Cloud,
     Masonry,
     CodeTile,
     InlineCalloutContainer,
@@ -118,16 +103,6 @@ export default function Article({
     Image,
     Download,
     Flex,
-    Autofunction: (props) => (
-      <Autofunction
-        {...props}
-        streamlitFunction={props.function}
-        streamlit={streamlit}
-        version={version}
-        versions={versions}
-        slug={slug}
-      />
-    ),
     pre: (props) => <Code {...props} />,
     h1: H1,
     h2: H2,
@@ -139,20 +114,6 @@ export default function Article({
   let nextArrow;
   let arrowContainer;
   let keywordsTag;
-
-  if (version && version != maxVersion && currMenuItem.isVersioned) {
-    // Slugs don't have the version number, so we just have to join them.
-    currentLink = `/${slug.join("/")}`;
-    versionWarning = (
-      <Warning>
-        <p>
-          You are reading the documentation for Streamlit version {version}, but{" "}
-          <Link href={currentLink}>{maxVersion}</Link> is the latest version
-          available.
-        </p>
-      </Warning>
-    );
-  }
 
   if (prevMenuItem) {
     previousArrow = (
@@ -199,32 +160,17 @@ export default function Article({
         <section className={styles.Container}>
           <SideBar slug={slug} menu={menu} />
           <Head>
-            <title>{data.title} - Streamlit Docs</title>
+            <title>{data.title} - OpenMetadata Docs</title>
             <link rel="icon" href="/favicon.svg" />
             <link rel="alternate icon" href="/favicon32.ico" />
             <meta name="theme-color" content="#ffffff" />
             {keywordsTag}
-            {version ? (
-              <link
-                rel="canonical"
-                href={`https://${process.env.NEXT_PUBLIC_HOSTNAME}/${slug
-                  .slice(1)
-                  .join("/")}`}
-              />
-            ) : (
-              <link
-                rel="canonical"
-                href={`https://${process.env.NEXT_PUBLIC_HOSTNAME}/${slug.join(
-                  "/"
-                )}`}
-              />
-            )}
             <meta
-              content={`${data.title} - Streamlit Docs`}
+              content={`${data.title} - OpenMetadata Docs`}
               property="og:title"
             />
             <meta
-              content={`${data.title} - Streamlit Docs`}
+              content={`${data.title} - OpenMetadata Docs`}
               name="twitter:title"
             />
             {data.description && (
@@ -235,7 +181,7 @@ export default function Article({
               </React.Fragment>
             )}
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://docs.streamlit.io/" />
+            <meta property="og:url" content="https://docs.open-metadata.org/" />
             <meta content="summary_large_image" name="twitter:card" />
             <meta
               property="og:image"
@@ -247,13 +193,10 @@ export default function Article({
             />
           </Head>
           <section className={styles.InnerContainer} id="documentation">
-            {versionWarning}
-            <BreadCrumbs slug={slug} menu={menu} version={version} />
             <article
               id="content-container"
               className={classNames("leaf-page", styles.ArticleContainer)}
             >
-              <FloatingNav slug={slug} menu={menu} version={version} />
               <div className={classNames("content", styles.ContentContainer)}>
                 <MDXRemote {...source} components={components} />
                 {/* <Helpful slug={slug} sourcefile={suggestEditURL} /> */}
@@ -277,24 +220,6 @@ export async function getStaticProps(context) {
 
   const menu = getMenu();
 
-  props["streamlit"] = {};
-  // Sort of documentation versions
-  const jsonContents = fs.readFileSync(
-    join(ometaDirectory, "openmetadata.json"),
-    "utf8"
-  );
-  const ometaJSON = jsonContents ? JSON.parse(jsonContents) : {};
-  const all_versions = Object.keys(ometaJSON);
-  const versions = sortBy(all_versions, [
-    (o) => {
-      return parseFloat(o);
-    },
-  ]);
-  const current_version = versions[versions.length - 1];
-
-  props["versions"] = all_versions;
-  props["versionFromStaticLoad"] = null;
-
   if ("slug" in context.params) {
     let filename;
 
@@ -307,19 +232,6 @@ export async function getStaticProps(context) {
     // Get the last element of the array to find the MD file
     const fileContents = fs.readFileSync(filename, "utf8");
     const { data, content } = matter(fileContents);
-    const should_version = /<Autofunction(.*?)\/>/gi.test(fileContents);
-
-    if (should_version) {
-      props["streamlit"] = funcs[current_version];
-    }
-
-    const isnum = /^[\d\.]+$/.test(context.params.slug[0]);
-    if (isnum) {
-      props["versionFromStaticLoad"] = context.params.slug[0];
-      props["streamlit"] = funcs[props["versionFromStaticLoad"]];
-
-      location = `/${context.params.slug.slice(1).join("/")}`;
-    }
 
     const source = await serialize(content, {
       scope: data,
@@ -390,36 +302,6 @@ export async function getStaticPaths() {
 
     paths.push(path);
 
-    // If the file uses Autofunction, we need to version it.
-    // Major versions only --TO DO--
-    const should_version = /<Autofunction(.*?)\/>/gi.test(fileContents);
-    if (!should_version) {
-      continue;
-    }
-
-    for (const v_index in versions) {
-      const version = versions[v_index];
-
-      if (version == current_version) {
-        continue;
-      }
-
-      const versioned_location = `/${version}${slug}`;
-      const newSlug = [...realSlug];
-
-      newSlug.unshift(version);
-
-      path = {
-        params: {
-          slug: newSlug,
-          location: versioned_location,
-          fileName: articles[index],
-          title: data.title ? data.title : "Untitled",
-          description: data.description ? data.description : "",
-        },
-      };
-      paths.push(path);
-    }
   }
 
   return {

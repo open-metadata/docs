@@ -108,7 +108,7 @@ const Search = () => {
       setIndexFocus(1);
     }
 
-    const results = document.querySelectorAll(".ais-Hits-item article");
+    const results = document.querySelectorAll(".ais");
 
     if (results.length > 0) {
       if (results.length >= index) {
@@ -136,20 +136,12 @@ const Search = () => {
   }, []);
 
   const searchClient = algoliasearch(
-    "XNXFGO6BQ1",
-    "b90675aaf5269e66b8b0cd042dacf0d0"
+    "9JH19D2DQ0",
+    "38758af91d7e29692db598a007069a29"
   );
 
   function Hit(props) {
-    const icon = props.hit.icon ? props.hit.icon : "text_snippet";
-    const category = props.hit.category ? props.hit.category : "Page";
-    let snippet;
-    if (
-      props.hit._snippetResult &&
-      props.hit._snippetResult.content.matchLevel !== "none"
-    ) {
-      snippet = <Snippet attribute="content" hit={props.hit} />;
-    }
+    const id = props.hit.id ? props.hit.id : "text_snippet";
 
     return (
       <article
@@ -159,26 +151,60 @@ const Search = () => {
         )}
         tabIndex="-1"
       >
-        <a
-          className={classNames("not-link", styles.HitLink)}
-          href={props.hit.url}
-        >
-          <section className={styles.IconContainer}>
-            <div className={classNames(styles.ImageContainer, `icon-${icon}`)}>
-              <i className={styles.Icon}>{icon}</i>
-            </div>
-          </section>
+        <>
+          {" "}
           <section className={styles.TextContainer}>
-            <p className={styles.HitCategory}>{category}</p>
-            <h5 className={styles.HitTitle}>
-              <Highlight hit={props.hit} attribute="title"></Highlight>
-            </h5>
-            {snippet}
+            <a href={props.hit.objectID}>
+              <h5 className={styles.HitTitle}>
+                <Highlight hit={props.hit} attribute="title"></Highlight>
+              </h5>
+            </a>
+            
           </section>
-        </a>
+        </>
       </article>
     );
   }
+  // Commented below lines for reference
+  // function Hit(props) {
+  //   const icon = props.hit.icon ? props.hit.icon : "text_snippet";
+  //   const category = props.hit.category ? props.hit.category : "Page";
+  //   let snippet;
+  //   if (
+  //     props.hit._snippetResult &&
+  //     props.hit._snippetResult.content.matchLevel !== "none"
+  //   ) {
+  //     snippet = <Snippet attribute="content" hit={props.hit} />;
+  //   }
+
+  //   return (
+  //     <article
+  //       className={classNames(
+  //         styles.HitContainer,
+  //         props.hit.__position === indexFocus ? styles.ActiveHit : ""
+  //       )}
+  //       tabIndex="-1"
+  //     >
+  //       <a
+  //         className={classNames("not-link", styles.HitLink)}
+  //         href={props.hit.url}
+  //       >
+  //         <section className={styles.IconContainer}>
+  //           <div className={classNames(styles.ImageContainer, `icon-${icon}`)}>
+  //             <i className={styles.Icon}>{icon}</i>
+  //           </div>
+  //         </section>
+  //         <section className={styles.TextContainer}>
+  //           <p className={styles.HitCategory}>{category}</p>
+  //           <h5 className={styles.HitTitle}>
+  //             <Highlight hit={props.hit} attribute="title"></Highlight>
+  //           </h5>
+  //           {snippet}
+  //         </section>
+  //       </a>
+  //     </article>
+  //   );
+  // }
 
   let modal;
 
@@ -221,15 +247,10 @@ const Search = () => {
                 >
                   <div className="ais-InstantSearch">
                     <InstantSearch
-                      indexName="documentation"
+                      indexName="openmetadata"
                       searchClient={searchClient}
                     >
                       <div className="right-panel">
-                        <Configure
-                          facets={["*", "version"]}
-                          facetFilters={["version:latest"]}
-                          hitsPerPage={10}
-                        />
                         <SearchBox id="search-box small" />
                         <Hits hitComponent={Hit} />
                       </div>

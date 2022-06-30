@@ -23,7 +23,7 @@ const MetadataIngestionService = ({ connector }) => {
       <H3>2. Create a New Service</H3>
       <p>Click on the Add New Service button to start the Service creation.</p>
       <Image
-        src="/images/metadata-ui/ingestion/workflows/metadata/connectors/create-service.png"
+        src="/images/metadata-ui/connectors/create-service.png"
         alt="Create a new service"
         caption="Add a new Service from the Services page"
       />
@@ -41,6 +41,7 @@ const MetadataIngestionService = ({ connector }) => {
           caption="Select your service from the list"
         />
       </div>
+
       <H3>4. Name and Describe your Service</H3>
       <p>
         Provide a name and description for your service as illustrated below.
@@ -52,6 +53,7 @@ const MetadataIngestionService = ({ connector }) => {
         the other {connector} services that you might be ingesting metadata
         from.
       </p>
+
       <div className="w-100 flex justify-center">
         <Image
           src={
@@ -63,6 +65,7 @@ const MetadataIngestionService = ({ connector }) => {
           caption="Provide a Name and description for your Service"
         />
       </div>
+
 
       <H3>5. Configure the Service Connection</H3>
       <p>
@@ -82,6 +85,7 @@ const MetadataIngestionService = ({ connector }) => {
           caption="Configure the service connection by filling the form"
         />
       </div>
+
       <p className="mt-2">
         Once the credentials have been added, click on Test Connection and Save
         the changes.
@@ -95,6 +99,7 @@ const MetadataIngestionService = ({ connector }) => {
           caption="Test the connection and save the Service"
         />
       </div>
+
     </section>
   );
 };

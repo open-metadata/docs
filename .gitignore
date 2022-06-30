@@ -111,3 +111,7 @@ out/
 
 
 .idea/
+
+# Jupyter
+*.ipynb
+.ipynb_checkpoints/
