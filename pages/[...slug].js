@@ -193,10 +193,12 @@ export default function Article({
             />
           </Head>
           <section className={styles.InnerContainer} id="documentation">
+            <BreadCrumbs slug={slug} menu={menu} />
             <article
               id="content-container"
               className={classNames("leaf-page", styles.ArticleContainer)}
             >
+              <FloatingNav slug={slug} menu={menu} />
               <div className={classNames("content", styles.ContentContainer)}>
                 <MDXRemote {...source} components={components} />
                 {/* <Helpful slug={slug} sourcefile={suggestEditURL} /> */}
@@ -301,7 +303,6 @@ export async function getStaticPaths() {
     };
 
     paths.push(path);
-
   }
 
   return {
