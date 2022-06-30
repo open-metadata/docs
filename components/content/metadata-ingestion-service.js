@@ -30,16 +30,17 @@ const MetadataIngestionService = ({ connector }) => {
 
       <H3>3. Select the Service Type</H3>
       <p>Select {connector} as the service type and click Next.</p>
-      <Image
-        src={
-          "/images/metadata-ui/ingestion/workflows/metadata/connectors/" +
-          connector +
-          "/select-service.png"
-        }
-        alt="Select Service"
-        caption="Select your service from the list"
-      />
-
+      <div className="w-100 flex justify-center">
+        <Image
+          src={
+            "/images/metadata-ui/ingestion/workflows/metadata/connectors/" +
+            connector +
+            "/select-service.png"
+          }
+          alt="Select Service"
+          caption="Select your service from the list"
+        />
+      </div>
       <H3>4. Name and Describe your Service</H3>
       <p>
         Provide a name and description for your service as illustrated below.
@@ -51,15 +52,17 @@ const MetadataIngestionService = ({ connector }) => {
         the other {connector} services that you might be ingesting metadata
         from.
       </p>
-      <Image
-        src={
-          "/images/metadata-ui/ingestion/workflows/metadata/connectors/" +
-          connector +
-          "/add-new-service.png"
-        }
-        alt="Add New Service"
-        caption="Provide a Name and description for your Service"
-      />
+      <div className="w-100 flex justify-center">
+        <Image
+          src={
+            "/images/metadata-ui/ingestion/workflows/metadata/connectors/" +
+            connector +
+            "/add-new-service.png"
+          }
+          alt="Add New Service"
+          caption="Provide a Name and description for your Service"
+        />
+      </div>
 
       <H3>5. Configure the Service Connection</H3>
       <p>
@@ -68,26 +71,30 @@ const MetadataIngestionService = ({ connector }) => {
         you've configured the connector to read from your {connector} service as
         desired.
       </p>
-      <Image
-        src={
-          "/images/metadata-ui/ingestion/workflows/metadata/connectors/" +
-          connector +
-          "/service-connection.png"
-        }
-        alt="Configure service connection"
-        caption="Configure the service connection by filling the form"
-      />
+      <div className="w-100 flex justify-center">
+        <Image
+          src={
+            "/images/metadata-ui/ingestion/workflows/metadata/connectors/" +
+            connector +
+            "/service-connection.png"
+          }
+          alt="Configure service connection"
+          caption="Configure the service connection by filling the form"
+        />
+      </div>
       <p className="mt-2">
         Once the credentials have been added, click on Test Connection and Save
         the changes.
       </p>
-      <Image
-        src={
-          "/images/metadata-ui/ingestion/workflows/metadata/connectors/test-connection.png"
-        }
-        alt="Test Connection"
-        caption="Test the connection and save the Service"
-      />
+      <div className="w-100 flex justify-center">
+        <Image
+          src={
+            "/images/metadata-ui/ingestion/workflows/metadata/connectors/test-connection.png"
+          }
+          alt="Test Connection"
+          caption="Test the connection and save the Service"
+        />
+      </div>
     </section>
   );
 };
