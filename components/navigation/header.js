@@ -67,7 +67,7 @@ const Header = () => {
           <a href="https://slack.open-metadata.org" target="_blank">
             <Slack className="h-6" />
           </a>
-          <a href="https://github.com/open-metadata/" target="_blank">
+          <a href="https://github.com/open-metadata/OpenMetadata" target="_blank">
             <Github />
           </a>
           <a
