@@ -18,11 +18,13 @@ const IngestionScheduleAndDeploy = ({ connector }) => {
         If something doesn't look right, click the Back button to return to the
         appropriate step and change the settings as needed.
       </p>
-      <Image
-        src="/images/metadata-ui/ingestion/workflows/metadata/connectors/schedule.png"
-        alt="Schedule the Workflow"
-        caption="Schedule the Ingestion Pipeline and Deploy"
-      />
+      <div className="w-100 flex justify-center">
+        <Image
+          src="/images/metadata-ui/ingestion/workflows/metadata/connectors/schedule.png"
+          alt="Schedule the Workflow"
+          caption="Schedule the Ingestion Pipeline and Deploy"
+        />
+      </div>
       <p className="mt-1">
         After configuring the workflow, you can click on Deploy to create the
         pipeline.
