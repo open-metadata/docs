@@ -115,3 +115,8 @@ out/
 # Jupyter
 *.ipynb
 .ipynb_checkpoints/
+
+# Content should come from OpenMetadata
+content/
+public/images/
+public/ingestion/
