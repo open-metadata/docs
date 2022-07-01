@@ -16,6 +16,7 @@ const YouTube = ({ caption, videoId, start, end }) => {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            height="512"
           ></iframe>
         </section>
         <section className={styles.CaptionContainer}>
@@ -33,6 +34,7 @@ const YouTube = ({ caption, videoId, start, end }) => {
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
+          height="512"
         ></iframe>
       </section>
     );
