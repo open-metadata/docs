@@ -156,7 +156,8 @@ export default function Article({
       }}
     >
       <Layout>
-        <GDPRBanner {...gdpr_data} />
+        {/* <GDPRBanner {...gdpr_data} /> */}
+        
         <section className={styles.Container}>
           <SideBar slug={slug} menu={menu} />
           <Head>
