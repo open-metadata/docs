@@ -28,7 +28,6 @@ import SideBar from "../components/navigation/sideBar";
 import Masonry from "../components/layouts/masonry";
 import TileContainer from "../components/layouts/tileContainer";
 import InlineCalloutContainer from "../components/layouts/inlineCalloutContainer";
-
 import ArrowLinkContainer from "../components/navigation/arrowLinkContainer";
 import ArrowLink from "../components/navigation/arrowLink";
 import Helpful from "../components/utilities/helpful";
@@ -50,7 +49,7 @@ import InlineCallout from "../components/blocks/inlineCallout";
 import Tip from "../components/blocks/tip";
 import Warning from "../components/blocks/warning";
 import YouTube from "../components/blocks/youTube";
-
+import Collapse from "../components/blocks/collape";
 import styles from "../components/layouts/container.module.css";
 
 // Content Components
@@ -86,6 +85,7 @@ export default function Article({
     Code,
     Warning,
     YouTube,
+    Collapse,
     Masonry,
     CodeTile,
     InlineCalloutContainer,
@@ -301,7 +301,6 @@ export async function getStaticPaths() {
     };
 
     paths.push(path);
-
   }
 
   return {
