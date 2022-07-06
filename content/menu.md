@@ -1,6 +1,6 @@
 ---
 site_menu:
-  - category: Quickstart
+  - category: Placeholder
     url: /placeholder
     color: violet-70
     icon: av_timer

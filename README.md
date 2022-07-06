@@ -1,5 +1,17 @@
 # OpenMetadata Docs
 
+This is the main repository hosting the core implementation of the OpenMetadata docs.
+
+The end-to-end setup is showcased in the figure below:
+
+![setup](resources/setup.drawio.png)
+
+Then, the process of contributing to the docs depends on whether you are a core contributor and need to update the layout, components, styles, etc. or you are a content contributor.
+
+## I am a Core Contributor
+
+As a documentation core contributor, your role is managing the look and feel of the site, as well as creating new components, updating versions of the required libraries, or any activity directly related to the NextJS code.
+
 ## Building
 
 To build the docs, clone this repo, install the NPM dependencies, and start the development server.
