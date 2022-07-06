@@ -9,7 +9,7 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-name: docker-openmetadata-db docker
+name: docker-docs
 on:
   workflow_dispatch:
 
@@ -41,6 +41,6 @@ jobs:
         with:
           context: .
           platforms: linux/amd64,linux/arm64
-          # Update tags before every release
+          push: true
           tags: 'openmetadata/docs:latest'
           file: Dockerfile
