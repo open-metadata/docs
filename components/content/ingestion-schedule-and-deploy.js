@@ -20,7 +20,7 @@ const IngestionScheduleAndDeploy = ({ connector }) => {
       </p>
       <div className="w-100 flex justify-center">
         <Image
-          src="/images/metadata-ui/ingestion/workflows/metadata/connectors/schedule.png"
+          src="/images/metadata-ui/connectors/schedule.png"
           alt="Schedule the Workflow"
           caption="Schedule the Ingestion Pipeline and Deploy"
         />
@@ -36,7 +36,7 @@ const IngestionScheduleAndDeploy = ({ connector }) => {
         Ingestion Pipeline running from the Service Page.
       </p>
       <Image
-        src="/images/metadata-ui/ingestion/workflows/metadata/connectors/view-ingestion-pipeline.png"
+        src="/images/metadata-ui/connectors/view-ingestion-pipeline.png"
         alt="View Ingestion Pipeline"
         caption="View the Ingestion Pipeline from the Service Page"
       />
@@ -49,7 +49,7 @@ const IngestionScheduleAndDeploy = ({ connector }) => {
       </p>
       <p>You can then edit the Ingestion Pipeline and Deploy it again.</p>
       <Image
-        src="/images/metadata-ui/ingestion/workflows/metadata/connectors/workflow-deployment-error.png"
+        src="/images/metadata-ui/connectors/workflow-deployment-error.png"
         alt="Workflow Deployment Error"
         caption="Edit and Deploy the Ingestion Pipeline"
       />
