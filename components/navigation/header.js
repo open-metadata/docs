@@ -9,6 +9,8 @@ import { ReactComponent as SvgLogo } from "../../images/icons/omd.svg";
 import { ReactComponent as Github } from "../../images/icons/github.svg";
 import { ReactComponent as Slack } from "../../images/icons/slack.svg";
 import { ReactComponent as Cloud } from "../../images/icons/cloud.svg";
+import { ReactComponent as API } from "../../images/icons/api.svg";
+
 import styles from "./header.module.css";
 
 const ThemeToggle = dynamic(() => import("../utilities/themeToggle"), {
@@ -70,6 +72,9 @@ const Header = () => {
           <a href="https://github.com/open-metadata/" target="_blank">
             <Github />
           </a>
+          <a href="/swagger.html" target="_blank">
+            <API />
+          </a>
           <a
             className="btn fw-500 btn-primary rounded-pill"
             href="https://share.hsforms.com/1fstvMCeZRZKTYA4nG1VTPgcq0j9"
@@ -79,6 +84,7 @@ const Header = () => {
               <Cloud className="m-auto" />
             </button>
           </a>
+
           {mobileNav}
         </section>
       </nav>
