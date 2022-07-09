@@ -10,7 +10,7 @@ const ConnectorOutro = ({ connector, hasUsage, hasProfiler, hasDBT }) => {
         icon="schema"
         title="Profiler Workflow"
         text="Learn more about how to configure the Data Profiler and about executing Data Quality tests from the UI."
-        link="/metadata-ui/ingestion/workflows/profiler"
+        link="/openmetadata/ingestion/workflows/profiler"
       />
     </section>
   );
@@ -22,7 +22,7 @@ const ConnectorOutro = ({ connector, hasUsage, hasProfiler, hasDBT }) => {
         icon="mediation"
         title="DBT Integration"
         text="Learn more about how to ingest DBT models' definitions and their lineage."
-        link="/metadata-ui/ingestion/workflows/metadata/dbt"
+        link="/openmetadata/ingestion/workflows/metadata/dbt"
       />
     </section>
   );
@@ -34,7 +34,7 @@ const ConnectorOutro = ({ connector, hasUsage, hasProfiler, hasDBT }) => {
         icon="manage_accounts"
         title="Usage Workflow"
         text="Learn more about how to configure the Usage Workflow to ingest Query and Lineage information from the UI."
-        link="/metadata-ui/ingestion/workflows/usage"
+        link="/openmetadata/ingestion/workflows/usage"
       />
     </section>
   );
