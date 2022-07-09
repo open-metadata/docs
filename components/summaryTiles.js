@@ -19,7 +19,7 @@ const SummaryTiles = () => {
         text="Connect to database, dashboard, messaging, pipeline and ML services."
         background="blue-70"
         bordercolor="blue-70"
-        link="/metadata-ui/connectors"
+        link="/openmetadata/connectors"
       />
 
       <Tile

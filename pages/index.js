@@ -108,9 +108,15 @@ export default function Home({ window, menu, gdpr_data }) {
             <YouTube videoId="pF8L_mAtexo" start="0:00" end="9:29" />
             
 
-            <br></br>
+            <br></br>  
 
             <NewsContainer>
+              <NewsEntry
+                date="2022-07-07T16:05:00.000Z"
+                title="OpenMetadata 0.11.0 release"
+                text="Data Collaboration, Column-level Lineage, ML Models, Data Profiler, Advanced Search, Data Lake Connectors, and more."
+                link="https://blog.open-metadata.org/openmetadata-0-11-release-8b82c85636a"
+              />
               <NewsEntry
                 date="2022-04-26T16:05:00.000Z"
                 title="OpenMetadata 0.10.0 release"
