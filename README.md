@@ -29,26 +29,26 @@ This is a high-level view of the docs' organisation:
 To add a new page:
 1. Add the entry under `site_menu` in `content/menu.md`. Make sure you're following the right structure in the `category` (using names) and `url` (building the path). Note that the URL **should match** the actual directory so that we can better understand where to find each file.
 2. In the file path, create a markdown file. You can name it either as `index.md`, if it is the presentation of a section, or `something.md` if it is a detailed entry.
-3. Each `md` file will have the following header (example from `content/metadata-ui/ingestion/lineage.md`):
+3. Each `md` file will have the following header (example from `content/openmetadata/ingestion/lineage.md`):
     ```
     ---
     title: Entity Lineage
-    slug: /metadata-ui/ingestion/lineage
+    slug: /openmetadata/ingestion/lineage
     ---
     ```
    The title will be the Page title, and the `slug` will need to match the `url` specified in the `menu.md`.
 4. If you need to add any image, they should be placed under `public/images/`, using the same directory structure as the `md` file. You can then add them with `![name](path)` with normal markdown.
-    The path will start from `images`, e.g., `/images/metadata-ui/ingestion/lineage/my-image.png`. The same path philosophy applies here, create the structure in the images directory that follows the same as the URL and markdown path.
+    The path will start from `images`, e.g., `/images/openmetadata/ingestion/lineage/my-image.png`. The same path philosophy applies here, create the structure in the images directory that follows the same as the URL and markdown path.
 
 ### How to add a new connector
 
-1. Create a new directory with the service type and connector name under `/content/metadata-ui/ingestion/workflows/metadata/connectors/{service}/{connector}`. Supported services are `database`, `messaging`, `dashboard` and `metadata`.
+1. Create a new directory with the service type and connector name under `/content/openmetadata/ingestion/workflows/metadata/connectors/{service}/{connector}`. Supported services are `database`, `messaging`, `dashboard` and `metadata`.
 2. Create an `index.md`, `airflow.md` and `cli.md` files. You can copy the main structure of any other connector.
 3. Update the title and slug.
 4. Update the connector name and specify if it has usage with `hasUsage="true"` in the components.
 5. Add the Connection Options in each markdown file.
 6. Add the `ingestion.yaml`, `usage.yaml` (if required) and `profiler.yaml` under `/public/ingestion/connectors/{connector}`.
-7. Add screenshots of `add-new-service.png`, `select-service.png` and `service-connection.png` under `/public/images/metadata-ui/ingestion/workflows/metadata/connectors/{connector}`.
+7. Add screenshots of `add-new-service.png`, `select-service.png` and `service-connection.png` under `/public/images/openmetadata/ingestion/workflows/metadata/connectors/{connector}`.
 
 If the templates need to be updated, this requires updating the components from the docs repo under `components/content`. For that, follow the steps of [core contributors](#i-am-a-core-contributor).
 
