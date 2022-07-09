@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { ReactComponent as SvgArrow } from "../../images/icons/arrow.svg";
+import styles from "./collapse.module.css";
+import classNames from "classnames";
 
 const Collapse = ({ title, children }) => {
   
@@ -22,7 +24,7 @@ const Collapse = ({ title, children }) => {
           <div
             className="main-heading pl-6 pb-2 flex"
           >
-            <section>{children}</section>
+            <section className={classNames(styles.Container)}>{children}</section>
             
           </div>
         )}
