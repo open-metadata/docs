@@ -37,7 +37,7 @@ const SummaryTiles = () => {
         text="Deploy in Bare Metal, Docker or Kubernetes."
         background="yellow-70"
         bordercolor="yellow-70"
-        link="/quick-start"
+        link="/deployment"
         size="half"
       />
 
