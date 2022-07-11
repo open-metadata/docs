@@ -2,10 +2,6 @@
   @apply inline-block;
 }
 
-.InnerContainer {
-  @apply rounded-md md:bg-gray-20;
-}
-
 :global(.dark) .InnerContainer {
   @apply md:bg-gray-90;
 }
