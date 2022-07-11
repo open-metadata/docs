@@ -11,7 +11,7 @@
 }
 
 .Caption {
-  @apply italic text-gray-90 text-sm tracking-tight ml-1;
+  @apply italic text-gray-90 text-sm tracking-tight ml-1 pt-[5px];
 }
 
 :global(.dark) .Caption {
