@@ -3,7 +3,7 @@
 }
 
 .InnerContainer {
-  @apply col-span-full lg:col-start-2 lg:col-end-5 w-[68rem];
+  @apply col-span-full lg:col-start-2 lg:col-end-5 pl-4;
 }
 
 .ArticleContainer {

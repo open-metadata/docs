@@ -5,7 +5,7 @@ import SideBar from "../components/navigation/sideBar";
 import Footer from "../components/navigation/footer";
 import Spacer from "../components/utilities/spacer";
 import SummaryTiles from "../components/summaryTiles";
-
+import { H1 } from "../components/blocks/headers";
 import styles from "../components/layouts/container.module.css";
 
 export default function Home({ window, menu }) {
@@ -46,11 +46,9 @@ export default function Home({ window, menu }) {
         <SideBar menu={menu} slug={["404"]} />
         <section className={styles.InnerContainer}>
           <article>
-            <h1>Page not found :(</h1>
+            <H1>Page not found :(</H1>
 
-            <p>
-              Maybe you were looking for:
-            </p>
+            <p>Maybe you were looking for:</p>
 
             <SummaryTiles />
           </article>
