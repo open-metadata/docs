@@ -1,9 +1,5 @@
 .Container {
-  @apply inline-block;
-}
-
-.InnerContainer {
-  @apply rounded-md md:bg-gray-20;
+  @apply inline-block m-auto;
 }
 
 :global(.dark) .InnerContainer {
