@@ -99,7 +99,7 @@ const NavChild = ({ slug, page, color, className }) => {
           <span
             className={`${classNames(
               styles.PageName,
-              active && styles.ActivePage
+              active
             )} font-[500] text-[#76746F]`}
           >
             {page.name}

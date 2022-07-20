@@ -27,7 +27,7 @@
 
 .CategoryName {
   @apply m-0 sm:my-0 font-sans;
-  @apply text-color_violet !important;
+  @apply text-[#505050] !important;
 }
 
 :global(.dark) .CategoryName {
