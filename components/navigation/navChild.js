@@ -87,14 +87,14 @@ const NavChild = ({ slug, page, color, className }) => {
   }
 
   link = (
-    <Link href={url} className="cursor-pointer">
-      <span
-        className={`${classNames(
-          styles.LinkContainer,
-          styles.PageName,
-          active && styles.ActivePage
-        )} font-[500] text-[#76746F]`}
-      >
+    <span
+      className={`${classNames(
+        styles.LinkContainer,
+        styles.PageName,
+        active && styles.ActivePage
+      )} font-[500] text-[#76746F]`}
+    >
+      <Link href={url} className="cursor-pointer">
         <a className={classNames("not-link", styles.Link)} target={target}>
           <span
             className={`${classNames(
@@ -106,9 +106,10 @@ const NavChild = ({ slug, page, color, className }) => {
             {icon}
           </span>
         </a>
-        {accordion}
-      </span>
-    </Link>
+      </Link>
+
+      {accordion}
+    </span>
   );
 
   return (
