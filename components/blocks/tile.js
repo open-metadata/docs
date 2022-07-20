@@ -59,9 +59,13 @@ const Tile = ({
       ? styles.YellowBackground
       : background === "blue-70"
       ? styles.BlueBackground
-      : background === "violet-70"
-      ? styles.VioletBackground
-      : styles.VioletBackground;
+      : background === "pink-70"
+      ? styles.PinkBackground
+      : background === "green-70"
+      ? styles.GreenBackground
+      : background === "purple-70"
+      ? styles.PurpleBackground
+      : styles.GreenBackground;
 
   const backgroundColor = styles.TransparentBackground;
 
@@ -75,28 +79,27 @@ const Tile = ({
       )}
     >
       <Link href={link || "/"}>
-        {
-          newTab ?
-          <a className={classNames("not-link", styles.Link)} target="_blank" rel="noopener noreferrer" >
-          {image}
-          <div>
-            <h4 className={styles.Title}>{title}</h4>
-            <p className={styles.Text}>
-              {text}
-            </p>
-          </div>
-        </a>
-          : <a className={classNames("not-link", styles.Link)} >
-          {image}
-          <div>
-            <h4 className={styles.Title}>{title}</h4>
-            <p className={styles.Text}>
-              {text}
-            </p>
-          </div>
-        </a>
-        }
-        
+        {newTab ? (
+          <a
+            className={classNames("not-link", styles.Link)}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {image}
+            <div>
+              <h4 className={styles.Title}>{title}</h4>
+              <p className={styles.Text}>{text}</p>
+            </div>
+          </a>
+        ) : (
+          <a className={classNames("not-link", styles.Link)}>
+            {image}
+            <div>
+              <h4 className={styles.Title}>{title}</h4>
+              <p className={styles.Text}>{text}</p>
+            </div>
+          </a>
+        )}
       </Link>
     </div>
   );

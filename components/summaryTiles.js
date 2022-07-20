@@ -26,8 +26,8 @@ const SummaryTiles = () => {
         icon="tips_and_updates"
         title="Knowledge Base"
         text="Check out some frequent questions and answers"
-        background="violet-70"
-        bordercolor="violet-70"
+        background="pink-70"
+        bordercolor="pink-70"
         link="https://github.com/open-metadata/OpenMetadata/discussions/categories/q-a"
       />
 
@@ -35,8 +35,8 @@ const SummaryTiles = () => {
         icon="settings_suggest"
         title="Deployment"
         text="Deploy in Bare Metal, Docker or Kubernetes."
-        background="yellow-70"
-        bordercolor="yellow-70"
+        background="green-70"
+        bordercolor="green-70"
         link="/quick-start"
         size="half"
       />
@@ -45,12 +45,11 @@ const SummaryTiles = () => {
         icon="cloud"
         title="SaaS"
         text="Enjoy 100% of OpenMetadata with 0% of the hassle."
-        background="blue-70"
-        bordercolor="blue-70"
+        background="purple-70"
+        bordercolor="purple-70"
         link="https://share.hsforms.com/1fstvMCeZRZKTYA4nG1VTPgcq0j9"
         size="half"
       />
-
     </TileContainer>
   );
 };
