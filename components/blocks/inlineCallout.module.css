@@ -1,19 +1,18 @@
 .Container {
-  @apply flex items-start  mb-4  border-b border-b-gray-30 px-3 py-4;
+  @apply flex items-start  mb-4  border-b border-b-gray-30 px-3 py-4 rounded-[10px];
 }
 
 .IconContainer {
-  @apply flex items-center p-4 mr-4 mb-0 rounded-md hover:opacity-70;
+  @apply flex items-center p-4 mr-4 mb-0 rounded-md;
 }
 
 .Icon {
-  @apply text-2xl leading-none;
-  @apply text-white !important;
+  @apply text-3xl leading-none;
+  @apply text-color_violet !important;
 }
 
 .Text {
   @apply text-[16px] leading-normal tracking-tight;
-  @apply text-gray-90 !important;
 }
 
 :global(.dark) .Text {
@@ -30,27 +29,19 @@
 
 /* Colors for each category */
 .LibraryBackground {
-  @apply bg-indigo-70;
+  @apply bg-color_violet bg-opacity-10;
 }
 
 .CloudBackground {
-  @apply bg-lightBlue-70 ;
+  @apply bg-[#1890FF] bg-opacity-10;
 }
 
 .KBBackground {
-  @apply bg-orange-70 ;
+  @apply bg-[#FFC34E] bg-opacity-10;
 }
 
 .LibraryText {
-  @apply text-lg text-indigo-70 !important;
-}
-
-.CloudText {
-  @apply text-lg text-lightBlue-70 !important;
-}
-
-.KBText {
-  @apply text-lg text-[#EAA623] !important;
+  @apply text-lg text-[#3B454E] !important;
 }
 
 .YellowBackground {
@@ -58,9 +49,9 @@
 }
 
 .VioletBackground {
-  @apply border border-color_violet  rounded-[10px];
+  @apply border border-color_violet;
 }
 
 .BlueBackground {
-  @apply  border border-lightBlue-70  rounded-[10px];
+  @apply border border-[#1890FF]  rounded-[10px];
 }
