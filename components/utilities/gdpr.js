@@ -160,9 +160,9 @@ function insertAnalytics() {
           n.parentNode.insertBefore(t, n);
           analytics._loadOptions = e;
         };
-        analytics._writeKey = "pUoB6ihRTAFLDtLp2NWEuJvBNtiooQwE";
+        analytics._writeKey = "";
         analytics.SNIPPET_VERSION = "4.13.2";
-        analytics.load("pUoB6ihRTAFLDtLp2NWEuJvBNtiooQwE");
+        analytics.load("");
         analytics.page();
       }
   })();

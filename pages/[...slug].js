@@ -28,7 +28,6 @@ import SideBar from "../components/navigation/sideBar";
 import Masonry from "../components/layouts/masonry";
 import TileContainer from "../components/layouts/tileContainer";
 import InlineCalloutContainer from "../components/layouts/inlineCalloutContainer";
-
 import ArrowLinkContainer from "../components/navigation/arrowLinkContainer";
 import ArrowLink from "../components/navigation/arrowLink";
 import Helpful from "../components/utilities/helpful";
@@ -50,7 +49,7 @@ import InlineCallout from "../components/blocks/inlineCallout";
 import Tip from "../components/blocks/tip";
 import Warning from "../components/blocks/warning";
 import YouTube from "../components/blocks/youTube";
-
+import Collapse from "../components/blocks/collape";
 import styles from "../components/layouts/container.module.css";
 
 // Content Components
@@ -86,6 +85,7 @@ export default function Article({
     Code,
     Warning,
     YouTube,
+    Collapse,
     Masonry,
     CodeTile,
     InlineCalloutContainer,
@@ -156,7 +156,8 @@ export default function Article({
       }}
     >
       <Layout>
-        <GDPRBanner {...gdpr_data} />
+        {/* <GDPRBanner {...gdpr_data} /> */}
+        
         <section className={styles.Container}>
           <SideBar slug={slug} menu={menu} />
           <Head>
@@ -193,10 +194,12 @@ export default function Article({
             />
           </Head>
           <section className={styles.InnerContainer} id="documentation">
+            <BreadCrumbs slug={slug} menu={menu} />
             <article
               id="content-container"
               className={classNames("leaf-page", styles.ArticleContainer)}
             >
+              <FloatingNav slug={slug} menu={menu} />
               <div className={classNames("content", styles.ContentContainer)}>
                 <MDXRemote {...source} components={components} />
                 {/* <Helpful slug={slug} sourcefile={suggestEditURL} /> */}
@@ -301,7 +304,6 @@ export async function getStaticPaths() {
     };
 
     paths.push(path);
-
   }
 
   return {

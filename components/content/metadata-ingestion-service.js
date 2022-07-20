@@ -15,7 +15,7 @@ const MetadataIngestionService = ({ connector }) => {
       <p>To visit the Services page, select Services from the Settings menu.</p>
 
       <Image
-        src="/images/metadata-ui/ingestion/workflows/metadata/connectors/visit-services.png"
+        src="/images/openmetadata/connectors/visit-services.png"
         alt="Visit Services Page"
         caption="Find Services under the Settings menu"
       />
@@ -23,7 +23,7 @@ const MetadataIngestionService = ({ connector }) => {
       <H3>2. Create a New Service</H3>
       <p>Click on the Add New Service button to start the Service creation.</p>
       <Image
-        src="/images/metadata-ui/connectors/create-service.png"
+        src="/images/openmetadata/connectors/create-service.png"
         alt="Create a new service"
         caption="Add a new Service from the Services page"
       />
@@ -33,9 +33,7 @@ const MetadataIngestionService = ({ connector }) => {
       <div className="w-100 flex justify-center">
         <Image
           src={
-            "/images/metadata-ui/ingestion/workflows/metadata/connectors/" +
-            connector +
-            "/select-service.png"
+            `/images/openmetadata/connectors/${connector}/select-service.png`
           }
           alt="Select Service"
           caption="Select your service from the list"
@@ -57,9 +55,7 @@ const MetadataIngestionService = ({ connector }) => {
       <div className="w-100 flex justify-center">
         <Image
           src={
-            "/images/metadata-ui/ingestion/workflows/metadata/connectors/" +
-            connector +
-            "/add-new-service.png"
+            `/images/openmetadata/connectors/${connector}/add-new-service.png`
           }
           alt="Add New Service"
           caption="Provide a Name and description for your Service"
@@ -77,9 +73,7 @@ const MetadataIngestionService = ({ connector }) => {
       <div className="w-100 flex justify-center">
         <Image
           src={
-            "/images/metadata-ui/ingestion/workflows/metadata/connectors/" +
-            connector +
-            "/service-connection.png"
+            `/images/openmetadata/connectors/${connector}/service-connection.png`
           }
           alt="Configure service connection"
           caption="Configure the service connection by filling the form"
@@ -93,7 +87,7 @@ const MetadataIngestionService = ({ connector }) => {
       <div className="w-100 flex justify-center">
         <Image
           src={
-            "/images/metadata-ui/ingestion/workflows/metadata/connectors/test-connection.png"
+            "/images/openmetadata/connectors/test-connection.png"
           }
           alt="Test Connection"
           caption="Test the connection and save the Service"

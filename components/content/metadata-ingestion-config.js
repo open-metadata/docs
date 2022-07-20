@@ -25,7 +25,7 @@ const MetadataIngestionConfig = ({
 
   const sourceConfigUrl = `https://github.com/open-metadata/OpenMetadata/blob/main/catalog-rest-service/src/main/resources/json/schema/metadataIngestion/${service}ServiceMetadataPipeline.json`;
   const usageSourceConfigUrl = `https://github.com/open-metadata/OpenMetadata/blob/main/catalog-rest-service/src/main/resources/json/schema/metadataIngestion/${service}ServiceQueryUsagePipeline.json`;
-  const profilerSourceConfigUrl = `https://github.com/open-metadata/OpenMetadata/blob/main/catalog-rest-service/src/main/resources/json/schema/metadataIngestion/databaseServiceProfilerPipeline.json`;
+  const profilerSourceConfigUrl = `https://github.com/open-metadata/OpenMetadata/blob/main/catalog-rest-service/src/main/resources/json/schema/metadataIngestion/${service}ServiceProfilerPipeline.json`;
 
   const [usageYamlConfig, setUsageYaml] = useState();
   const [profilerYamlConfig, setProfilerYaml] = useState();
@@ -567,7 +567,7 @@ with DAG(
       <H2>DBT Integration</H2>
       <p>
         You can learn more about how to ingest DBT models' definitions and their
-        lineage <a href="/metadata-ui/ingestion/workflows/metadata/dbt">here</a>
+        lineage <a href="/openmetadata/ingestion/workflows/metadata/dbt">here</a>
         .
       </p>
     </section>
