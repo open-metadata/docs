@@ -4,24 +4,19 @@
 
 .Container:hover {
   transform: scale(1.01);
-} 
+}
 
 .Link {
   @apply p-3 flex;
 }
 
 .Title {
-  @apply m-0 font-bold text-lg;
-  @apply text-white !important;
+  @apply m-0 font-semibold text-lg;
+  @apply text-[#3B454E] !important;
 }
 
 .Text {
   @apply text-[16px] tracking-tight text-white leading-normal !important;
-}
-
-.Icon {
-  @apply text-3xl mr-2;
-  @apply text-white !important;
 }
 
 /* Size modifiers */
@@ -47,17 +42,21 @@
 }
 
 .BlueBackground {
-  @apply border border-lightBlue-70;
+  @apply border border-[#1890FF];
 }
 
-.VioletBackground {
+.PinkBackground {
+  @apply border border-[#B02AAC];
+}
+.GreenBackground {
+  @apply border border-[#008376];
+}
+.PurpleBackground {
   @apply border border-color_violet;
 }
-
 .TransparentBackground i,
-.TransparentBackground h4,
 .TransparentBackground p {
-  @apply text-gray-90 !important;
+  @apply text-[#76746F] !important;
 }
 
 :global(.dark) .TransparentBackground i,
@@ -65,17 +64,27 @@
 :global(.dark) .TransparentBackground p {
   @apply text-white !important;
 }
-.YellowBackground i,
-.YellowBackground h4{
-  @apply text-[#EAA623] !important;
+
+.YellowBackground h4 {
+  @apply text-[#3B454E] !important;
 }
 
-.BlueBackground i,
-.BlueBackground h4{
-  @apply text-lightBlue-70 !important;
+.YellowBackground i {
+  @apply h-fit mr-[0.625rem] p-[0.625rem] bg-[#FFF3DC] rounded-[6px] text-center text-[#EFAE2F] !important;
 }
 
-.VioletBackground i,
-.VioletBackground h4{
-  @apply text-color_violet !important;
+.BlueBackground i {
+  @apply h-fit mr-[0.625rem] p-[0.625rem] bg-[#1890FF] bg-opacity-10 text-center rounded-[6px] text-[#1890FF] !important ;
+}
+
+.PinkBackground i {
+  @apply h-fit mr-[0.625rem] p-[0.625rem] bg-[#B02AAC] bg-opacity-10 text-center rounded-[6px] text-[#B02AAC] !important;
+}
+
+.GreenBackground i {
+  @apply h-fit mr-[0.625rem] p-[0.625rem] bg-[#008376] bg-opacity-10 text-center rounded-[6px] text-[#008376] !important;
+} 
+
+.PurpleBackground i {
+  @apply h-fit mr-[0.625rem] p-[0.625rem]  bg-color_violet bg-opacity-10 text-center rounded-[6px] text-color_violet !important;
 }
