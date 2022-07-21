@@ -12,8 +12,8 @@
 }
 
 /* Color modifiers */
-.VioletBackground {
-  @apply bg-[#B02AAC];
+.PinkBackground {
+  @apply bg-pink;
 }
 
 .OrangeBackground {
@@ -21,11 +21,11 @@
 }
 
 .LightBlueBackground {
-  @apply bg-[#2EAADC];
+  @apply bg-blue;
 }
 
-.VioletText {
-  @apply text-[#B02AAC] !important;
+.PinkText {
+  @apply text-pink !important;
 }
 
 .OrangeText {
@@ -33,9 +33,9 @@
 }
 
 .LightBlueText {
-  @apply text-[#2EAADC] !important;
+  @apply text-blue !important;
 }
 
-:global(.dark) .VioletText {
+:global(.dark) .PinkText {
   @apply text-white !important;
 }

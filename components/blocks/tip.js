@@ -14,7 +14,7 @@ const Tip = ({ children }) => {
         icon={<Star />}
         rotate="0"
         title="Tip"
-        background="violet-70"
+        background="pink"
         color="white"
       />
       {children}

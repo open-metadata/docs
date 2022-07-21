@@ -1,5 +1,5 @@
 .Note {
-  @apply bg-[#2EAADC] bg-opacity-[calc(60/1000)] border border-[#2EAADC];
+  @apply bg-blue bg-opacity-[calc(60/1000)] border border-blue;
 }
 
 :global(.dark) .Note {
