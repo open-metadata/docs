@@ -123,6 +123,8 @@ export default function Article({
         content={prevMenuItem.name}
       />
     );
+  } else if (nextMenuItem) {
+    previousArrow = <ArrowLink link="./" type="back" content="Home" />;
   }
 
   if (nextMenuItem) {
@@ -137,10 +139,10 @@ export default function Article({
 
   if (nextMenuItem || prevMenuItem) {
     arrowContainer = (
-      <ArrowLinkContainer>
-        {previousArrow}
-        {nextArrow}
-      </ArrowLinkContainer>
+      <>
+        <ArrowLinkContainer>{previousArrow}</ArrowLinkContainer>
+        <ArrowLinkContainer> {nextArrow}</ArrowLinkContainer>
+      </>
     );
   }
 
@@ -157,7 +159,7 @@ export default function Article({
     >
       <Layout>
         {/* <GDPRBanner {...gdpr_data} /> */}
-        
+
         <section className={styles.Container}>
           <SideBar slug={slug} menu={menu} />
           <Head>
@@ -206,7 +208,7 @@ export default function Article({
               </div>
             </article>
             <Psa />
-            {arrowContainer}
+            <div className={styles.Buttons}>{arrowContainer}</div>
           </section>
           <Footer />
         </section>
