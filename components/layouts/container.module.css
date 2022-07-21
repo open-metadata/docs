@@ -10,7 +10,7 @@
   @apply relative;
 }
 
-.updates_button{
+.updates_button {
   @apply bg-[#1890FF] !important;
 }
 /* Links inside markdown */
@@ -25,7 +25,9 @@
 :global(.dark) .ArticleContainer ul li a {
   @apply border-b-white !important;
 }
-
+.Buttons {
+  @apply flex gap-x-[30px];
+}
 @media (min-width: 1448px) {
   .ArticleContainer :global(.toc):not(.advanced-features) {
     @apply block;
