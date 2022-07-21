@@ -13,7 +13,7 @@
 
 /* Color modifiers */
 .VioletBackground {
-  @apply bg-indigo-70;
+  @apply bg-[#B02AAC];
 }
 
 .OrangeBackground {
@@ -21,11 +21,11 @@
 }
 
 .LightBlueBackground {
-  @apply bg-lightBlue-70;
+  @apply bg-[#2EAADC];
 }
 
 .VioletText {
-  @apply text-indigo-70 !important;
+  @apply text-[#B02AAC] !important;
 }
 
 .OrangeText {
@@ -33,7 +33,7 @@
 }
 
 .LightBlueText {
-  @apply text-lightBlue-70 !important;
+  @apply text-[#2EAADC] !important;
 }
 
 :global(.dark) .VioletText {
