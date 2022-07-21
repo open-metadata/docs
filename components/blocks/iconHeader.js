@@ -8,8 +8,8 @@ const IconHeader = ({ icon, rotate, title, background, color }) => {
       <i
         className={classNames(
           styles.Icon,
-          background === "violet-70"
-            ? styles.VioletBackground
+          background === "pink"
+            ? styles.PinkBackground
             : background === "l-blue-70"
             ? styles.LightBlueBackground
             : styles.OrangeBackground
@@ -23,8 +23,8 @@ const IconHeader = ({ icon, rotate, title, background, color }) => {
       <h4
         className={classNames(
           styles.Title,
-          background === "violet-70"
-            ? styles.VioletText
+          background === "pink"
+            ? styles.PinkText
             : background === "l-blue-70"
             ? styles.LightBlueText
             : styles.OrangeText

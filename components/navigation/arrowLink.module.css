@@ -1,9 +1,13 @@
 .Container {
-  @apply flex flex-wrap flex-col md:flex-row md:flex-nowrap items-center justify-between;
+  @apply flex flex-wrap  flex-col md:flex-row md:flex-nowrap items-center justify-between !important;
+}
+.prev,
+.next {
+  @apply h-[81px] w-[395px] border border-[#C4C4C4] rounded-[4px];
 }
 
 .Link {
-  @apply border-none text-base tracking-tight font-sans font-normal text-gray-90 leading-7 hover:opacity-70 flex items-center transition-all;
+  @apply border-none text-base tracking-tight font-sans font-normal text-gray-90 leading-7 cursor-pointer flex items-center transition-all justify-between mt-[14px] !important;
 }
 
 :global(.dark) .Link {
@@ -31,5 +35,9 @@
 }
 
 .Text {
-  @apply mr-1 font-bold;
+  @apply grid mr-1 text-[#AFA8BA] font-medium justify-items-center !important;
+}
+
+.content {
+  @apply text-color_violet font-medium !important;
 }
