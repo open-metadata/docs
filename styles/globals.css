@@ -18,3 +18,9 @@ body {
 p a{
   @apply text-color_violet border-b-0 !important;
 }
+section p{
+  @apply text-justify
+}
+hr{
+  @apply border-t-[0.5px]
+}
