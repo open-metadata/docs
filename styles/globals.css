@@ -21,3 +21,6 @@ p a{
 section p{
   @apply text-justify
 }
+hr{
+  @apply border-t-[0.5px]
+}
