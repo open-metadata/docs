@@ -15,3 +15,6 @@ body {
   @apply absolute top-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-none;
   clip: rect(0, 0, 0, 0);
 }
+p a{
+  @apply text-color_violet border-b-0 !important;
+}
