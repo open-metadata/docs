@@ -16,7 +16,7 @@
 }
 
 .Text {
-  @apply text-[16px] tracking-tight text-white leading-normal !important;
+  @apply text-[16px] tracking-tight text-white text-left leading-normal !important;
 }
 
 /* Size modifiers */
