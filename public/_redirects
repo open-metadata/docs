@@ -100,14 +100,14 @@
 /integrations/connectors/vertica	/openmetadata/connectors/database/vertica
 /integrations/connectors/vertica/run-vertica-connector-using-airflow-sdk	/openmetadata/connectors/database/vertica/airflow
 /integrations/connectors/vertica/run-vertica-connector-using-cli	/openmetadata/connectors/database/vertica/cli
-/integrations/troubleshoot-connectors	
+/integrations/troubleshoot-connectors	/
 /integrations/ingest-metadata-in-production	/
 /integrations/ingest-sample-data	/
 /integrations/airflow	/deployment/airflow
 /integrations/airflow/custom-airflow-installation	/deployment/airflow
 /integrations/airflow/airflow-lineage	/openmetadata/connectors/pipeline/airflow/lineage-backend
 /integrations/airflow/configure-airflow-in-the-openmetadata-server	/deployment/airflow
-/integrations/airflow/airflow	
+/integrations/airflow/airflow	/openmetadata/connectors/pipeline/airflow/
 /metadata-standard/schemas	/main-concepts/metadata-standard/schemas
 /metadata-standard/schemas/schema-language	/main-concepts/metadata-standard/schemas
 /metadata-standard/schemas/overview	/main-concepts/metadata-standard/schemas
@@ -167,8 +167,8 @@
 /metadata-standard/apis/overview	/main-concepts/metadata-standard/apis
 /metadata-standard/apis/api-organization	/main-concepts/metadata-standard/apis
 /metadata-standard/apis/implementation-notes	/main-concepts/metadata-standard/apis
-/deploy/local-deployment	
-/deploy/local-deployment/enable-security	/deployment/bare-metal/security
+/deploy/local-deployment	/quick-start/local-deployment
+/deploy/local-deployment/enable-security	/deployment/docker/security
 /deploy/local-deployment/binding-named-volumes	/deployment/docker/volumes
 /deploy/deploy-on-bare-metal	/deployment/bare-metal
 /deploy/deploy-on-docker	/deployment/docker
@@ -228,10 +228,10 @@
 /upgrade/upgrade-on-bare-metal/upgrade-openmetadata	/deployment/upgrade/bare-metal
 /upgrade/upgrade-on-docker	/deployment/upgrade/docker
 /upgrade/upgrade-on-docker/backup-metadata	/deployment/upgrade/backup-metadata
-/upgrade/upgrade-on-docker/upgrade-openmetadata-on-docker	deployment/upgrade/docker
+/upgrade/upgrade-on-docker/upgrade-openmetadata-on-docker	/deployment/upgrade/docker
 /upgrade/upgrade-on-kubernetes	/deployment/upgrade/kubernetes
 /upgrade/upgrade-on-kubernetes/backup-metadata	/deployment/upgrade/backup-metadata
-/upgrade/upgrade-on-kubernetes/upgrade-openmetadata-on-kubernetes	deployment/upgrade/kubernetes
+/upgrade/upgrade-on-kubernetes/upgrade-openmetadata-on-kubernetes	/deployment/upgrade/kubernetes
 /upgrade/upgrade-from-0.9-to-0.10	/deployment/upgrade/versions/090-to-010
 /upgrade/upgrade-from-0.10-to-0.11	/deployment/upgrade/versions/010-to-011
 /data-discovery/keyword-search	/
@@ -271,7 +271,7 @@
 /developer/architecture/entities/ml-model-entity	/sdk/python/entities/ml-model-sdk
 /developer/openmetadata-sdk	/sdk
 /developer/openmetadata-sdk/python-api	/sdk/python
-/developer/openmetadata-sdk/python-api/version-upgrades	
+/developer/openmetadata-sdk/python-api/version-upgrades	/sdk/python
 /developer/openmetadata-sdk/java-coming-soon	/sdk/java
 /developer/build-a-connector	/sdk/python/build-connector
 /developer/build-a-connector/source	/sdk/python/build-connector/source
