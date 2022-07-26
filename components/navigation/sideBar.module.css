@@ -1,6 +1,6 @@
 .Container {
-  @apply fixed lg:sticky top-auto pl-2 pr-2 lg:top-16 left-0 xl:left-auto px-0 h-[calc(100vh-4rem)] z-20 w-10/12 md:w-9/12 xl:w-screen max-w-xs md:max-w-none overflow-y-auto overflow-x-hidden shadow-lg lg:shadow-none transition-all;
-  @apply bg-light_purple !important;
+  @apply fixed lg:sticky top-auto pl-6 pr-2 lg:top-16 left-0 xl:left-auto px-0 h-[calc(100vh-4rem)] z-20 w-10/12 md:w-9/12 xl:w-screen max-w-xs md:max-w-none overflow-y-auto overflow-x-hidden shadow-lg lg:shadow-none transition-all;
+  @apply bg-light_purple shadow-[1px_4px_6px_0px_rgba(0,0,0,0.08)] border-r-[1px] border-r-[rgba(113,71,232,0.05)] !important;
 }
 
 :global(.dark) .Container {

@@ -18,8 +18,12 @@
 }
 
 .Text {
-  @apply text-[16px] tracking-tight leading-normal;
+  @apply text-[16px] tracking-tight leading-normal table-row;
   @apply text-gray-90 !important;
+}
+
+.Link{
+  @apply text-color_condense_violet;
 }
 
 :global(.dark) .Container {
