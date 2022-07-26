@@ -1,5 +1,6 @@
 import fs from "fs";
 import { join, basename } from "path";
+import Script from "next/script";
 import sortBy from "lodash/sortBy";
 import React from "react";
 import Link from "next/link";
