@@ -66,25 +66,29 @@ const Header = () => {
         <section className={styles.NavigationContainer}>
           <Search />
           {/* <ThemeToggle /> */}
-          <a href="https://slack.open-metadata.org" target="_blank">
-            <Slack className="h-6" />
-          </a>
-          <a href="https://github.com/open-metadata/OpenMetadata" target="_blank">
-            <Github />
-          </a>
-          <a href="/swagger.html" target="_blank">
-            <API />
-          </a>
-          <a
-            className="btn fw-500 btn-primary rounded-pill"
-            href="https://share.hsforms.com/1fstvMCeZRZKTYA4nG1VTPgcq0j9"
-            target="_blank"
-          >
-            <button className="bg-[#7147e8]  pl-[1.125] pr-[1.125] rounded-full w-[55.5px] h-[44px] justify-center">
-              <Cloud className="m-auto" />
-            </button>
-          </a>
-
+          <div className={styles.iconContainer}>
+            <a href="https://slack.open-metadata.org" target="_blank">
+              <Slack className="h-6" />
+            </a>
+            <a
+              href="https://github.com/open-metadata/OpenMetadata"
+              target="_blank"
+            >
+              <Github />
+            </a>
+            <a href="/swagger.html" target="_blank">
+              <API />
+            </a>
+            <a
+              className="btn fw-500 btn-primary rounded-pill"
+              href="https://share.hsforms.com/1fstvMCeZRZKTYA4nG1VTPgcq0j9"
+              target="_blank"
+            >
+              <button className="bg-[#7147e8]  pl-[1.125] pr-[1.125] rounded-full w-[55.5px] h-[44px] justify-center">
+                <Cloud className="m-auto" />
+              </button>
+            </a>
+          </div>
           {mobileNav}
         </section>
       </nav>
