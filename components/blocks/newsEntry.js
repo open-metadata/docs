@@ -17,15 +17,13 @@ const NewsEntry = ({ date, title, text, link }) => {
       <time className={styles.Date} dateTime="date">
         {niceDate(date)}
       </time>
-      <h4 className={styles.Title}>{title}</h4>
+      <a href={link}>
+        <h4 className={styles.Title}>{title}</h4>
+      </a>
       <p className={styles.Text}>{text}</p>
-      <ArrowLink
-        link={link}
-        type="next"
-        clean={true}
-        className="tiny bold"
-        content="Read More"
-      ></ArrowLink>
+      <a href={link} className={styles.Link}>
+        Read More
+      </a>
     </article>
   );
 };
