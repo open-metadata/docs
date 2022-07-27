@@ -24,7 +24,7 @@
 }
 
 .Navigation {
-  @apply container px-2 xl:px-2 flex items-center justify-between relative transition-all mx-9 h-full left-auto;
+  @apply px-2 xl:px-2 flex items-center justify-between relative transition-all mx-9 h-full left-auto;
 }
 
 .LogoContainer {
@@ -41,9 +41,13 @@
 }
 
 .NavigationContainer {
-  @apply flex items-center flex-auto justify-self-end gap-8 lg:gap-8 ml-6;
+  @apply flex items-center flex-auto justify-self-end gap-8 lg:gap-8;
 }
 
 .Container nav section i {
   @apply text-gray-70;
+}
+
+.iconContainer{
+  @apply inline-flex  items-center gap-8;
 }

@@ -1,9 +1,9 @@
 .Container {
-  @apply grid grid-cols-1 lg:grid-cols-4 gap-4 container mx-auto ml-0;
+  @apply grid grid-cols-[20%_minmax(400px,_1fr)];
 }
 
 .InnerContainer {
-  @apply col-span-full lg:col-start-2 lg:col-end-5 w-[68rem];
+  @apply pl-8 pt-4 pr-[20rem];
 }
 
 .ArticleContainer {

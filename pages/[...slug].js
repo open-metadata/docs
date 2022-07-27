@@ -158,7 +158,7 @@ export default function Article({
       <Layout>
         <GDPRBanner {...gdpr_data} />
         <section className={styles.Container}>
-          <SideBar slug={slug} menu={menu} />
+          <SideBar slug={slug} menu={menu} className="sideBar" />
           <Head>
             <title>{data.title} - OpenMetadata Docs</title>
             <link rel="icon" href="/favicon.svg" />
@@ -205,9 +205,10 @@ export default function Article({
             <Psa />
             {arrowContainer}
           </section>
-          <Footer />
+          <FloatingNav slug={slug} menu={menu} className="floatingNav" />
         </section>
       </Layout>
+      <Footer />
     </MDXProvider>
   );
 }
