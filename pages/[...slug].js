@@ -177,7 +177,7 @@ export default function Article({
         /> 
 
         <section className={styles.Container}>
-          <SideBar slug={slug} menu={menu} />
+          <SideBar slug={slug} menu={menu} className="sideBar" />
           <Head>
             <title>{data.title} - OpenMetadata Docs</title>
             <link rel="icon" href="/favicon.svg" />
@@ -226,9 +226,10 @@ export default function Article({
             <Psa />
             <div className={styles.Buttons}>{arrowContainer}</div>
           </section>
-          <Footer />
+          <FloatingNav slug={slug} menu={menu} className="floatingNav" />
         </section>
       </Layout>
+      <Footer />
     </MDXProvider>
   );
 }
