@@ -1,291 +1,291 @@
-/overview/readme	/
-/overview/features	/overview/features
-/overview/roadmap	/overview/roadmap
-/overview/releases	/overview/releases
-/overview/take-it-for-a-spin	/quick-start/sandbox
-/overview/run-openmetadata	/quick-start/local-deployment
-/overview/run-openmetadata-with-prefect	/openmetadata/integrations/prefect
-/overview/tutorials	/
-/overview/tutorials/tutorial-data-discovery-with-openmetadata	/
-/integrations/metadata-ingestion	/
-/integrations/connectors	/openmetadata/connectors
-/integrations/connectors/amundsen	/openmetadata/connectors/metadata/amundsen
-/integrations/connectors/athena	/openmetadata/connectors/database/athena
-/integrations/connectors/athena/run-athena-connector-using-airflow-sdk	/openmetadata/connectors/database/athena/airflow
-/integrations/connectors/athena/run-athena-connector-with-the-cli	/openmetadata/connectors/database/athena/cli
-/integrations/connectors/athena/aws-credentials	/openmetadata/connectors/database/athena
-/integrations/connectors/azure-sql	/openmetadata/connectors/database/azuresql
-/integrations/connectors/azure-sql/run-azuresql-connector-with-the-airflow-sdk	/openmetadata/connectors/database/azuresql/airflow
-/integrations/connectors/azure-sql/run-azuresql-connector-with-the-cli	/openmetadata/connectors/database/azuresql/cli
-/integrations/connectors/bigquery	/openmetadata/connectors/database/bigquery
-/integrations/connectors/bigquery/run-bigquery-connector-using-airflow-sdk	/openmetadata/connectors/database/bigquery/airflow
-/integrations/connectors/bigquery/run-bigquery-connector-using-cli	/openmetadata/connectors/database/bigquery/cli
-/integrations/connectors/clickhouse	/openmetadata/connectors/database/clickhouse
-/integrations/connectors/clickhouse/run-clickhouse-connector-with-the-airflow-sdk	/openmetadata/connectors/database/clickhouse/airflow
-/integrations/connectors/clickhouse/run-clickhouse-connector-with-the-cli	/openmetadata/connectors/database/clickhouse/cli
-/integrations/connectors/databricks	/openmetadata/connectors/database/databricks
-/integrations/connectors/databricks/run-databricks-connector-using-airflow-sdk	/openmetadata/connectors/database/databricks/airflow
-/integrations/connectors/databricks/run-databricks-connector-with-the-cli	/openmetadata/connectors/database/databricks/cli
-/integrations/connectors/data-lake	/openmetadata/connectors/database/datalake
-/integrations/connectors/data-lake/run-data-lake-connector-using-airflow-sdk	/openmetadata/connectors/database/datalake/airflow
-/integrations/connectors/data-lake/run-data-lake-connector-with-the-cli	/openmetadata/connectors/database/datalake/cli
-/integrations/connectors/delta-lake	/openmetadata/connectors/database/deltalake
-/integrations/connectors/delta-lake/run-delta-lake-connector-with-the-airflow-sdk	/openmetadata/connectors/database/deltalake/airflow
-/integrations/connectors/delta-lake/run-delta-lake-connector-using-cli	/openmetadata/connectors/database/deltalake/cli
-/integrations/connectors/dynamodb	/openmetadata/connectors/database/dynamodb
-/integrations/connectors/dynamodb/run-dynamodb-connector-using-airflow-sdk	/openmetadata/connectors/database/dynamodb/airflow
-/integrations/connectors/dynamodb/run-dynamodb-connector-with-the-cli	/openmetadata/connectors/database/dynamodb/cli
-/integrations/connectors/glue-catalog	/openmetadata/connectors/database/glue
-/integrations/connectors/glue-catalog/glue-metadata-extraction	/openmetadata/connectors/database/glue/airflow
-/integrations/connectors/glue-catalog/run-glue-connector-with-the-cli	/openmetadata/connectors/database/glue/cli
-/integrations/connectors/glue-catalog/troubleshooting	/openmetadata/connectors/database/glue
-/integrations/connectors/glue-catalog/aws-credentials	/openmetadata/connectors/database/glue
-/integrations/connectors/hive	/openmetadata/connectors/database/hive
-/integrations/connectors/hive/run-hive-connector-using-airflow-sdk	/openmetadata/connectors/database/hive/airflow
-/integrations/connectors/hive/run-hive-connector-with-the-cli	/openmetadata/connectors/database/hive/cli
-/integrations/connectors/ibm-db2	/openmetadata/connectors/database/db2
-/integrations/connectors/kafka	/openmetadata/connectors/messaging/kafka
-/integrations/connectors/looker	/openmetadata/connectors/dashboard/looker
-/integrations/connectors/looker/run-looker-connector-with-the-airflow-sdk	/openmetadata/connectors/dashboard/looker/airflow
-/integrations/connectors/looker/run-looker-connector-with-the-cli	/openmetadata/connectors/dashboard/looker/cli
-/integrations/connectors/mariadb	/openmetadata/connectors/database/mariadb
-/integrations/connectors/metabase	/openmetadata/connectors/dashboard/metabase
-/integrations/connectors/metabase/run-metabase-connector-with-the-airflow-sdk	/openmetadata/connectors/dashboard/metabase/airflow
-/integrations/connectors/metabase/run-metabase-connector-with-the-cli	/openmetadata/connectors/dashboard/metabase/cli
-/integrations/connectors/mlflow	/openmetadata/connectors/ml/mlflow
-/integrations/connectors/mlflow/run-mlflow-connector-with-the-airflow-sdk	/openmetadata/connectors/ml/mlflow/airflow
-/integrations/connectors/mlflow/run-mlflow-connector-using-the-cli	/openmetadata/connectors/ml/mlflow/cli
-/integrations/connectors/mode	/openmetadata/connectors/dashboard/mode
-/integrations/connectors/mode/run-mode-connector-with-the-airflow-sdk	/openmetadata/connectors/dashboard/mode/airflow
-/integrations/connectors/mode/run-mode-connector-with-the-cli	/openmetadata/connectors/dashboard/mode/cli
-/integrations/connectors/mssql	/openmetadata/connectors/database/mssql
-/integrations/connectors/mssql/run-mssql-connector-with-the-airflow-sdk	/openmetadata/connectors/database/mssql/airflow
-/integrations/connectors/mssql/run-mssql-connector-with-the-cli	/openmetadata/connectors/database/mssql/cli
-/integrations/connectors/mysql	/openmetadata/connectors/database/mysql
-/integrations/connectors/mysql/run-mysql-connector-with-the-airflow-sdk	/openmetadata/connectors/database/mysql/airflow
-/integrations/connectors/mysql/run-mysql-connector-using-cli	/openmetadata/connectors/database/mysql/cli
-/integrations/connectors/oracle	/openmetadata/connectors/database/oracle
-/integrations/connectors/oracle/run-oracle-connector-with-the-airflow-sdk	/openmetadata/connectors/database/oracle/airflow
-/integrations/connectors/oracle/run-oracle-connector-with-the-cli	/openmetadata/connectors/database/oracle/cli
-/integrations/connectors/postgres	/openmetadata/connectors/database/postgres
-/integrations/connectors/postgres/run-postgres-connector-with-the-airflow-sdk	/openmetadata/connectors/database/postgres/airflow
-/integrations/connectors/postgres/run-postgres-connector-with-the-cli	/openmetadata/connectors/database/postgres/cli
-/integrations/connectors/presto	/openmetadata/connectors/database/presto
-/integrations/connectors/presto/run-presto-connector-with-the-airflow-sdk	/openmetadata/connectors/database/presto/airflow
-/integrations/connectors/presto/run-presto-connector-with-the-cli	/openmetadata/connectors/database/presto/cli
-/integrations/connectors/redash	/openmetadata/connectors/dashboard/redash
-/integrations/connectors/redash/run-redash-connector-with-the-airflow-sdk	/openmetadata/connectors/dashboard/redash/airflow
-/integrations/connectors/redash/run-redash-connector-with-the-cli	/openmetadata/connectors/dashboard/redash/cli
-/integrations/connectors/redshift	/openmetadata/connectors/database/redshift
-/integrations/connectors/redshift/redshift-metadata-extraction	/openmetadata/connectors/database/redshift/airflow
-/integrations/connectors/redshift/run-redshift-connector-with-the-cli	/openmetadata/connectors/database/redshift/cli
-/integrations/connectors/salesforce	/openmetadata/connectors/database/salesforce
-/integrations/connectors/salesforce/run-salesforce-connector-using-airflow-sdk	/openmetadata/connectors/database/salesforce/airflow
-/integrations/connectors/salesforce/run-salesforce-connector-using-cli	/openmetadata/connectors/database/salesforce/cli
-/integrations/connectors/singlestore	/openmetadata/connectors/database/singlestore
-/integrations/connectors/singlestore/run-singlestore-connector-using-airflow-sdk	/openmetadata/connectors/database/singlestore/airflow
-/integrations/connectors/singlestore/run-singlestore-connector-using-cli	/openmetadata/connectors/database/singlestore/cli
-/integrations/connectors/snowflake	/openmetadata/connectors/database/snowflake
-/integrations/connectors/snowflake/run-snowflake-connector-with-the-airflow-sdk	/openmetadata/connectors/database/snowflake/airflow
-/integrations/connectors/snowflake/run-snowflake-connector-with-the-cli	/openmetadata/connectors/database/snowflake/cli
-/integrations/connectors/superset-1	/openmetadata/connectors/dashboard/superset
-/integrations/connectors/superset-1/run-superset-connector-with-the-airflow-sdk	/openmetadata/connectors/dashboard/superset/airflow
-/integrations/connectors/superset-1/run-superset-connector-with-the-cli	/openmetadata/connectors/dashboard/superset/cli
-/integrations/connectors/tableau	/openmetadata/connectors/dashboard/tableau
-/integrations/connectors/tableau/run-tableau-connector-with-the-airflow-sdk	/openmetadata/connectors/dashboard/tableau/airflow
-/integrations/connectors/tableau/run-tableau-connector-with-the-cli	/openmetadata/connectors/dashboard/tableau/cli
-/integrations/connectors/trino	/openmetadata/connectors/database/trino
-/integrations/connectors/trino/run-trino-connector-using-airflow-sdk	/openmetadata/connectors/database/trino/airflow
-/integrations/connectors/trino/run-trino-connector-using-cli	/openmetadata/connectors/database/trino/cli
-/integrations/connectors/vertica	/openmetadata/connectors/database/vertica
-/integrations/connectors/vertica/run-vertica-connector-using-airflow-sdk	/openmetadata/connectors/database/vertica/airflow
-/integrations/connectors/vertica/run-vertica-connector-using-cli	/openmetadata/connectors/database/vertica/cli
-/integrations/troubleshoot-connectors	/
-/integrations/ingest-metadata-in-production	/
-/integrations/ingest-sample-data	/
-/integrations/airflow	/deployment/airflow
-/integrations/airflow/custom-airflow-installation	/deployment/airflow
-/integrations/airflow/airflow-lineage	/openmetadata/connectors/pipeline/airflow/lineage-backend
-/integrations/airflow/configure-airflow-in-the-openmetadata-server	/deployment/airflow
-/integrations/airflow/airflow	/openmetadata/connectors/pipeline/airflow/
-/metadata-standard/schemas	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/schema-language	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/overview	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/auditlog	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/basic	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/changeevent	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/dailycount	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/databaseconnectionconfig	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/entityhistory	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/entitylineage	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/entityreference	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/entityrelationship	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/entityusage	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/include	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/jdbcconnection	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/paging	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/profile	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/schedule	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/storage	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/taglabel	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/types/usagedetails	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/accesscontrolrule	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/bot	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/chart	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/dashboard	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/dashboardservice	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/database	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/databaseservice	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/deleteaction	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/thread	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/filters	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/glossary	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/glossaryterm	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/location	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/messagingservice	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/metrics	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/mlmodel	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/moveaction	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/pipeline	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/pipelineservice	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/policy	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/report	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/role	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/rule	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/storageservice	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/table	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/tagbased	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/tagcategory	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/task	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/team	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/topic	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/user	/main-concepts/metadata-standard/schemas
-/metadata-standard/schemas/entities/webhook	/main-concepts/metadata-standard/schemas
-/metadata-standard/apis	/main-concepts/metadata-standard/apis
-/metadata-standard/apis/overview	/main-concepts/metadata-standard/apis
-/metadata-standard/apis/api-organization	/main-concepts/metadata-standard/apis
-/metadata-standard/apis/implementation-notes	/main-concepts/metadata-standard/apis
-/deploy/local-deployment	/quick-start/local-deployment
-/deploy/local-deployment/enable-security	/deployment/docker/security
-/deploy/local-deployment/binding-named-volumes	/deployment/docker/volumes
-/deploy/deploy-on-bare-metal	/deployment/bare-metal
-/deploy/deploy-on-docker	/deployment/docker
-/deploy/deploy-on-docker/using-python-cli	/deployment/docker
-/deploy/deploy-on-kubernetes	/deployment/kubernetes
-/deploy/deploy-on-kubernetes/values.yaml	/deployment/kubernetes
-/deploy/secure-openmetadata	/deployment/security
-/deploy/secure-openmetadata/google-sso	/deployment/security/google
-/deploy/secure-openmetadata/google-sso/create-server-credentials	/deployment/security/google
-/deploy/secure-openmetadata/google-sso/create-service-account	/deployment/security/google
-/deploy/secure-openmetadata/google-sso/configure-openmetadata	/deployment/security/google
-/deploy/secure-openmetadata/google-sso/configure-openmetadata/configure-openmetadata-server	/deployment/security/google/bare-metal
-/deploy/secure-openmetadata/google-sso/configure-openmetadata/configure-openmetadata-server-using-docker	/deployment/security/google/docker
-/deploy/secure-openmetadata/google-sso/configure-openmetadata/configure-openmetadata-helm	/deployment/security/google/kubernetes
-/deploy/secure-openmetadata/google-sso/configure-ingestion	/deployment/security/google
-/deploy/secure-openmetadata/google-sso-1	/deployment/security/custom-oidc
-/deploy/secure-openmetadata/google-sso-1/create-server-credentials	/deployment/security/custom-oidc
-/deploy/secure-openmetadata/google-sso-1/create-service-account	/deployment/security/custom-oidc
-/deploy/secure-openmetadata/google-sso-1/configure-openmetadata	/deployment/security/custom-oidc
-/deploy/secure-openmetadata/google-sso-1/configure-openmetadata/configure-openmetadata-server	/deployment/security/custom-oidc/bare-metal
-/deploy/secure-openmetadata/google-sso-1/configure-openmetadata/configure-openmetadata-server-using-docker	/deployment/security/custom-oidc/docker
-/deploy/secure-openmetadata/google-sso-1/configure-openmetadata/configure-openmetadata-helm	/deployment/security/custom-oidc/kubernetes
-/deploy/secure-openmetadata/google-sso-1/configure-ingestion	/deployment/security/custom-oidc
-/deploy/secure-openmetadata/okta-sso	/deployment/security/okta
-/deploy/secure-openmetadata/okta-sso/create-server-credentials	/deployment/security/okta
-/deploy/secure-openmetadata/okta-sso/configure-openmetadata	/deployment/security/okta
-/deploy/secure-openmetadata/okta-sso/configure-openmetadata/configure-openmetadata-server	/deployment/security/okta/bare-metal
-/deploy/secure-openmetadata/okta-sso/configure-openmetadata/configure-openmetadata-server-using-docker	/deployment/security/okta/docker
-/deploy/secure-openmetadata/okta-sso/configure-openmetadata/configure-openmetadata-helm	/deployment/security/okta/kubernetes
-/deploy/secure-openmetadata/okta-sso/create-service-application	/deployment/security/okta
-/deploy/secure-openmetadata/okta-sso/configure-ingestion	/deployment/security/okta
-/deploy/secure-openmetadata/auth0-sso	/deployment/security/auth0
-/deploy/secure-openmetadata/auth0-sso/create-server-credentials	/deployment/security/auth0
-/deploy/secure-openmetadata/auth0-sso/create-service-account	/deployment/security/auth0
-/deploy/secure-openmetadata/auth0-sso/configure-openmetadata	/deployment/security/auth0
-/deploy/secure-openmetadata/auth0-sso/configure-openmetadata/configure-openmetadata-server	/deployment/security/auth0/bare-metal
-/deploy/secure-openmetadata/auth0-sso/configure-openmetadata/configure-openmetadata-server-using-docker	/deployment/security/auth0/docker
-/deploy/secure-openmetadata/auth0-sso/configure-openmetadata/configure-openmetadata-helm	/deployment/security/auth0/kubernetes
-/deploy/secure-openmetadata/auth0-sso/configure-ingestion	/deployment/security/auth0
-/deploy/secure-openmetadata/azure-sso	/deployment/security/azure
-/deploy/secure-openmetadata/azure-sso/create-server-credentials	/deployment/security/azure
-/deploy/secure-openmetadata/azure-sso/create-service-application	/deployment/security/azure
-/deploy/secure-openmetadata/azure-sso/configure-openmetadata	/deployment/security/azure
-/deploy/secure-openmetadata/azure-sso/configure-openmetadata/configure-openmetadata-server	/deployment/security/azure/bare-metal
-/deploy/secure-openmetadata/azure-sso/configure-openmetadata/configure-openmetadata-server-using-docker	/deployment/security/azure/docker
-/deploy/secure-openmetadata/azure-sso/configure-openmetadata/configure-openmetadata-helm	/deployment/security/azure/kubernetes
-/deploy/secure-openmetadata/azure-sso/configure-ingestion	/deployment/security/azure
-/deploy/enable-ssl	/deployment/security/enable-ssl
-/deploy/enable-ssl/use-nginx	/deployment/security/enable-ssl/nginx
-/deploy/enable-ssl/openmetadata-server	/deployment/security/enable-ssl/openmetadata-server
-/deploy/enable-jwt-tokens	/deployment/security/enable-jwt-tokens
-/deploy/reference	/
-/deploy/reference/configuration	/deployment/configuration
-/deploy/reference/connector-configuration	/
-/upgrade/upgrade-on-bare-metal	/deployment/upgrade/bare-metal
-/upgrade/upgrade-on-bare-metal/backup-metadata	/deployment/upgrade/backup-metadata
-/upgrade/upgrade-on-bare-metal/upgrade-openmetadata	/deployment/upgrade/bare-metal
-/upgrade/upgrade-on-docker	/deployment/upgrade/docker
-/upgrade/upgrade-on-docker/backup-metadata	/deployment/upgrade/backup-metadata
-/upgrade/upgrade-on-docker/upgrade-openmetadata-on-docker	/deployment/upgrade/docker
-/upgrade/upgrade-on-kubernetes	/deployment/upgrade/kubernetes
-/upgrade/upgrade-on-kubernetes/backup-metadata	/deployment/upgrade/backup-metadata
-/upgrade/upgrade-on-kubernetes/upgrade-openmetadata-on-kubernetes	/deployment/upgrade/kubernetes
-/upgrade/upgrade-from-0.9-to-0.10	/deployment/upgrade/versions/090-to-010
-/upgrade/upgrade-from-0.10-to-0.11	/deployment/upgrade/versions/010-to-011
-/data-discovery/keyword-search	/
-/data-discovery/discovery-through-association	/
-/data-discovery/advanced-search	/
-/data-discovery/complex-data-types	/
-/data-discovery/deleted-entity-metadata	/
-/data-collaboration/activity-feeds	/
-/data-collaboration/conversation-threads	/
-/data-collaboration/descriptions-and-tags	/
-/data-collaboration/data-importance	/
-/data-collaboration/data-ownership	/
-/data-lineage/lineage-ingestion	/
-/data-lineage/edit-data-lineage-manually	/
-/data-lineage/dbt-integration	/openmetadata/ingestion/workflows/metadata/dbt
-/data-lineage/dbt-integration/add-dbt-while-ingesting-from-ui	/openmetadata/ingestion/workflows/metadata/dbt/ingest-dbt-ui
-/data-lineage/dbt-integration/add-dbt-while-ingesting-from-cli	/openmetadata/ingestion/workflows/metadata/dbt/ingest-dbt-cli
-/data-lineage/dbt-integration/dbt-python-sdk	/python/ingestion/dbt
-/data-lineage/usage-workflow	/openmetadata/ingestion/workflows/usage
-/data-lineage/usage-workflow-through-query-logs	/openmetadata/ingestion/workflows/usage/usage-workflow-query-logs
-/controlled-vocabulary/glossaries	/openmetadata/glossaries
-/data-quality/data-quality-overview	/openmetadata/data-quality
-/data-quality/data-quality-overview/metrics	/openmetadata/data-quality/metrics
-/data-quality/data-quality-overview/tests	/openmetadata/data-quality/tests
-/data-quality/profiler-workflow	/openmetadata/ingestion/workflows/profiler
-/data-quality/3rd-party-tools-integration	/openmetadata/integrations
-/data-quality/3rd-party-tools-integration/great-expectations	/openmetadata/integrations/great-expectations
-/metadata-versioning/metadata-versioning	/openmetadata/ingestion/versioning
-/metadata-versioning/change-feeds	/openmetadata/ingestion/versioning/change-feeds
-/metadata-versioning/change-events	/openmetadata/ingestion/versioning/change-events
-/metadata-versioning/event-notification-via-webhooks	/openmetadata/ingestion/versioning/event-notification-via-webhooks
-/developer	/developers
-/developer/architecture	/developers/architecture
-/developer/architecture/solution-design	/developers/architecture/design
-/developer/architecture/quick-start-guide	/developers/architecture/code-layout
-/developer/architecture/entities	/sdk/python/entities
-/developer/architecture/entities/ml-model-entity	/sdk/python/entities/ml-model-sdk
-/developer/openmetadata-sdk	/sdk
-/developer/openmetadata-sdk/python-api	/sdk/python
-/developer/openmetadata-sdk/python-api/version-upgrades	/sdk/python
-/developer/openmetadata-sdk/java-coming-soon	/sdk/java
-/developer/build-a-connector	/sdk/python/build-connector
-/developer/build-a-connector/source	/sdk/python/build-connector/source
-/developer/build-a-connector/sink	/sdk/python/build-connector/sink
-/developer/build-a-connector/stage	/sdk/python/build-connector/stage
-/developer/build-a-connector/bulksink	/sdk/python/build-connector/bulk-sink
-/developer/how-to-contribute	/developers/contribute
-/developer/contribute/build-code-and-run-tests	/developers/contribute/build-code-and-run-tests
-/developer/contribute/build-code-and-run-tests/prerequisites	/developers/contribute/build-code-and-run-tests/prerequisites
-/developer/contribute/build-code-and-run-tests/openmetadata-server	/developers/contribute/build-code-and-run-tests/openmetadata-server
-/developer/contribute/build-code-and-run-tests/ingestion-framework	/developers/contribute/build-code-and-run-tests/ingestion-framework
-/developer/contribute/build-code-and-run-tests/generate-typescript-types-from-json-schema	/developers/contribute/build-code-and-run-tests/generate-typescript-types-from-json-schema
-/developer/contribute/build-code-and-run-tests/ui	/developers/contribute/build-code-and-run-tests/openmetadata-ui
-/developer/contribute/build-code-and-run-tests/backend	/developers/contribute/build-code-and-run-tests/backend
-/developer/contribute/build-code-and-run-tests/cypress-integration-tests	/developers/contribute/build-code-and-run-tests/cypress-integration-tests
-/developer/ux-style-guide	/developers/contribute/ux-style-guide
-/open-source-community	/developers/open-source-community
+/overview/readme	/   302
+/overview/features	/overview/features  302
+/overview/roadmap	/overview/roadmap   302
+/overview/releases	/overview/releases  302
+/overview/take-it-for-a-spin	/quick-start/sandbox    302
+/overview/run-openmetadata	/quick-start/local-deployment   302
+/overview/run-openmetadata-with-prefect	/openmetadata/integrations/prefect  302
+/overview/tutorials	/   302
+/overview/tutorials/tutorial-data-discovery-with-openmetadata	/   302
+/integrations/metadata-ingestion	/   302
+/integrations/connectors	/openmetadata/connectors    302
+/integrations/connectors/amundsen	/openmetadata/connectors/metadata/amundsen  302
+/integrations/connectors/athena	/openmetadata/connectors/database/athena    302
+/integrations/connectors/athena/run-athena-connector-using-airflow-sdk	/openmetadata/connectors/database/athena/airflow    302
+/integrations/connectors/athena/run-athena-connector-with-the-cli	/openmetadata/connectors/database/athena/cli    302
+/integrations/connectors/athena/aws-credentials	/openmetadata/connectors/database/athena    302
+/integrations/connectors/azure-sql	/openmetadata/connectors/database/azuresql  302
+/integrations/connectors/azure-sql/run-azuresql-connector-with-the-airflow-sdk	/openmetadata/connectors/database/azuresql/airflow  302
+/integrations/connectors/azure-sql/run-azuresql-connector-with-the-cli	/openmetadata/connectors/database/azuresql/cli  302
+/integrations/connectors/bigquery	/openmetadata/connectors/database/bigquery  302
+/integrations/connectors/bigquery/run-bigquery-connector-using-airflow-sdk	/openmetadata/connectors/database/bigquery/airflow  302
+/integrations/connectors/bigquery/run-bigquery-connector-using-cli	/openmetadata/connectors/database/bigquery/cli  302
+/integrations/connectors/clickhouse	/openmetadata/connectors/database/clickhouse    302
+/integrations/connectors/clickhouse/run-clickhouse-connector-with-the-airflow-sdk	/openmetadata/connectors/database/clickhouse/airflow    302
+/integrations/connectors/clickhouse/run-clickhouse-connector-with-the-cli	/openmetadata/connectors/database/clickhouse/cli    302
+/integrations/connectors/databricks	/openmetadata/connectors/database/databricks    302
+/integrations/connectors/databricks/run-databricks-connector-using-airflow-sdk	/openmetadata/connectors/database/databricks/airflow    302
+/integrations/connectors/databricks/run-databricks-connector-with-the-cli	/openmetadata/connectors/database/databricks/cli    302
+/integrations/connectors/data-lake	/openmetadata/connectors/database/datalake  302
+/integrations/connectors/data-lake/run-data-lake-connector-using-airflow-sdk	/openmetadata/connectors/database/datalake/airflow  302
+/integrations/connectors/data-lake/run-data-lake-connector-with-the-cli	/openmetadata/connectors/database/datalake/cli  302
+/integrations/connectors/delta-lake	/openmetadata/connectors/database/deltalake 302
+/integrations/connectors/delta-lake/run-delta-lake-connector-with-the-airflow-sdk	/openmetadata/connectors/database/deltalake/airflow 302
+/integrations/connectors/delta-lake/run-delta-lake-connector-using-cli	/openmetadata/connectors/database/deltalake/cli 302
+/integrations/connectors/dynamodb	/openmetadata/connectors/database/dynamodb  302
+/integrations/connectors/dynamodb/run-dynamodb-connector-using-airflow-sdk	/openmetadata/connectors/database/dynamodb/airflow  302
+/integrations/connectors/dynamodb/run-dynamodb-connector-with-the-cli	/openmetadata/connectors/database/dynamodb/cli  302
+/integrations/connectors/glue-catalog	/openmetadata/connectors/database/glue  302
+/integrations/connectors/glue-catalog/glue-metadata-extraction	/openmetadata/connectors/database/glue/airflow  302
+/integrations/connectors/glue-catalog/run-glue-connector-with-the-cli	/openmetadata/connectors/database/glue/cli  302
+/integrations/connectors/glue-catalog/troubleshooting	/openmetadata/connectors/database/glue  302
+/integrations/connectors/glue-catalog/aws-credentials	/openmetadata/connectors/database/glue  302
+/integrations/connectors/hive	/openmetadata/connectors/database/hive  302
+/integrations/connectors/hive/run-hive-connector-using-airflow-sdk	/openmetadata/connectors/database/hive/airflow  302
+/integrations/connectors/hive/run-hive-connector-with-the-cli	/openmetadata/connectors/database/hive/cli  302
+/integrations/connectors/ibm-db2	/openmetadata/connectors/database/db2   302
+/integrations/connectors/kafka	/openmetadata/connectors/messaging/kafka    302
+/integrations/connectors/looker	/openmetadata/connectors/dashboard/looker   302
+/integrations/connectors/looker/run-looker-connector-with-the-airflow-sdk	/openmetadata/connectors/dashboard/looker/airflow   302
+/integrations/connectors/looker/run-looker-connector-with-the-cli	/openmetadata/connectors/dashboard/looker/cli   302
+/integrations/connectors/mariadb	/openmetadata/connectors/database/mariadb   302
+/integrations/connectors/metabase	/openmetadata/connectors/dashboard/metabase 302
+/integrations/connectors/metabase/run-metabase-connector-with-the-airflow-sdk	/openmetadata/connectors/dashboard/metabase/airflow 302
+/integrations/connectors/metabase/run-metabase-connector-with-the-cli	/openmetadata/connectors/dashboard/metabase/cli 302
+/integrations/connectors/mlflow	/openmetadata/connectors/ml/mlflow  302
+/integrations/connectors/mlflow/run-mlflow-connector-with-the-airflow-sdk	/openmetadata/connectors/ml/mlflow/airflow  302
+/integrations/connectors/mlflow/run-mlflow-connector-using-the-cli	/openmetadata/connectors/ml/mlflow/cli  302
+/integrations/connectors/mode	/openmetadata/connectors/dashboard/mode 302
+/integrations/connectors/mode/run-mode-connector-with-the-airflow-sdk	/openmetadata/connectors/dashboard/mode/airflow 302
+/integrations/connectors/mode/run-mode-connector-with-the-cli	/openmetadata/connectors/dashboard/mode/cli 302
+/integrations/connectors/mssql	/openmetadata/connectors/database/mssql 302
+/integrations/connectors/mssql/run-mssql-connector-with-the-airflow-sdk	/openmetadata/connectors/database/mssql/airflow 302
+/integrations/connectors/mssql/run-mssql-connector-with-the-cli	/openmetadata/connectors/database/mssql/cli 302
+/integrations/connectors/mysql	/openmetadata/connectors/database/mysql 302
+/integrations/connectors/mysql/run-mysql-connector-with-the-airflow-sdk	/openmetadata/connectors/database/mysql/airflow 302
+/integrations/connectors/mysql/run-mysql-connector-using-cli	/openmetadata/connectors/database/mysql/cli 302
+/integrations/connectors/oracle	/openmetadata/connectors/database/oracle    302
+/integrations/connectors/oracle/run-oracle-connector-with-the-airflow-sdk	/openmetadata/connectors/database/oracle/airflow    302
+/integrations/connectors/oracle/run-oracle-connector-with-the-cli	/openmetadata/connectors/database/oracle/cli    302
+/integrations/connectors/postgres	/openmetadata/connectors/database/postgres  302
+/integrations/connectors/postgres/run-postgres-connector-with-the-airflow-sdk	/openmetadata/connectors/database/postgres/airflow  302
+/integrations/connectors/postgres/run-postgres-connector-with-the-cli	/openmetadata/connectors/database/postgres/cli  302
+/integrations/connectors/presto	/openmetadata/connectors/database/presto    302
+/integrations/connectors/presto/run-presto-connector-with-the-airflow-sdk	/openmetadata/connectors/database/presto/airflow    302
+/integrations/connectors/presto/run-presto-connector-with-the-cli	/openmetadata/connectors/database/presto/cli    302
+/integrations/connectors/redash	/openmetadata/connectors/dashboard/redash   302
+/integrations/connectors/redash/run-redash-connector-with-the-airflow-sdk	/openmetadata/connectors/dashboard/redash/airflow   302
+/integrations/connectors/redash/run-redash-connector-with-the-cli	/openmetadata/connectors/dashboard/redash/cli   302
+/integrations/connectors/redshift	/openmetadata/connectors/database/redshift  302
+/integrations/connectors/redshift/redshift-metadata-extraction	/openmetadata/connectors/database/redshift/airflow  302
+/integrations/connectors/redshift/run-redshift-connector-with-the-cli	/openmetadata/connectors/database/redshift/cli  302
+/integrations/connectors/salesforce	/openmetadata/connectors/database/salesforce    302
+/integrations/connectors/salesforce/run-salesforce-connector-using-airflow-sdk	/openmetadata/connectors/database/salesforce/airflow    302
+/integrations/connectors/salesforce/run-salesforce-connector-using-cli	/openmetadata/connectors/database/salesforce/cli    302
+/integrations/connectors/singlestore	/openmetadata/connectors/database/singlestore   302
+/integrations/connectors/singlestore/run-singlestore-connector-using-airflow-sdk	/openmetadata/connectors/database/singlestore/airflow   302
+/integrations/connectors/singlestore/run-singlestore-connector-using-cli	/openmetadata/connectors/database/singlestore/cli   302
+/integrations/connectors/snowflake	/openmetadata/connectors/database/snowflake 302
+/integrations/connectors/snowflake/run-snowflake-connector-with-the-airflow-sdk	/openmetadata/connectors/database/snowflake/airflow 302
+/integrations/connectors/snowflake/run-snowflake-connector-with-the-cli	/openmetadata/connectors/database/snowflake/cli 302
+/integrations/connectors/superset-1	/openmetadata/connectors/dashboard/superset 302
+/integrations/connectors/superset-1/run-superset-connector-with-the-airflow-sdk	/openmetadata/connectors/dashboard/superset/airflow 302
+/integrations/connectors/superset-1/run-superset-connector-with-the-cli	/openmetadata/connectors/dashboard/superset/cli 302
+/integrations/connectors/tableau	/openmetadata/connectors/dashboard/tableau  302
+/integrations/connectors/tableau/run-tableau-connector-with-the-airflow-sdk	/openmetadata/connectors/dashboard/tableau/airflow  302
+/integrations/connectors/tableau/run-tableau-connector-with-the-cli	/openmetadata/connectors/dashboard/tableau/cli  302
+/integrations/connectors/trino	/openmetadata/connectors/database/trino 302
+/integrations/connectors/trino/run-trino-connector-using-airflow-sdk	/openmetadata/connectors/database/trino/airflow 302
+/integrations/connectors/trino/run-trino-connector-using-cli	/openmetadata/connectors/database/trino/cli 302
+/integrations/connectors/vertica	/openmetadata/connectors/database/vertica   302
+/integrations/connectors/vertica/run-vertica-connector-using-airflow-sdk	/openmetadata/connectors/database/vertica/airflow   302
+/integrations/connectors/vertica/run-vertica-connector-using-cli	/openmetadata/connectors/database/vertica/cli   302
+/integrations/troubleshoot-connectors	/   302
+/integrations/ingest-metadata-in-production	/   302
+/integrations/ingest-sample-data	/   302
+/integrations/airflow	/deployment/airflow 302
+/integrations/airflow/custom-airflow-installation	/deployment/airflow 302
+/integrations/airflow/airflow-lineage	/openmetadata/connectors/pipeline/airflow/lineage-backend   302
+/integrations/airflow/configure-airflow-in-the-openmetadata-server	/deployment/airflow 302
+/integrations/airflow/airflow	/openmetadata/connectors/pipeline/airflow/  302
+/metadata-standard/schemas	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/schema-language	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/overview	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/auditlog	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/basic	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/changeevent	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/dailycount	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/databaseconnectionconfig	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/entityhistory	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/entitylineage	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/entityreference	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/entityrelationship	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/entityusage	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/include	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/jdbcconnection	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/paging	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/profile	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/schedule	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/storage	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/taglabel	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/types/usagedetails	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/accesscontrolrule	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/bot	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/chart	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/dashboard	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/dashboardservice	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/database	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/databaseservice	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/deleteaction	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/thread	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/filters	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/glossary	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/glossaryterm	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/location	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/messagingservice	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/metrics	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/mlmodel	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/moveaction	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/pipeline	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/pipelineservice	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/policy	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/report	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/role	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/rule	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/storageservice	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/table	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/tagbased	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/tagcategory	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/task	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/team	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/topic	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/user	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/schemas/entities/webhook	/main-concepts/metadata-standard/schemas    302
+/metadata-standard/apis	/main-concepts/metadata-standard/apis   302
+/metadata-standard/apis/overview	/main-concepts/metadata-standard/apis   302
+/metadata-standard/apis/api-organization	/main-concepts/metadata-standard/apis   302
+/metadata-standard/apis/implementation-notes	/main-concepts/metadata-standard/apis   302
+/deploy/local-deployment	/quick-start/local-deployment   302
+/deploy/local-deployment/enable-security	/deployment/docker/security 302
+/deploy/local-deployment/binding-named-volumes	/deployment/docker/volumes  302
+/deploy/deploy-on-bare-metal	/deployment/bare-metal  302
+/deploy/deploy-on-docker	/deployment/docker  302
+/deploy/deploy-on-docker/using-python-cli	/deployment/docker  302
+/deploy/deploy-on-kubernetes	/deployment/kubernetes  302
+/deploy/deploy-on-kubernetes/values.yaml	/deployment/kubernetes  302
+/deploy/secure-openmetadata	/deployment/security    302
+/deploy/secure-openmetadata/google-sso	/deployment/security/google 302
+/deploy/secure-openmetadata/google-sso/create-server-credentials	/deployment/security/google 302
+/deploy/secure-openmetadata/google-sso/create-service-account	/deployment/security/google 302
+/deploy/secure-openmetadata/google-sso/configure-openmetadata	/deployment/security/google 302
+/deploy/secure-openmetadata/google-sso/configure-openmetadata/configure-openmetadata-server	/deployment/security/google/bare-metal  302
+/deploy/secure-openmetadata/google-sso/configure-openmetadata/configure-openmetadata-server-using-docker	/deployment/security/google/docker  302
+/deploy/secure-openmetadata/google-sso/configure-openmetadata/configure-openmetadata-helm	/deployment/security/google/kubernetes  302
+/deploy/secure-openmetadata/google-sso/configure-ingestion	/deployment/security/google 302
+/deploy/secure-openmetadata/google-sso-1	/deployment/security/custom-oidc    302
+/deploy/secure-openmetadata/google-sso-1/create-server-credentials	/deployment/security/custom-oidc    302
+/deploy/secure-openmetadata/google-sso-1/create-service-account	/deployment/security/custom-oidc    302
+/deploy/secure-openmetadata/google-sso-1/configure-openmetadata	/deployment/security/custom-oidc    302
+/deploy/secure-openmetadata/google-sso-1/configure-openmetadata/configure-openmetadata-server	/deployment/security/custom-oidc/bare-metal 302
+/deploy/secure-openmetadata/google-sso-1/configure-openmetadata/configure-openmetadata-server-using-docker	/deployment/security/custom-oidc/docker 302
+/deploy/secure-openmetadata/google-sso-1/configure-openmetadata/configure-openmetadata-helm	/deployment/security/custom-oidc/kubernetes 302
+/deploy/secure-openmetadata/google-sso-1/configure-ingestion	/deployment/security/custom-oidc    302
+/deploy/secure-openmetadata/okta-sso	/deployment/security/okta   302
+/deploy/secure-openmetadata/okta-sso/create-server-credentials	/deployment/security/okta   302
+/deploy/secure-openmetadata/okta-sso/configure-openmetadata	/deployment/security/okta   302
+/deploy/secure-openmetadata/okta-sso/configure-openmetadata/configure-openmetadata-server	/deployment/security/okta/bare-metal    302
+/deploy/secure-openmetadata/okta-sso/configure-openmetadata/configure-openmetadata-server-using-docker	/deployment/security/okta/docker    302
+/deploy/secure-openmetadata/okta-sso/configure-openmetadata/configure-openmetadata-helm	/deployment/security/okta/kubernetes    302
+/deploy/secure-openmetadata/okta-sso/create-service-application	/deployment/security/okta   302
+/deploy/secure-openmetadata/okta-sso/configure-ingestion	/deployment/security/okta   302
+/deploy/secure-openmetadata/auth0-sso	/deployment/security/auth0  302
+/deploy/secure-openmetadata/auth0-sso/create-server-credentials	/deployment/security/auth0  302
+/deploy/secure-openmetadata/auth0-sso/create-service-account	/deployment/security/auth0  302
+/deploy/secure-openmetadata/auth0-sso/configure-openmetadata	/deployment/security/auth0  302
+/deploy/secure-openmetadata/auth0-sso/configure-openmetadata/configure-openmetadata-server	/deployment/security/auth0/bare-metal   302
+/deploy/secure-openmetadata/auth0-sso/configure-openmetadata/configure-openmetadata-server-using-docker	/deployment/security/auth0/docker   302
+/deploy/secure-openmetadata/auth0-sso/configure-openmetadata/configure-openmetadata-helm	/deployment/security/auth0/kubernetes   302
+/deploy/secure-openmetadata/auth0-sso/configure-ingestion	/deployment/security/auth0  302
+/deploy/secure-openmetadata/azure-sso	/deployment/security/azure  302
+/deploy/secure-openmetadata/azure-sso/create-server-credentials	/deployment/security/azure  302
+/deploy/secure-openmetadata/azure-sso/create-service-application	/deployment/security/azure  302
+/deploy/secure-openmetadata/azure-sso/configure-openmetadata	/deployment/security/azure  302
+/deploy/secure-openmetadata/azure-sso/configure-openmetadata/configure-openmetadata-server	/deployment/security/azure/bare-metal   302
+/deploy/secure-openmetadata/azure-sso/configure-openmetadata/configure-openmetadata-server-using-docker	/deployment/security/azure/docker   302
+/deploy/secure-openmetadata/azure-sso/configure-openmetadata/configure-openmetadata-helm	/deployment/security/azure/kubernetes   302
+/deploy/secure-openmetadata/azure-sso/configure-ingestion	/deployment/security/azure  302
+/deploy/enable-ssl	/deployment/security/enable-ssl 302
+/deploy/enable-ssl/use-nginx	/deployment/security/enable-ssl/nginx   302
+/deploy/enable-ssl/openmetadata-server	/deployment/security/enable-ssl/openmetadata-server 302
+/deploy/enable-jwt-tokens	/deployment/security/enable-jwt-tokens  302
+/deploy/reference	/   302
+/deploy/reference/configuration	/deployment/configuration   302
+/deploy/reference/connector-configuration	/   302
+/upgrade/upgrade-on-bare-metal	/deployment/upgrade/bare-metal  302
+/upgrade/upgrade-on-bare-metal/backup-metadata	/deployment/upgrade/backup-metadata 302
+/upgrade/upgrade-on-bare-metal/upgrade-openmetadata	/deployment/upgrade/bare-metal  302
+/upgrade/upgrade-on-docker	/deployment/upgrade/docker  302
+/upgrade/upgrade-on-docker/backup-metadata	/deployment/upgrade/backup-metadata 302
+/upgrade/upgrade-on-docker/upgrade-openmetadata-on-docker	/deployment/upgrade/docker  302
+/upgrade/upgrade-on-kubernetes	/deployment/upgrade/kubernetes  302
+/upgrade/upgrade-on-kubernetes/backup-metadata	/deployment/upgrade/backup-metadata 302
+/upgrade/upgrade-on-kubernetes/upgrade-openmetadata-on-kubernetes	/deployment/upgrade/kubernetes  302
+/upgrade/upgrade-from-0.9-to-0.10	/deployment/upgrade/versions/090-to-010 302
+/upgrade/upgrade-from-0.10-to-0.11	/deployment/upgrade/versions/010-to-011 302
+/data-discovery/keyword-search	/   302
+/data-discovery/discovery-through-association	/   302
+/data-discovery/advanced-search	/   302
+/data-discovery/complex-data-types	/   302
+/data-discovery/deleted-entity-metadata	/   302
+/data-collaboration/activity-feeds	/   302
+/data-collaboration/conversation-threads	/   302
+/data-collaboration/descriptions-and-tags	/   302
+/data-collaboration/data-importance	/   302
+/data-collaboration/data-ownership	/   302
+/data-lineage/lineage-ingestion	/   302
+/data-lineage/edit-data-lineage-manually	/   302
+/data-lineage/dbt-integration	/openmetadata/ingestion/workflows/metadata/dbt  302
+/data-lineage/dbt-integration/add-dbt-while-ingesting-from-ui	/openmetadata/ingestion/workflows/metadata/dbt/ingest-dbt-ui    302
+/data-lineage/dbt-integration/add-dbt-while-ingesting-from-cli	/openmetadata/ingestion/workflows/metadata/dbt/ingest-dbt-cli   302
+/data-lineage/dbt-integration/dbt-python-sdk	/python/ingestion/dbt   302
+/data-lineage/usage-workflow	/openmetadata/ingestion/workflows/usage 302
+/data-lineage/usage-workflow-through-query-logs	/openmetadata/ingestion/workflows/usage/usage-workflow-query-logs   302
+/controlled-vocabulary/glossaries	/openmetadata/glossaries    302
+/data-quality/data-quality-overview	/openmetadata/data-quality  302
+/data-quality/data-quality-overview/metrics	/openmetadata/data-quality/metrics  302
+/data-quality/data-quality-overview/tests	/openmetadata/data-quality/tests    302
+/data-quality/profiler-workflow	/openmetadata/ingestion/workflows/profiler  302
+/data-quality/3rd-party-tools-integration	/openmetadata/integrations  302
+/data-quality/3rd-party-tools-integration/great-expectations	/openmetadata/integrations/great-expectations   302
+/metadata-versioning/metadata-versioning	/openmetadata/ingestion/versioning  302
+/metadata-versioning/change-feeds	/openmetadata/ingestion/versioning/change-feeds 302
+/metadata-versioning/change-events	/openmetadata/ingestion/versioning/change-events    302
+/metadata-versioning/event-notification-via-webhooks	/openmetadata/ingestion/versioning/event-notification-via-webhooks  302
+/developer	/developers 302
+/developer/architecture	/developers/architecture    302
+/developer/architecture/solution-design	/developers/architecture/design 302
+/developer/architecture/quick-start-guide	/developers/architecture/code-layout    302
+/developer/architecture/entities	/sdk/python/entities    302
+/developer/architecture/entities/ml-model-entity	/sdk/python/entities/ml-model-sdk   302
+/developer/openmetadata-sdk	/sdk    302
+/developer/openmetadata-sdk/python-api	/sdk/python 302
+/developer/openmetadata-sdk/python-api/version-upgrades	/sdk/python 302
+/developer/openmetadata-sdk/java-coming-soon	/sdk/java   302
+/developer/build-a-connector	/sdk/python/build-connector 302
+/developer/build-a-connector/source	/sdk/python/build-connector/source  302
+/developer/build-a-connector/sink	/sdk/python/build-connector/sink    302
+/developer/build-a-connector/stage	/sdk/python/build-connector/stage   302
+/developer/build-a-connector/bulksink	/sdk/python/build-connector/bulk-sink   302
+/developer/how-to-contribute	/developers/contribute  302
+/developer/contribute/build-code-and-run-tests	/developers/contribute/build-code-and-run-tests 302
+/developer/contribute/build-code-and-run-tests/prerequisites	/developers/contribute/build-code-and-run-tests/prerequisites   302
+/developer/contribute/build-code-and-run-tests/openmetadata-server	/developers/contribute/build-code-and-run-tests/openmetadata-server 302
+/developer/contribute/build-code-and-run-tests/ingestion-framework	/developers/contribute/build-code-and-run-tests/ingestion-framework 302
+/developer/contribute/build-code-and-run-tests/generate-typescript-types-from-json-schema	/developers/contribute/build-code-and-run-tests/generate-typescript-types-from-json-schema  302
+/developer/contribute/build-code-and-run-tests/ui	/developers/contribute/build-code-and-run-tests/openmetadata-ui 302
+/developer/contribute/build-code-and-run-tests/backend	/developers/contribute/build-code-and-run-tests/backend 302
+/developer/contribute/build-code-and-run-tests/cypress-integration-tests	/developers/contribute/build-code-and-run-tests/cypress-integration-tests   302
+/developer/ux-style-guide	/developers/contribute/ux-style-guide   302
+/open-source-community	/developers/open-source-community   302
