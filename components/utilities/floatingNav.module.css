@@ -3,16 +3,12 @@
 }
 
 .List {
-  @apply sticky top-24 m-0 list-none overflow-y-auto overflow-x-hidden;
-  max-height: calc(100vh - (6em * 2));
+  @apply sticky top-24 m-0 list-none overflow-y-auto overflow-x-hidden border border-[#DDE3EA] rounded-[4px];
+  /* max-height: calc(100vh - (6em * 2)); */
 }
 
 .ListItem {
-  @apply m-0 text-xs pt-1;
-}
-
-.TopGradient {
-  @apply absolute h-6 w-full bg-gradient-to-b from-white z-10;
+  @apply m-0 text-[16px] pt-1 font-normal;
 }
 
 :global(.dark) .TopGradient {
@@ -21,8 +17,8 @@
 
 /* Contents Title */
 .ListTitle {
-  @apply pt-6 pl-6 uppercase font-semibold tracking-widest;
-  @apply text-gray-60 !important;
+  @apply pl-4 font-semibold tracking-normal	!important;
+  @apply text-[#76746F] !important;
 }
 
 /* Hide the first h1 on the page, as it's the page title */
@@ -35,18 +31,18 @@
   @apply text-white !important;
 }
 
-.activeLink {
-  @apply text-gray-90 !important;
-}
+
 
 .Link {
   @apply border-none inline-block truncate w-40 leading-4 hover:opacity-70 hover:no-underline;
   @apply text-gray-70 !important;
 }
-
+.activeLink {
+  @apply text-color_condense_violet !important;
+}
 /* Paddings for different title hierarchies */
 .headingH1 {
-  @apply pl-6;
+  @apply pl-6 text-gray-90 font-normal !important; 
 }
 
 .headingH2 {
@@ -54,7 +50,7 @@
 }
 
 .headingH3 {
-  @apply pl-10;
+  @apply pl-10 text-[#A1A1A1] font-normal !important;
 }
 
 .headingH4 {

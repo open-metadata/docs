@@ -3,7 +3,7 @@
 }
 
 .HeaderContainer {
-  @apply flex text-[#3B454E] items-center font-bold leading-snug my-3 mt-4 mb-1;
+  @apply flex text-gray-90 items-center font-bold leading-snug my-3 mt-10 mb-1;
 }
 
 .HeaderContainer strong {

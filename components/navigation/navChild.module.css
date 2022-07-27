@@ -8,7 +8,7 @@
 }
 
 .Accordion {
-  @apply flex items-center justify-center hover:opacity-50 h-4 w-4 mr-2;
+  @apply flex items-center justify-center h-4 w-4 mr-2;
 }
 
 .AccordionIcon {
@@ -32,7 +32,7 @@
 }
 
 .LinkContainer {
-  @apply flex items-center cursor-pointer hover:bg-lt_gray justify-between -ml-[100%] pl-[100%] -mr-[100%] pr-[100%] group-hover:bg-lt_gray;
+  @apply flex items-center cursor-pointer pt-[5px] pb-[5px] hover:bg-lt_gray  justify-between -ml-[100%] pl-[100%] -mr-[100%] pr-[100%] group-hover:bg-lt_gray;
 }
 
 .Link {
@@ -52,13 +52,12 @@
   @apply text-[#fff] !important;
 }
 
-.ActivePage {
-  @apply font-bold;
-  @apply text-gray-90 !important;
+.ActivePage a span{
+  @apply text-color_violet !important;
 }
 
 span.ActivePage {
-  @apply bg-lt_gray;
+  @apply bg-color_violet bg-opacity-10;
 }
 
 :global(.dark) .LinkContainer {

@@ -1,9 +1,5 @@
 .Container {
-  @apply inline-block;
-}
-
-.InnerContainer {
-  @apply rounded-md md:bg-gray-20;
+  @apply inline-block m-auto;
 }
 
 :global(.dark) .InnerContainer {
@@ -15,7 +11,8 @@
 }
 
 .Caption {
-  @apply italic text-gray-90 text-sm tracking-tight ml-1;
+
+  @apply italic text-gray-90 text-sm tracking-tight rounded-br-[5px] rounded-bl-[5px] pt-[5px] bg-lt_gray text-center;
 }
 
 :global(.dark) .Caption {

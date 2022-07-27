@@ -162,7 +162,7 @@ module.exports = {
         60: "#a3a8b8",
         70: "#808495",
         80: "#555867",
-        90: "#262730",
+        90: "#37352F",
         100: "#0e1117",
       },
       white: "#ffffff",
@@ -170,6 +170,8 @@ module.exports = {
       color_violet: "#7147E8",
       lt_gray: "#E6E2EF",
       color_condense_violet: "#8D6AF1",
+      blue: "#2EAADC",
+      pink: "#B02AAC",
     },
 
     extend: {

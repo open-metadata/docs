@@ -1,5 +1,5 @@
 .Tip {
-  @apply bg-indigo-10;
+  @apply bg-pink bg-opacity-[calc(60/1000)] border border-pink;
 }
 
 :global(.dark) .Tip {

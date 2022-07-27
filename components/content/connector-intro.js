@@ -48,7 +48,7 @@ const ConnectorIntro = ({ service, connector, hasUsage, hasProfiler, hasDBT, goa
           title="Ingest with Airflow"
           text="Configure the ingestion using Airflow SDK"
           link={
-            "/metadata-ui/connectors/" +
+            "/openmetadata/connectors/" +
             serviceType + "/" +
             connector.toLowerCase() +
             "/airflow"
@@ -60,7 +60,7 @@ const ConnectorIntro = ({ service, connector, hasUsage, hasProfiler, hasDBT, goa
           title="Ingest with the CLI"
           text="Run a one-time ingestion using the metadata CLI"
           link={
-            "/metadata-ui/connectors/" +
+            "/openmetadata/connectors/" +
             serviceType + "/" +
             connector.toLowerCase() +
             "/cli"

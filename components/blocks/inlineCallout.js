@@ -17,12 +17,12 @@ const InlineCallout = ({ children, icon, color, bold, href }) => {
     case "l-blue-70":
       bordercolor = styles.BlueBackground;
       backgroundColor = styles.CloudBackground;
-      textColor = styles.CloudText;
+      textColor = styles.LibraryText;
       break;
     case "yellow-70":
       bordercolor = styles.YellowBackground;
       backgroundColor = styles.KBBackground;
-      textColor = styles.KBText;
+      textColor = styles.LibraryText;
       break;
     default:
       bordercolor = styles.TransparentBackground;
