@@ -161,9 +161,10 @@ export default function Article({
       <Layout>
         {/* <GDPRBanner {...gdpr_data} /> */}
 
-        <Script id="show-banner"
-            dangerouslySetInnerHTML={{
-                __html: `              
+        <Script
+          id="show-banner"
+          dangerouslySetInnerHTML={{
+            __html: `              
                 (function(window, document, dataLayerName, id) {
                   window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
                   function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString()}document.cookie=a+"="+b+d+"; path=/"}
@@ -172,9 +173,9 @@ export default function Article({
                   tags.async=!0,tags.src="https://collate.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
                   !function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
                   })(window, document, 'dataLayer', '85b94982-8c42-497f-96c9-353365f1fe7a');
-                `
-            }}
-        /> 
+                `,
+          }}
+        />
 
         <section className={styles.Container}>
           <SideBar slug={slug} menu={menu} className="sideBar" />
@@ -217,7 +218,6 @@ export default function Article({
               id="content-container"
               className={classNames("leaf-page", styles.ArticleContainer)}
             >
-              <FloatingNav slug={slug} menu={menu} />
               <div className={classNames("content", styles.ContentContainer)}>
                 <MDXRemote {...source} components={components} />
                 {/* <Helpful slug={slug} sourcefile={suggestEditURL} /> */}
