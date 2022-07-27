@@ -1,5 +1,5 @@
 .ListContainer {
-  @apply absolute right-0 h-full top-0 w-56 z-10 hidden left-[63.5rem];
+  @apply absolute mt-[2rem] right-0 h-full mb-[2rem] mr-[2rem] w-56 overflow-y-scroll;
 }
 
 .List {
