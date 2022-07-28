@@ -19,7 +19,7 @@ p a{
   @apply text-color_violet border-b-0 !important;
 }
 section p{
-  @apply text-justify
+  @apply text-justify text-[#6B7280]
 }
 hr{
   @apply border-t-[0.5px]

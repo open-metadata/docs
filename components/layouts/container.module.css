@@ -3,7 +3,7 @@
 }
 
 .InnerContainer {
-  @apply pl-8 pt-4 pr-[20rem];
+  @apply pl-12 pt-4 pr-[20rem];
 }
 
 .ArticleContainer {
