@@ -1,7 +1,7 @@
 import TileContainer from "../components/layouts/tileContainer";
 import Tile from "../components/blocks/tile";
 import { ReactComponent as Quickstart } from "../images/icons/Quickstart_tile.svg";
-import { ReactComponent as Knowledge } from "../images/icons/Knowledge.svg";
+import { ReactComponent as Knowledge } from "../images/icons/knowledge.svg";
 import { ReactComponent as Deployment } from "../images/icons/Deployment_tile.svg";
 import { ReactComponent as SaaS } from "../images/icons/saas.svg";
 import { ReactComponent as Connectors } from "../images/icons/connectors.svg";
