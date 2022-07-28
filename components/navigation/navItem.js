@@ -3,6 +3,13 @@ import Link from "next/link";
 import classNames from "classnames";
 import { urlInChildren } from "../../lib/utils.js";
 import NavChild from "./navChild";
+import { ReactComponent as Quickstart } from "../../images/icons/Quickstart.svg";
+import { ReactComponent as Deployment } from "../../images/icons/Deployment.svg";
+import { ReactComponent as Development } from "../../images/icons/Development.svg";
+import { ReactComponent as Overview } from "../../images/icons/Overview.svg";
+import { ReactComponent as SDK } from "../../images/icons/SDK.svg";
+import { ReactComponent as MainConcept } from "../../images/icons/MainConcept.svg";
+import { ReactComponent as OpenMetadata } from "../../images/icons/OpenMetadata.svg";
 
 import styles from "./navItem.module.css";
 
@@ -22,6 +29,32 @@ const NavItem = ({ page, slug, condensed, className }) => {
       : styles.KBCategory;
   color = isCondensed || active ? color : "";
 
+  let icon = "";
+  switch (page.icon) {
+    case "quickstart":
+      icon = <Quickstart />;
+      break;
+    case "overview":
+      icon = <Overview />;
+      break;
+    case "deployment":
+      icon = <Deployment />;
+      break;
+    case "openmetadata":
+      icon = <OpenMetadata />;
+      break;
+    case "main-concepts":
+      icon = <MainConcept />;
+      break;
+    case "developers":
+      icon = <Development />;
+      break;
+    case "sdk":
+      icon = <SDK />;
+      break;
+    default:
+      icon = page.category;
+  }
   navBox = (
     <section
       className={classNames(
@@ -40,7 +73,7 @@ const NavItem = ({ page, slug, condensed, className }) => {
             : styles.KBIcon
         )}
       >
-        <i className={styles.Icon}>{page.icon}</i>{" "}
+        <i className={styles.IconSidebar}>{icon}</i>{" "}
       </div>
       <p
         className={`${classNames(
