@@ -28,6 +28,10 @@ import NoteSplit from "../components/blocks/noteSplit";
 
 import { attributes } from "../content/index.md";
 import styles from "../components/layouts/container.module.css";
+import { ReactComponent as Blog1 } from "../images/icons/blog1.svg";
+import { ReactComponent as Blog2 } from "../images/icons/blog2.svg";
+import { ReactComponent as Blog3 } from "../images/icons/blog3.svg";
+import { ReactComponent as Blog4 } from "../images/icons/blog4.svg";
 
 export default function Home({ window, menu, gdpr_data }) {
   let { description } = attributes;
@@ -64,9 +68,10 @@ export default function Home({ window, menu, gdpr_data }) {
           content={`https://${process.env.NEXT_PUBLIC_HOSTNAME}/sharing-image-twitter.jpg`}
         />
       </Head>
-      <Script id="show-banner"
-            dangerouslySetInnerHTML={{
-                __html: `              
+      <Script
+        id="show-banner"
+        dangerouslySetInnerHTML={{
+          __html: `              
                 (function(window, document, dataLayerName, id) {
                   window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
                   function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString()}document.cookie=a+"="+b+d+"; path=/"}
@@ -75,12 +80,12 @@ export default function Home({ window, menu, gdpr_data }) {
                   tags.async=!0,tags.src="https://collate.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
                   !function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
                   })(window, document, 'dataLayer', '85b94982-8c42-497f-96c9-353365f1fe7a');
-                `
-            }}
-        /> 
-      
+                `,
+        }}
+      />
+
       {/*<GDPRBanner {...gdpr_data} />*/}
-      
+
       <section className={styles.Container}>
         <SideBar menu={menu} slug={[]} />
         <section className={styles.InnerContainer}>
@@ -98,17 +103,20 @@ export default function Home({ window, menu, gdpr_data }) {
 
             <H2>Overview</H2>
             <p>
-            OpenMetadata enables <b>metadata management</b> end-to-end, giving you the ability to unlock the value of data assets in the common use cases of data discovery and governance,
-            but also in emerging use cases related to data quality, observability, and people collaboration.
+              OpenMetadata enables <b>metadata management</b> end-to-end, giving
+              you the ability to unlock the value of data assets in the common
+              use cases of data discovery and governance, but also in emerging
+              use cases related to data quality, observability, and people
+              collaboration.
             </p>
             <p>
-            Learn how OpenMetadata tries to solve the metadata problem and the features it provides in the following video 👇
+              Learn how OpenMetadata tries to solve the metadata problem and the
+              features it provides in the following video 👇
             </p>
 
             <YouTube videoId="pF8L_mAtexo" start="0:00" end="9:29" />
-            
 
-            <br></br>  
+            <br></br>
 
             <NewsContainer>
               <NewsEntry
@@ -116,24 +124,28 @@ export default function Home({ window, menu, gdpr_data }) {
                 title="OpenMetadata 0.11.0 release"
                 text="Data Collaboration, Column-level Lineage, ML Models, Data Profiler, Advanced Search, Data Lake Connectors, and more."
                 link="https://blog.open-metadata.org/openmetadata-0-11-release-8b82c85636a"
+                image={<Blog1 />}
               />
               <NewsEntry
                 date="2022-04-26T16:05:00.000Z"
                 title="OpenMetadata 0.10.0 release"
                 text="Backend APIs, Support for database schema objects, Hard deletion of entities, Refactor service connectors, DBT changes, Security updates, and more."
                 link="https://blog.open-metadata.org/openmetadata-0-10-0-release-82c4f5533c3f"
+                image={<Blog2 />}
               />
               <NewsEntry
                 date="2022-03-07T16:05:00.000Z"
                 title="ML is not just about ML"
                 text="Understanding our dependencies and the role they play is crucial. If we can also bring this same knowledge to the users of the models and open a channel for sharing and collaborating, we are heading on the path to success."
                 link="https://blog.open-metadata.org/ml-is-not-just-about-ml-c08eab242e84"
+                image={<Blog3 />}
               />
               <NewsEntry
                 date="2021-12-02T16:05:00.000Z"
                 title="Why OpenMetadata is the Right Choice for you"
                 text="OpenMetadata is a fresh start on how to do Metadata right from first principles."
                 link="https://blog.open-metadata.org/why-openmetadata-is-the-right-choice-for-you-59e329163cac"
+                image={<Blog4 />}
               />
               <Button blueButton link="https://blog.open-metadata.org/">
                 View all updates
@@ -142,15 +154,9 @@ export default function Home({ window, menu, gdpr_data }) {
           </article>
 
           <ArrowLinkContainer>
-            <ArrowLink
-              link="/quick-start"
-              type="next"
-              content="Get started"
-            />
+            <ArrowLink link="/quick-start" type="next" content="Get started" />
           </ArrowLinkContainer>
         </section>
-
-        
 
         <Footer />
       </section>

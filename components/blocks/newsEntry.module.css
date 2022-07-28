@@ -1,5 +1,5 @@
 .Container {
-  @apply mb-2 pb-4 border-b border-b-gray-30;
+  @apply flex flex-initial my-4 pb-4 border-b border-b-gray-30;
 }
 
 .Date {
@@ -19,7 +19,7 @@
 
 .Text {
   @apply text-[16px] tracking-tight leading-normal table-row;
-  @apply text-gray-90 !important;
+  @apply text-[#6B7280] !important;
 }
 
 .Link{
@@ -28,4 +28,9 @@
 
 :global(.dark) .Container {
   @apply border-b-gray-90;
+}
+
+.blogImage{
+  @apply mr-[16px] h-[136px];
+  box-shadow: 0px 0px 2px rgb(0 0 0 / 30%);
 }
