@@ -18,7 +18,9 @@
   @apply lg:mr-0;
 }
 
-
+.IconSidebar{
+  @apply text-color_violet
+}
 
 /* Colors for heading icons */
 .CloudIcon {

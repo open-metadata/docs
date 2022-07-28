@@ -16,7 +16,7 @@
 }
 
 .Text {
-  @apply text-[16px] tracking-tight text-white text-left leading-normal !important;
+  @apply text-[16px] tracking-tight text-[#6B7280] text-left leading-normal !important;
 }
 
 /* Size modifiers */
@@ -25,7 +25,7 @@
 }
 
 .Half {
-  @apply col-span-full sm:col-span-3;
+  @apply col-span-full sm:col-span-2;
 }
 
 .TwoThirds {
@@ -56,7 +56,7 @@
 }
 .TransparentBackground i,
 .TransparentBackground p {
-  @apply text-[#76746F] !important;
+  @apply text-[#6B7280] !important;
 }
 
 :global(.dark) .TransparentBackground i,
@@ -74,7 +74,7 @@
 }
 
 .BlueBackground i {
-  @apply h-fit mr-[0.625rem] p-[0.625rem] bg-[#1890FF] bg-opacity-10 text-center rounded-[6px] text-[#1890FF] !important ;
+  @apply h-fit mr-[0.625rem] p-[0.625rem] bg-[#1890FF] bg-opacity-10 text-center rounded-[6px] text-[#1890FF] !important;
 }
 
 .PinkBackground i {
@@ -83,7 +83,7 @@
 
 .GreenBackground i {
   @apply h-fit mr-[0.625rem] p-[0.625rem] bg-[#008376] bg-opacity-10 text-center rounded-[6px] text-[#008376] !important;
-} 
+}
 
 .PurpleBackground i {
   @apply h-fit mr-[0.625rem] p-[0.625rem]  bg-color_violet bg-opacity-10 text-center rounded-[6px] text-color_violet !important;

@@ -11,7 +11,7 @@
 }
 
 h1.HeaderContainer {
-  @apply leading-tight;
+  @apply leading-tight text-[36px];
 }
 
 .CopiedMessage {

@@ -1,11 +1,16 @@
 import TileContainer from "../components/layouts/tileContainer";
 import Tile from "../components/blocks/tile";
+import { ReactComponent as Quickstart } from "../images/icons/Quickstart_tile.svg";
+import { ReactComponent as Knowledge } from "../images/icons/Knowledge.svg";
+import { ReactComponent as Deployment } from "../images/icons/Deployment_tile.svg";
+import { ReactComponent as SaaS } from "../images/icons/saas.svg";
+import { ReactComponent as Connectors } from "../images/icons/connectors.svg";
 
 const SummaryTiles = () => {
   return (
     <TileContainer>
       <Tile
-        icon="av_timer"
+        icon={<Quickstart />}
         title="Quickstart"
         text="Deploy OpenMetadata and connect to your sources in minutes!"
         background="yellow-70"
@@ -14,16 +19,17 @@ const SummaryTiles = () => {
       />
 
       <Tile
-        icon="add_task"
-        title="Connectors"
-        text="Connect to database, dashboard, messaging, pipeline and ML services."
-        background="blue-70"
-        bordercolor="blue-70"
-        link="/openmetadata/connectors"
+        icon={<SaaS />}
+        title="SaaS"
+        text="Enjoy 100% of OpenMetadata with 0% of the hassle."
+        background="purple-70"
+        bordercolor="purple-70"
+        link="https://share.hsforms.com/1fstvMCeZRZKTYA4nG1VTPgcq0j9"
+        size="half"
       />
 
       <Tile
-        icon="tips_and_updates"
+        icon={<Knowledge />}
         title="Knowledge Base"
         text="Check out some frequent questions and answers"
         background="pink-70"
@@ -32,7 +38,7 @@ const SummaryTiles = () => {
       />
 
       <Tile
-        icon="settings_suggest"
+        icon={<Deployment />}
         title="Deployment"
         text="Deploy in Bare Metal, Docker or Kubernetes."
         background="green-70"
@@ -40,15 +46,13 @@ const SummaryTiles = () => {
         link="/quick-start"
         size="half"
       />
-
       <Tile
-        icon="cloud"
-        title="SaaS"
-        text="Enjoy 100% of OpenMetadata with 0% of the hassle."
-        background="purple-70"
-        bordercolor="purple-70"
-        link="https://share.hsforms.com/1fstvMCeZRZKTYA4nG1VTPgcq0j9"
-        size="half"
+        icon={<Connectors />}
+        title="Connectors"
+        text="Connect to database, dashboard, messaging, pipeline and ML services."
+        background="blue-70"
+        bordercolor="blue-70"
+        link="/openmetadata/connectors"
       />
     </TileContainer>
   );
