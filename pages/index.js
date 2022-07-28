@@ -28,10 +28,10 @@ import NoteSplit from "../components/blocks/noteSplit";
 
 import { attributes } from "../content/index.md";
 import styles from "../components/layouts/container.module.css";
-import { ReactComponent as Blog1 } from "../images/icons/blog1.svg";
-import { ReactComponent as Blog2 } from "../images/icons/blog2.svg";
-import { ReactComponent as Blog3 } from "../images/icons/blog3.svg";
-import { ReactComponent as Blog4 } from "../images/icons/blog4.svg";
+import { ReactComponent as Blog1 } from "../public/blog1.svg";
+import { ReactComponent as Blog2 } from "../public/blog2.svg";
+import { ReactComponent as Blog3 } from "../public/blog3.svg";
+import { ReactComponent as Blog4 } from "../public/blog4.svg";
 
 export default function Home({ window, menu, gdpr_data }) {
   let { description } = attributes;
