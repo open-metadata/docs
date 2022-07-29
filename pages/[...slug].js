@@ -224,6 +224,7 @@ export default function Article({
               </div>
             </article>
             <Psa />
+            <Helpful />
             <div className={styles.Buttons}>{arrowContainer}</div>
           </section>
           <FloatingNav slug={slug} menu={menu} className="floatingNav" />
