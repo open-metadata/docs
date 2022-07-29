@@ -24,3 +24,9 @@ section p{
 hr{
   @apply border-t-[0.5px]
 }
+li{
+  @apply text-[#6B7280]
+}
+li a{
+  @apply text-color_violet border-b-0
+}

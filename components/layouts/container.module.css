@@ -17,7 +17,7 @@
 .ArticleContainer p a,
 .ArticleContainer ol li a,
 .ArticleContainer ul li a {
-  @apply border-b border-b-gray-90 hover:border-color_violet hover:text-color_violet hover:opacity-80;
+  @apply text-color_violet  hover:opacity-80;
 }
 
 :global(.dark) .ArticleContainer p a,

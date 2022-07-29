@@ -19,12 +19,12 @@
 }
 
 .Button_green {
-  @apply bg-[#00837633] ml-0 md:ml-6 w-16 h-16 mb-0 py-2 px-3 flex items-center font-bold rounded-full border-none cursor-pointer hover:opacity-90 hover:scale-105 hover:shadow-lg;
+  @apply bg-[#00837633] ml-0 md:ml-6 w-14 h-14 mb-0 py-2 px-1 flex items-center font-bold rounded-full border-none cursor-pointer hover:opacity-90 hover:scale-105 hover:shadow-lg;
   @apply text-gray-90 !important;
 }
 
 .Button_red {
-  @apply bg-[#FF4C3B33] ml-0 md:ml-6 w-16 h-16 mb-0 py-2 px-3 flex items-center font-bold rounded-full border-none cursor-pointer hover:opacity-90 hover:scale-105 hover:shadow-lg;
+  @apply bg-[#FF4C3B33] ml-0 md:ml-6 w-14 h-14 mb-0 py-2 px-1 flex items-center font-bold rounded-full border-none cursor-pointer hover:opacity-90 hover:scale-105 hover:shadow-lg;
   @apply text-gray-90 !important;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .FormContainer {
-  @apply flex flex-col md:flex-row items-start md:items-center mt-16;
+  @apply flex flex-col md:flex-row items-start md:items-center mb-16;
 }
 
 .Form {

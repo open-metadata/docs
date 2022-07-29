@@ -113,13 +113,13 @@ const Helpful = ({ slug, sourcefile }) => {
         <p className={styles.Title}>Was this page helpful?</p>
         <section className={styles.CtaContainer}>
           <button onClick={() => handleStep(2)} className={styles.Button_green}>
-            <div class="group-hover:-rotate-8 transition-fast-out w-24 h-24 p-2">
+            <div class="group-hover:-rotate-8 transition-fast-out w-20 h-12 p-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="#008376"
-                stroke-width="2"
+                stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 class="feather feather-thumbs-up block w-full h-full bg-[00837633]"
@@ -135,7 +135,7 @@ const Helpful = ({ slug, sourcefile }) => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="#FF4C3B"
-                stroke-width="2"
+                stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 class="feather feather-thumbs-down block w-full h-full"
