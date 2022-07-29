@@ -1,5 +1,5 @@
 .IframeContainer {
-  @apply relative w-full border border-gray-40 rounded-md;
+  @apply relative w-full border border-gray-40 rounded-md mt-4;
 }
 
 .Iframe {
