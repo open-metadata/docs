@@ -62,14 +62,14 @@ h6:first-child {
 }
 
 /* Styles for text inside markdown */
-p,
+
 li,
 a {
   @apply leading-relaxed tracking-tight;
 }
 
 p {
-  @apply mb-4 text-gray-90 dark:text-white;
+  @apply text-gray-90 dark:text-white leading-6;
 }
 
 sup a {
