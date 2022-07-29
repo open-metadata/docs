@@ -35,7 +35,7 @@
 }
 
 .Text {
-  @apply grid mr-1 text-[#AFA8BA] font-medium justify-items-center !important;
+  @apply grid text-[#AFA8BA] font-medium justify-items-center !important;
 }
 
 .content {
