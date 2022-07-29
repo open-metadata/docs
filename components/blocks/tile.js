@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "./tile.module.css";
 
 const Tile = ({
+  children,
   img,
   dark,
   icon,
@@ -89,6 +90,7 @@ const Tile = ({
             <div>
               <h4 className={styles.Title}>{title}</h4>
               <p className={styles.Text}>{text}</p>
+              {children}
             </div>
           </a>
         ) : (
@@ -97,6 +99,7 @@ const Tile = ({
             <div>
               <h4 className={styles.Title}>{title}</h4>
               <p className={styles.Text}>{text}</p>
+              {children}
             </div>
           </a>
         )}
