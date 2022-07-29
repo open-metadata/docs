@@ -9,7 +9,10 @@ const Collapse = ({ title, children }) => {
   return (
     <section className="py-2">
       <div className="collapse_container border border-color_violet rounded">
-        <div className="main-heading py-2 px-2" onClick={() => setShow(!show)}>
+        <div
+          className="main-heading py-2 px-2 cursor-pointer"
+          onClick={() => setShow(!show)}
+        >
           <summary className="flex text-[18px] pl-2 font-abold">
             {title}
             {show ? (
