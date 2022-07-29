@@ -35,9 +35,9 @@
 }
 
 .Text {
-  @apply grid mr-1 text-[#AFA8BA] font-medium justify-items-center !important;
+  @apply grid text-[#AFA8BA] font-medium justify-items-center !important;
 }
 
 .content {
-  @apply text-color_violet font-medium !important;
+  @apply text-color_violet font-medium w-max !important	;
 }
