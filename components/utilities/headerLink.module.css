@@ -5,13 +5,23 @@
 .HeaderContainer {
   @apply flex text-gray-90 items-center font-bold mb-[1.5rem];
 }
-
+.HeaderContainer li {
+  @apply text-[#6B7280] !important;
+}
 .HeaderContainer strong {
   @apply font-bold;
 }
 
 h1.HeaderContainer {
-  @apply leading-tight text-[36px];
+  @apply leading-tight text-[40px];
+}
+
+h2.HeaderContainer {
+  @apply text-[30px] font-semibold;
+}
+
+h3.HeaderContainer {
+  @apply font-semibold;
 }
 
 .CopiedMessage {
