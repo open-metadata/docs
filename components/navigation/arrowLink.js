@@ -31,7 +31,10 @@ const ArrowLink = ({ children, link, type, content }) => {
               </svg>
 
               <span className={styles.Text}>
-                <span className="mr-[14px]"> Previous: </span>
+                <span className="mr-[14px]" style={{ placeSelf: "end" }}>
+                  {" "}
+                  Previous:{" "}
+                </span>
                 <span
                   className={styles.content}
                   style={{ marginRight: "14px" }}

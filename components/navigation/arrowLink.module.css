@@ -39,5 +39,5 @@
 }
 
 .content {
-  @apply text-color_violet font-medium !important;
+  @apply text-color_violet font-medium w-max !important	;
 }
