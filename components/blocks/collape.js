@@ -13,7 +13,7 @@ const Collapse = ({ title, children }) => {
           className="main-heading py-2 cursor-pointer"
           onClick={() => setShow(!show)}
         >
-          <summary className="flex text-[18px] pl-2 font-abold hover:opacity-60">
+          <summary className="flex text-[18px] pl-2 font-abold hover:opacity-60 py-2">
             {show ? (
               <i className="rotate-90 duration-100 text-xxl fill-gray-90 self-center pr-[0.2rem]">
                 chevron_right
