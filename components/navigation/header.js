@@ -67,16 +67,21 @@ const Header = () => {
           <Search />
           {/* <ThemeToggle /> */}
           <div className={styles.iconContainer}>
-            <a href="https://slack.open-metadata.org" target="_blank">
+            <a
+              href="https://slack.open-metadata.org"
+              target="_blank"
+              title="Slack"
+            >
               <Slack className="h-6" />
             </a>
             <a
               href="https://github.com/open-metadata/OpenMetadata"
               target="_blank"
+              title="Github"
             >
               <Github />
             </a>
-            <a href="/swagger.html" target="_blank">
+            <a href="/swagger.html" target="_blank" title="Swagger">
               <API />
             </a>
             <a
