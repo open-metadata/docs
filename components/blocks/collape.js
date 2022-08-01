@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ReactComponent as SvgArrow } from "../../images/icons/arrow.svg";
+import { ReactComponent as SvgArrow } from "../../images/icons/collapse_arrow.svg";
 import styles from "./collapse.module.css";
 import classNames from "classnames";
 
@@ -10,16 +10,18 @@ const Collapse = ({ title, children }) => {
     <section className="py-2">
       <div className="collapse_container border border-color_violet rounded">
         <div
-          className="main-heading py-2 px-2 cursor-pointer"
+          className="main-heading py-2 cursor-pointer"
           onClick={() => setShow(!show)}
         >
-          <summary className="flex text-[18px] pl-2 font-abold">
-            {title}
+          <summary className="flex text-[18px] pl-2 font-abold hover:opacity-60 py-2">
             {show ? (
-              <SvgArrow className="rotate-90 duration-100 text-xxl fill-color_violet self-center" />
+              <i className="rotate-90 duration-100 text-xxl fill-gray-90 self-center pr-[0.2rem]">
+                chevron_right
+              </i>
             ) : (
-              <SvgArrow className=" fill-color_violet self-center" />
+              <i className="fill-gray-90 self-center">chevron_right</i>
             )}
+            {title}
           </summary>
         </div>
         {show && (

@@ -1,5 +1,8 @@
 import Link from "next/link";
 import classNames from "classnames";
+import { ReactComponent as SvgDocker } from "../../images/icons/Docker.svg";
+import { ReactComponent as SvgSecurity } from "../../images/icons/bare_metal.svg";
+import { ReactComponent as SvgKubernetes } from "../../images/icons/kubernetes.svg";
 
 import styles from "./inlineCallout.module.css";
 
@@ -26,6 +29,20 @@ const InlineCallout = ({ children, icon, color, bold, href }) => {
       break;
     default:
       bordercolor = styles.TransparentBackground;
+  }
+
+  switch (icon) {
+    case "celebration":
+      icon = <SvgDocker />;
+      break;
+    case "storage":
+      icon = <SvgSecurity />;
+      break;
+    case "fit_screen":
+      icon = <SvgKubernetes />;
+      break;
+    default:
+      icon = <SvgDocker />;
   }
 
   return (
