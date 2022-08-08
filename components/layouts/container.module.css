@@ -3,7 +3,7 @@
 }
 
 .InnerContainer {
-  @apply pl-12 pt-12 pr-[20rem];
+  @apply pl-12 pr-12 w-[900px];
 }
 
 .ArticleContainer {
@@ -26,7 +26,7 @@
   @apply border-b-white !important;
 }
 .Buttons {
-  @apply flex gap-x-[30px];
+  @apply flex gap-x-[30px] my-10;
 }
 @media (min-width: 1280px) {
   .ArticleContainer :global(.toc):not(.advanced-features) {

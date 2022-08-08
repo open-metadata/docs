@@ -1,10 +1,14 @@
 .Container {
-  @apply p-4 md:p-8 rounded-md mt-8 mb-12;
+  @apply p-4 rounded-md my-6;
 }
 
 .Container p {
-  @apply text-[14px] leading-relaxed tracking-tight;
+  @apply text-[14px] leading-relaxed tracking-tight m-0;
   @apply text-gray-90 !important;
+}
+
+.Container :first-child {
+  @apply mb-1;
 }
 
 .Container p > code {

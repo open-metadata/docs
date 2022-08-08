@@ -86,18 +86,22 @@ const Tile = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            {image}
             <div>
-              <h4 className={styles.Title}>{title}</h4>
+              <div className={styles.Header}>
+                {image}
+                <h4 className={styles.Title}>{title}</h4>
+              </div>
               <p className={styles.Text}>{text}</p>
               {children}
             </div>
           </a>
         ) : (
           <a className={classNames("not-link", styles.Link)}>
-            {image}
             <div>
-              <h4 className={styles.Title}>{title}</h4>
+              <div className={styles.Header}>
+                {image}
+                <h4 className={styles.Title}>{title}</h4>
+              </div>
               <p className={styles.Text}>{text}</p>
               {children}
             </div>

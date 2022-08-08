@@ -1,10 +1,11 @@
 .Container {
-  @apply text-sm tracking-tight dark:text-white mb-2;
+  @apply text-sm tracking-tight dark:text-white mb-0;
   @apply leading-none;
 }
 
 .List {
-  @apply list-none mt-2 mr-0 ml-1 pl-2;
+  @apply list-none m-0 ml-4 border-l;
+  border-color: #d4baec;
 }
 
 .Accordion {
@@ -32,7 +33,7 @@
 }
 
 .LinkContainer {
-  @apply flex items-center cursor-pointer pt-[5px] pb-[5px] hover:bg-lt_gray  justify-between -ml-[100%] pl-[100%] -mr-[100%] pr-[100%] group-hover:bg-lt_gray;
+  @apply flex items-center cursor-pointer px-[16px] hover:bg-lt_gray  justify-between  group-hover:bg-lt_gray h-10;
 }
 
 .Link {
@@ -52,12 +53,12 @@
   @apply text-[#fff] !important;
 }
 
-.ActivePage a span{
-  @apply text-color_violet !important;
+.ActivePage a span {
+  @apply text-[#8D6AF1] !important;
 }
 
 span.ActivePage {
-  @apply bg-color_violet bg-opacity-10;
+  @apply bg-[#FFFFFF] border border-r-0 border-[#e1d9f4];
 }
 
 :global(.dark) .LinkContainer {

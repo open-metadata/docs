@@ -16,7 +16,7 @@
 }
 
 .Text {
-  @apply text-[16px] tracking-tight text-[#6B7280] text-left leading-normal !important;
+  @apply text-[16px] tracking-tight text-[#37352f] text-left leading-normal !important;
 }
 
 /* Size modifiers */
@@ -56,7 +56,7 @@
 }
 .TransparentBackground i,
 .TransparentBackground p {
-  @apply text-[#6B7280] !important;
+  @apply text-[#37352f] !important;
 }
 
 :global(.dark) .TransparentBackground i,
@@ -87,4 +87,8 @@
 
 .PurpleBackground i {
   @apply h-fit mr-[0.625rem] p-[0.625rem]  bg-color_violet bg-opacity-10 text-center rounded-[6px] text-color_violet !important;
+}
+
+.Header {
+  @apply flex items-center;
 }

@@ -1,25 +1,17 @@
 .HeadingContainer {
-  @apply relative flex items-center xl:justify-start xl:flex-nowrap xl:text-left xl:w-auto transition-all left-auto lg:left-2 xl:left-auto;
+  @apply relative flex items-center transition-all left-auto mb-3;
 }
 
 .HeadingIconContainer {
-  @apply flex items-center p-2 mr-1 xl:mr-2 mb-0 rounded-md;
+  @apply flex items-center p-1 mr-1 xl:mr-2 mb-0 rounded-md;
 }
 
-.HeadingContainer i{
-  @apply text-color_violet mr-[-5px]
+.HeadingContainer i {
+  @apply text-color_violet mr-[-5px];
 }
 
-.CondensedHeadingContainer {
-  @apply lg:flex-wrap lg:justify-center lg:text-center lg:w-10;
-}
-
-.CondensedHeadingIconContainer {
-  @apply lg:mr-0;
-}
-
-.IconSidebar{
-  @apply text-color_violet
+.IconSidebar {
+  @apply text-color_violet;
 }
 
 /* Colors for heading icons */
@@ -28,16 +20,12 @@
 }
 
 .CategoryName {
-  @apply m-0 sm:my-0 font-sans;
-  @apply text-[#505050] !important;
+  @apply m-0 font-sans;
+  @apply text-[#7147E8] !important;
 }
 
 :global(.dark) .CategoryName {
   @apply text-white !important;
-}
-
-.CondensedCategoryName {
-  @apply lg:my-1 lg:text-xs  lg:tracking-tight;
 }
 
 /* Colors for active categories */
@@ -55,25 +43,21 @@
 
 /* Subnav styles */
 .SubNav {
-  @apply block pl-12 m-0  list-none;
-}
-
-.CondensedSubNav {
-  @apply lg:hidden ;
+  @apply block m-0 ml-3 list-none;
 }
 
 .ExpandedSubNav {
   @apply lg:block;
 }
 
-:global(.dark) .HeadingContainer{
-  @apply stroke-white
+:global(.dark) .HeadingContainer {
+  @apply stroke-white;
 }
 
 :global(.dark) .dev_icon {
-  @apply fill-white
+  @apply fill-white;
 }
 
 .NavItem {
-  @apply mb-4 mt-1 w-full;
+  @apply my-4 w-full;
 }
