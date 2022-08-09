@@ -3,7 +3,8 @@
 }
 
 .InnerContainer {
-  @apply pl-12 pr-12 w-[900px];
+  @apply pl-12 pr-12;
+  width: calc(100vw - 540px);
 }
 
 .ArticleContainer {

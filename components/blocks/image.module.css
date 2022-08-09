@@ -1,6 +1,11 @@
 .Container {
   @apply inline-block m-auto;
 }
+.InnerContainer {
+  width: calc(100vw - 640px);
+  display: flex;
+  justify-content: center;
+}
 
 :global(.dark) .InnerContainer {
   @apply md:bg-gray-90;
