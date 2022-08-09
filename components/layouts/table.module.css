@@ -1,0 +1,4 @@
+.container {
+  width: calc(100vw - 640px);
+  overflow-x: scroll;
+}
