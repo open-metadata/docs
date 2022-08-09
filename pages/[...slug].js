@@ -35,6 +35,7 @@ import Helpful from "../components/utilities/helpful";
 import { H1, H2, H3 } from "../components/blocks/headers";
 import Psa from "../components/utilities/psa";
 import FloatingNav from "../components/utilities/floatingNav";
+import Table from "../components/layouts/table";
 
 // MDX Components
 import Code from "../components/blocks/code";
@@ -100,6 +101,7 @@ export default function Article({
     MetadataIngestionServiceDev,
     MetadataIngestionConfig,
     Tile,
+    Table,
     RefCard,
     Image,
     Download,

@@ -1,18 +1,22 @@
 .Container {
   @apply inline-block m-auto;
 }
+.InnerContainer {
+  width: calc(100vw - 640px);
+  display: flex;
+  justify-content: center;
+}
 
 :global(.dark) .InnerContainer {
   @apply md:bg-gray-90;
 }
 
 .Image {
-  @apply max-w-full max-h-screen transition duration-100 ease-in-out hover:opacity-80 cursor-pointer;
+  @apply max-w-full max-h-screen transition duration-100 ease-in-out hover:opacity-80 cursor-pointer mt-6;
 }
 
 .Caption {
-
-  @apply italic text-gray-90 text-sm tracking-tight rounded-br-[5px] rounded-bl-[5px] pt-[5px] bg-lt_gray text-center;
+  @apply italic text-sm tracking-tight rounded-br-[5px] rounded-bl-[5px] text-center mt-0;
 }
 
 :global(.dark) .Caption {

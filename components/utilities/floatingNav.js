@@ -127,7 +127,12 @@ const Headings = ({ headings, activeId }) => {
   return (
     <>
       {headings.map((heading, index) => (
-        <Heading heading={heading} index={index} activeId={activeId} />
+        <Heading
+          heading={heading}
+          index={index}
+          activeId={activeId}
+          key={`${heading} ${index}`}
+        />
       ))}
     </>
   );
@@ -149,6 +154,7 @@ const Heading = ({ heading, index, activeId }) => {
             ? styles.headingH5
             : styles.headingH6
         }
+        ${heading.target === activeId ? styles.activeHeading : ""}
       `}
       key={`toc-${index}`}
     >
@@ -158,6 +164,7 @@ const Heading = ({ heading, index, activeId }) => {
           ${styles.Link}
           ${heading.target === activeId ? styles.activeLink : ""}
         `}
+        title={heading.label}
       >
         {heading.label}
       </a>

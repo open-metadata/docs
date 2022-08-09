@@ -113,32 +113,32 @@ const Helpful = ({ slug, sourcefile }) => {
         <p className={styles.Title}>Was this page helpful?</p>
         <section className={styles.CtaContainer}>
           <button onClick={() => handleStep(2)} className={styles.Button_green}>
-            <div class="group-hover:-rotate-8 transition-fast-out w-20 h-12 p-2">
+            <div className="group-hover:-rotate-8 transition-fast-out w-16 h-16 p-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="#008376"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-thumbs-up block w-full h-full bg-[00837633]"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="feather feather-thumbs-up block w-full h-full bg-[00837633]"
               >
                 <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
               </svg>
             </div>
           </button>
           <button onClick={() => handleStep(1)} className={styles.Button_red}>
-            <div class="group-hover:-rotate-8 transition-fast-out w-24 h-24 p-2">
+            <div className="group-hover:-rotate-8 transition-fast-out w-16 h-16 p-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="#FF4C3B"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-thumbs-down block w-full h-full"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="feather feather-thumbs-down block w-full h-full"
               >
                 <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>
               </svg>

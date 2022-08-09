@@ -1,14 +1,15 @@
 .ListContainer {
-  @apply absolute mt-[2rem] right-0 h-full mb-[2rem] mr-[2rem] w-56 overflow-y-scroll;
+  @apply fixed right-0 pt-4 pb-2 w-60 overflow-y-auto bg-white;
+  max-height: calc(100vh - 4.5rem);
 }
 
 .List {
-  @apply sticky top-24 m-0 list-none overflow-y-auto overflow-x-hidden border border-[#DDE3EA] rounded-[4px];
+  @apply m-0 list-none overflow-y-auto overflow-x-hidden border-l border-[#DDE3EA];
   /* max-height: calc(100vh - (6em * 2)); */
 }
 
 .ListItem {
-  @apply m-0 text-[16px] pt-1 font-normal;
+  @apply m-0 text-[14px] pt-1 font-normal;
 }
 
 :global(.dark) .TopGradient {
@@ -31,10 +32,8 @@
   @apply text-white !important;
 }
 
-
-
 .Link {
-  @apply border-none inline-block truncate w-40 leading-4 hover:opacity-70 hover:no-underline;
+  @apply border-none inline-block truncate w-48 leading-5 hover:opacity-70 hover:no-underline;
   @apply text-gray-70 !important;
 }
 .activeLink {
@@ -42,7 +41,7 @@
 }
 /* Paddings for different title hierarchies */
 .headingH1 {
-  @apply pl-6 text-gray-90 font-normal !important; 
+  @apply pl-6 text-gray-90 font-normal !important;
 }
 
 .headingH2 {
@@ -63,4 +62,8 @@
 
 .headingH6 {
   @apply pl-16;
+}
+
+.activeHeading {
+  @apply border-l border-[#8D6AF1];
 }

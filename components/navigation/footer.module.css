@@ -3,7 +3,7 @@
 }
 
 .InnerContainer {
-  @apply flex flex-col items-center justify-between py-8;
+  @apply flex flex-col items-center justify-between py-6;
 }
 
 .Separator {

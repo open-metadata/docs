@@ -12,7 +12,7 @@
 }
 
 .Text {
-  @apply text-[16px] leading-normal tracking-tight;
+  @apply text-[16px] leading-normal tracking-tight m-0;
 }
 
 :global(.dark) .Text {

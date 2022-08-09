@@ -1,5 +1,5 @@
 .Container {
-  @apply w-full my-7 mx-auto overflow-x-auto;
+  @apply w-full my-6 mx-auto overflow-x-auto;
   @apply relative !important;
 }
 

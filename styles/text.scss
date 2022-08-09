@@ -1,24 +1,20 @@
 /* Styles for headings inside markdown */
 h1,
-h2 {
-  @apply font-bold leading-tight tracking-tight mb-5;
+h2,
+h3 {
+  @apply font-bold leading-tight tracking-tight;
 }
 
-h2,
 h4,
 h5,
 h6 {
-  @apply mt-12;
-}
-
-h3 {
-  @apply mt-8;
+  @apply mt-2;
 }
 
 /* Size modifiers */
 
 h1 {
-  @apply text-5xl;
+  @apply text-5xl py-6;
 }
 
 h2 {
@@ -69,7 +65,7 @@ a {
 }
 
 p {
-  @apply text-gray-90 dark:text-white leading-6;
+  @apply text-gray-90 dark:text-white leading-6 mt-4;
 }
 
 sup a {

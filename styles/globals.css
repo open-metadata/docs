@@ -15,18 +15,18 @@ body {
   @apply absolute top-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-none;
   clip: rect(0, 0, 0, 0);
 }
-p a{
+p a {
   @apply text-color_violet border-b-0 !important;
 }
-section p{
-  @apply text-justify text-[#6B7280]
+section p {
+  @apply text-justify text-[#37352f];
 }
-hr{
-  @apply border-t-[0.5px]
+hr {
+  @apply border-t-[0.5px];
 }
-li{
-  @apply text-[#6B7280]
+li {
+  @apply text-[#37352f];
 }
-li a{
-  @apply text-color_violet border-b-0
+li a {
+  @apply text-color_violet border-b-0;
 }
