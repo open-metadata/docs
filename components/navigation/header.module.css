@@ -8,7 +8,7 @@
 }
 
 .standardContainer {
-  @apply shadow h-20 ;
+  @apply shadow h-20;
 }
 
 :global(.dark) .Container {
@@ -24,11 +24,11 @@
 }
 
 .Navigation {
-  @apply px-2 xl:px-2 flex items-center justify-between relative transition-all mx-9 h-full left-auto;
+  @apply flex items-center justify-between relative transition-all mx-8 h-full left-auto;
 }
 
 .LogoContainer {
-  @apply flex items-center text-base tracking-tight md:ml-0 lg:ml-2 xl:-ml-3 hover:opacity-70;
+  @apply flex items-center text-base tracking-tight ml-0 hover:opacity-70;
 }
 
 .LogoText {
@@ -41,15 +41,19 @@
 }
 
 .NavigationContainer {
-  @apply flex items-center flex-auto justify-self-end gap-8 lg:gap-8;
-
+  @apply flex justify-between items-center flex-auto justify-self-end;
 }
 
 .Container nav section i {
   @apply text-gray-70;
 }
 
-.iconContainer{
-  @apply inline-flex  items-center gap-8;
+.iconContainer {
+  @apply hidden;
 }
 
+@media screen and (min-width: 1024px) {
+  .iconContainer {
+    @apply flex flex-auto justify-between  items-center max-w-[200px];
+  }
+}

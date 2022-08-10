@@ -1,10 +1,16 @@
 .Container {
-  @apply grid grid-cols-[20%_minmax(400px,_1fr)];
+  @apply flex flex-wrap;
 }
 
 .InnerContainer {
   @apply pl-12 pr-12;
-  width: calc(100vw - 540px);
+  width: 100vw;
+}
+
+@media screen and (min-width: 1024px) {
+  .InnerContainer {
+    width: calc(100vw - 540px);
+  }
 }
 
 .ArticleContainer {
@@ -36,5 +42,16 @@
 
   .ArticleContainer :global(.toc):not(.advanced-features) ~ .ContentContainer {
     padding-right: 5rem;
+  }
+}
+
+.Container footer:last-child {
+  width: 100vw;
+}
+
+@media (min-width: 1024px) {
+  .Container footer:last-child {
+    width: calc(100vw - 240px);
+    margin-left: 240px;
   }
 }

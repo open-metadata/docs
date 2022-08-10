@@ -16,20 +16,21 @@ const ArrowLink = ({ children, link, type, content }) => {
               ${styles.BackLink}
             `}
             >
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 22 22"
-                fill="none"
-                style={{ marginLeft: "24px" }}
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.5771 1.42822L11.4932 0.344238C11.0342 -0.114746 10.292 -0.114746 9.83789 0.344238L0.345703 9.83154C-0.113281 10.2905 -0.113281 11.0327 0.345703 11.4868L9.83789 20.979C10.2969 21.438 11.0391 21.438 11.4932 20.979L12.5771 19.895C13.041 19.4312 13.0312 18.6743 12.5576 18.2202L6.67383 12.6147H20.707C21.3564 12.6147 21.8789 12.0923 21.8789 11.4429V9.88037C21.8789 9.23096 21.3564 8.7085 20.707 8.7085H6.67383L12.5576 3.10303C13.0361 2.64893 13.0459 1.89209 12.5771 1.42822Z"
-                  fill="#AFA8BA"
-                />
-              </svg>
-
+              <span className="prev_svg">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  style={{ marginLeft: "24px" }}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5771 1.42822L11.4932 0.344238C11.0342 -0.114746 10.292 -0.114746 9.83789 0.344238L0.345703 9.83154C-0.113281 10.2905 -0.113281 11.0327 0.345703 11.4868L9.83789 20.979C10.2969 21.438 11.0391 21.438 11.4932 20.979L12.5771 19.895C13.041 19.4312 13.0312 18.6743 12.5576 18.2202L6.67383 12.6147H20.707C21.3564 12.6147 21.8789 12.0923 21.8789 11.4429V9.88037C21.8789 9.23096 21.3564 8.7085 20.707 8.7085H6.67383L12.5576 3.10303C13.0361 2.64893 13.0459 1.89209 12.5771 1.42822Z"
+                    fill="#AFA8BA"
+                  />
+                </svg>
+              </span>
               <span className={styles.Text}>
                 <span className="mr-[14px]" style={{ placeSelf: "end" }}>
                   {" "}
@@ -38,6 +39,7 @@ const ArrowLink = ({ children, link, type, content }) => {
                 <span
                   className={styles.content}
                   style={{ marginRight: "14px" }}
+                  title={content}
                 >
                   {content}
                 </span>
@@ -60,7 +62,10 @@ const ArrowLink = ({ children, link, type, content }) => {
             >
               <span className={styles.Text}>
                 <span className="justify-self-start ml-[14px]">Next:</span>
-                <span className={`${styles.content} ml-[14px] content`}>
+                <span
+                  className={`${styles.content} ml-[14px] content`}
+                  title={content}
+                >
                   {content}
                 </span>
               </span>

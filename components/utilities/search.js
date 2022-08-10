@@ -159,7 +159,6 @@ const Search = () => {
                 <Highlight hit={props.hit} attribute="title"></Highlight>
               </h5>
             </a>
-            
           </section>
         </>
       </article>
@@ -278,7 +277,7 @@ const Search = () => {
           search
         </i>
         <p className={styles.SearchText}>Search</p>
-        {windowWidth > 1024 && <p className={styles.HotKey}>{hotkey}</p>}
+        {windowWidth > 500 && <p className={styles.HotKey}>{hotkey}</p>}
       </section>
       {modal}
       {/* <SearchBox /> */}

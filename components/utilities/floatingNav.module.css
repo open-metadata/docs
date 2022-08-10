@@ -1,5 +1,5 @@
 .ListContainer {
-  @apply fixed right-0 pt-4 pb-2 w-60 overflow-y-auto bg-white;
+  @apply pt-4 pb-2 w-60 overflow-y-auto bg-white hidden lg:block;
   max-height: calc(100vh - 4.5rem);
 }
 

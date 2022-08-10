@@ -38,21 +38,21 @@
 
 /* Color modifiers */
 .YellowBackground {
-  @apply border border-[#EAA623] !important;
+  @apply border border-[#EAA623] col-span-full md:col-span-2 !important;
 }
 
 .BlueBackground {
-  @apply border border-[#1890FF];
+  @apply border border-[#1890FF] col-span-full md:col-span-2;
 }
 
 .PinkBackground {
-  @apply border border-[#B02AAC];
+  @apply border border-[#B02AAC] col-span-full md:col-span-2;
 }
 .GreenBackground {
-  @apply border border-[#008376];
+  @apply border border-[#008376] col-span-full md:col-span-2;
 }
 .PurpleBackground {
-  @apply border border-color_violet;
+  @apply border border-color_violet col-span-full md:col-span-2;
 }
 .TransparentBackground i,
 .TransparentBackground p {

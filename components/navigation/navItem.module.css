@@ -3,7 +3,7 @@
 }
 
 .HeadingIconContainer {
-  @apply flex items-center p-1 mr-1 xl:mr-2 mb-0 rounded-md;
+  @apply flex items-center p-1 mr-2 mb-0 rounded-md;
 }
 
 .HeadingContainer i {
