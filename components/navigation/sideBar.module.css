@@ -1,5 +1,5 @@
 .Container {
-  @apply fixed lg:sticky top-auto pl-7 lg:top-16 left-0 xl:left-auto px-0 h-[calc(100vh-4rem)] z-20  overflow-y-auto overflow-x-hidden shadow-lg lg:shadow-none transition-all;
+  @apply fixed right-0 lg:sticky top-auto pl-7 lg:top-16 lg:left-0 xl:left-auto px-0 h-[calc(100vh-4rem)] z-20  overflow-y-auto overflow-x-hidden shadow-lg lg:shadow-none transition-all;
   @apply bg-light_purple shadow-[1px_4px_6px_0px_rgba(0,0,0,0.08)] border-r-[1px] border-r-[rgba(113,71,232,0.05)] !important;
   width: 280px;
 }
@@ -35,4 +35,14 @@
 
 :global(.dark) .TopGradient {
   @apply from-gray-100;
+}
+
+.iconContainer {
+  @apply flex flex-auto justify-between items-center mr-7 mt-2 block pb-3 border-b border-[#9a84d6];
+}
+
+@media screen and (min-width: 1024px) {
+  .iconContainer {
+    @apply hidden;
+  }
 }

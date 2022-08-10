@@ -38,6 +38,7 @@ const ArrowLink = ({ children, link, type, content }) => {
                 <span
                   className={styles.content}
                   style={{ marginRight: "14px" }}
+                  title={content}
                 >
                   {content}
                 </span>
@@ -60,7 +61,10 @@ const ArrowLink = ({ children, link, type, content }) => {
             >
               <span className={styles.Text}>
                 <span className="justify-self-start ml-[14px]">Next:</span>
-                <span className={`${styles.content} ml-[14px] content`}>
+                <span
+                  className={`${styles.content} ml-[14px] content`}
+                  title={content}
+                >
                   {content}
                 </span>
               </span>

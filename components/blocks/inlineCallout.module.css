@@ -1,5 +1,5 @@
 .Container {
-  @apply flex items-start  mb-4  border-b border-b-gray-30 px-3 py-4 rounded-[10px];
+  @apply flex items-start  my-4  border-b border-b-gray-30 px-3 py-4 rounded-[10px];
 }
 
 .IconContainer {

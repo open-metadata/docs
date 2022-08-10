@@ -1,5 +1,11 @@
 .Container {
-  @apply flex flex-initial items-center my-4 pb-4 border-b border-b-gray-30;
+  @apply flex flex-col flex-initial items-center my-4 pb-4 border-b border-b-gray-30;
+}
+
+@media screen and (min-width: 500px) {
+  .Container {
+    flex-direction: row;
+  }
 }
 
 .Date {

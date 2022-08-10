@@ -45,7 +45,7 @@ const Header = () => {
   }, []);
 
   let mobileNav;
-  if (windowWidth <= 1024) {
+  if (windowWidth <= 1023) {
     mobileNav = <MobileNav />;
   }
 
