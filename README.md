@@ -18,7 +18,7 @@ From the OpenMetadata repository, run `make docker-docs`. This will pull the `la
 that will pick up the content of the files under `openmetadata-docs`. In there, you will find all the directories with content you might ever need to change:
 - `content/` for the main markdown files
 - `images/` to add necessary images from the `content/`
-- `ingestion` for the YAML files that will be generated via the connector component templates. More info on [hot to add a new connector](#how-to-add-a-new-connector).
+- `ingestion` for the YAML files that will be generated via the connector component templates. More info on [how to add a new connector](#how-to-add-a-new-connector).
 
 ### How to add new docs
 
