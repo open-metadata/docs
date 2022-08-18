@@ -451,31 +451,29 @@ with DAG(
         <Code
           language="yaml"
           code={`processor:
-    type: orm-profiler
-    config:
-    test_suite:
-        name: <Test Suite name>
-        tests:
-        - table: <Table FQN>
-            table_tests:
-            - testCase:
-                config:
-                    value: 100
-                tableTestType: tableRowCountToEqual
-            column_tests:
-            - columnName: <Column Name>
-                testCase:
-                config:
-                    minValue: 0
-                    maxValue: 99
-                columnTestType: columnValuesToBeBetween
+          type: orm-profiler
+          config:
+            tableConfig:
+              - fullyQualifiedName: <table fqn>
+                profileSample: <number between 0 and 99>
+                columnConfig:
+                  partitionConfig:
+                    partitionField: <field to use as a partition field>
+                    partitionQueryDuration: <for date/datetime partitioning based set the offset from today>
+                    partitionValues: <values to uses as a predicate for the query>
+                  profileQuery: <query to use for sampling data for the profiler>
+                  excludeColumns:
+                    - <column name>
+                  includeColumns:
+                    - columnName: <column name>
+                    - metrics:
+                        - MEAN
+                        - MEDIAN
+                        - ...
 `}
         />
-        <code>tests</code> is a list of test definitions that will be applied to
-        table, informed by its FQN. For each table, one can then define a list
-        of <code>table_tests</code> and <code>column_tests</code>. Review the
-        supported tests and their definitions to learn how to configure the
-        different cases here. // TODO: Link to tests
+        <code>tableConfig</code> allows you to set up some configuration at the table level. All the properties are optional. 
+        <code>metrics</code> should be one of the metrics listed <a href="/openmetadata/ingestion/workflows/profiler/metrics">here</a>
       </p>
       <H4>Workflow Configuration</H4>
       <p>The same as the metadata ingestion.</p>
