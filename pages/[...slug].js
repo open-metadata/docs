@@ -56,6 +56,7 @@ import styles from "../components/layouts/container.module.css";
 
 // Content Components
 import Requirements from "../components/content/requirements";
+import PythonMod from "../components/content/python-requirements";
 import MetadataIngestionService from "../components/content/metadata-ingestion-service";
 import ConnectorIntro from "../components/content/connector-intro";
 import IngestionScheduleAndDeploy from "../components/content/ingestion-schedule-and-deploy";
@@ -94,6 +95,7 @@ export default function Article({
     InlineCallout,
     TileContainer,
     Requirements,
+    PythonMod,
     MetadataIngestionService,
     ConnectorIntro,
     IngestionScheduleAndDeploy,
