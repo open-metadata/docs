@@ -546,7 +546,7 @@ with DAG(
       </p>
       <Code
         language="yaml"
-        code={`tableFilterPAttern:
+        code={`tableFilterPattern:
   includes:
   - *users$`}
       />
