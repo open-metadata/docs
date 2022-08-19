@@ -427,14 +427,14 @@ with DAG(
         </li>
       </ul>
       <p>
-        Note that the <code>fqnFilterPattern</code> supports regex as includes
+        Note that the filter patterns support regex as includes
         or excludes. E.g.,
       </p>
       <Code
         language="yaml"
-        code={`fqnFilterPattern:
-    includes:
-    - service.database.schema.*`}
+        code={`tableFilterPAttern:
+  includes:
+  - service.database.schema.*`}
       />
       <H4>Processor</H4>
       <p>
@@ -443,25 +443,25 @@ with DAG(
         <Code
           language="yaml"
           code={`processor:
-          type: orm-profiler
-          config:
-            tableConfig:
-              - fullyQualifiedName: <table fqn>
-                profileSample: <number between 0 and 99>
-                columnConfig:
-                  partitionConfig:
-                    partitionField: <field to use as a partition field>
-                    partitionQueryDuration: <for date/datetime partitioning based set the offset from today>
-                    partitionValues: <values to uses as a predicate for the query>
-                  profileQuery: <query to use for sampling data for the profiler>
-                  excludeColumns:
-                    - <column name>
-                  includeColumns:
-                    - columnName: <column name>
-                    - metrics:
-                        - MEAN
-                        - MEDIAN
-                        - ...
+  type: orm-profiler
+  config:
+    tableConfig:
+      - fullyQualifiedName: <table fqn>
+        profileSample: <number between 0 and 99>
+        columnConfig:
+          partitionConfig:
+            partitionField: <field to use as a partition field>
+            partitionQueryDuration: <for date/datetime partitioning based set the offset from today>
+            partitionValues: <values to uses as a predicate for the query>
+          profileQuery: <query to use for sampling data for the profiler>
+          excludeColumns:
+            - <column name>
+          includeColumns:
+            - columnName: <column name>
+            - metrics:
+                - MEAN
+                - MEDIAN
+                - ...
 `}
         />
         <code>tableConfig</code> allows you to set up some configuration at the table level. All the properties are optional. 
