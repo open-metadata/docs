@@ -548,7 +548,7 @@ with DAG(
         language="yaml"
         code={`tableFilterPAttern:
   includes:
-  - service.database.schema.*`}
+  - *users$`}
       />
       <H4>Processor</H4>
       <p>
