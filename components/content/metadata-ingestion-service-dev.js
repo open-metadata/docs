@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { H2, H3 } from "../blocks/headers";
-import yaml from "js-yaml";
 import Code from "../blocks/code";
 
 const MetadataIngestionServiceDev = ({ connector, service, goal }) => {
@@ -23,9 +22,7 @@ const MetadataIngestionServiceDev = ({ connector, service, goal }) => {
           `/public/ingestion/connectors/${connector.toLowerCase()}/ingestion.yaml`
         )
       ).default;
-
-      const yamlData = yaml.safeDump(yaml.safeLoad(JSON.stringify(data)));
-      setYaml(yamlData);
+      setYaml(data);
     };
     readYaml();
   }, [connector]);
