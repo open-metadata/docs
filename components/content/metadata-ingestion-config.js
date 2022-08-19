@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { H2, H3, H4 } from "../blocks/headers";
 import Code from "../blocks/code";
+import Collapse from "../blocks/collape";
 
 const MetadataIngestionConfig = ({
   service,
@@ -215,20 +216,133 @@ const MetadataIngestionConfig = ({
         <a href="https://github.com/open-metadata/OpenMetadata/tree/main/catalog-rest-service/src/main/resources/json/schema/security/client">
           here
         </a>
-        . An example of an Auth0 configuration would be the following:
+        . You can find the different implementation of the ingestion below.
       </p>
+
+      <Collapse title="Configure SSO in the Ingestion Workflows">
+
+      <H3>Auth0 SSO</H3>
+      <Code
+        language="yaml"
+        code={`workflowConfig:
+  openMetadataServerConfig:
+    hostPort: 'http://localhost:8585/api'
+    authProvider: auth0
+    securityConfig:
+      clientId: '{your_client_id}'
+      secretKey: '{your_client_secret}'
+      domain: '{your_domain}'
+`}
+      />
+
+      <H3>Azure SSO</H3>
+      <Code
+        language="yaml"
+        code={`workflowConfig:
+  openMetadataServerConfig:
+    hostPort: 'http://localhost:8585/api'
+    authProvider: azure
+    securityConfig:
+      clientSecret: '{your_client_secret}'
+      authority: '{your_authority_url}'
+      clientId: '{your_client_id}'
+      scopes:
+        - your_scopes
+`}
+      />
+
+      <H3>Custom OIDC SSO</H3>
+      <Code
+        language="yaml"
+        code={`workflowConfig:
+  openMetadataServerConfig:
+    hostPort: 'http://localhost:8585/api'
+    authProvider: custom-oidc
+    securityConfig:
+      clientId: '{your_client_id}'
+      secretKey: '{your_client_secret}'
+      domain: '{your_domain}'
+`}
+      />
+
+      <H3>Google SSO</H3>
+      <Code
+        language="yaml"
+        code={`workflowConfig:
+  openMetadataServerConfig:
+    hostPort: 'http://localhost:8585/api'
+    authProvider: google
+    securityConfig:
+      secretKey: '{path-to-json-creds}'
+`}
+      />
+
+      <H3>Okta SSO</H3>
       <Code
         language="yaml"
         code={`workflowConfig:
   openMetadataServerConfig:
     hostPort: http://localhost:8585/api
-    authProvider: auth0
+    authProvider: okta
     securityConfig:
-      clientId: <client ID>
-      secretKey: <secret key>
-      domain: <domain>
+      clientId: "{CLIENT_ID - SPA APP}"
+      orgURL: "{ISSUER_URL}/v1/token"
+      privateKey: "{public/private keypair}"
+      email: "{email}"
+      scopes:
+      - token
 `}
       />
+
+      <H3>Amazon Cognito SSO</H3>
+      <p>The ingestion can be configured by 
+      <a href="/deployment/security/enable-jwt-tokens">
+      Enabling JWT Tokens
+        </a>
+        </p>
+      <Code
+        language="yaml"
+        code={`workflowConfig:
+  openMetadataServerConfig:
+    hostPort: http://localhost:8585/api
+    authProvider: openmetadata
+    securityConfig:
+        jwtToken:
+`}
+      />
+
+      <H3>One Login SSO</H3>
+      <p>Which uses Custom OIDC for the ingestion</p>
+      <Code
+        language="yaml"
+        code={`workflowConfig:
+  openMetadataServerConfig:
+    hostPort: 'http://localhost:8585/api'
+    authProvider: custom-oidc
+    securityConfig:
+      clientId: '{your_client_id}'
+      secretKey: '{your_client_secret}'
+      domain: '{your_domain}'
+`}
+      />
+
+      <H3>KeyCloak SSO</H3>
+      <p>Which uses Custom OIDC for the ingestion</p>
+      <Code
+        language="yaml"
+        code={`workflowConfig:
+  openMetadataServerConfig:
+    hostPort: 'http://localhost:8585/api'
+    authProvider: custom-oidc
+    securityConfig:
+      clientId: '{your_client_id}'
+      secretKey: '{your_client_secret}'
+      domain: '{your_domain}'
+`}
+      />
+
+    </Collapse>
+
     </section>
   );
 
