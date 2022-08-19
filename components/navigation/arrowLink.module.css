@@ -1,0 +1,54 @@
+.Container {
+  @apply flex flex-wrap  flex-col md:flex-row md:flex-nowrap items-center justify-between !important;
+}
+.prev,
+.next {
+  @apply h-[81px] border border-[#C4C4C4] rounded-[4px];
+  width: 40%;
+}
+
+@media screen and (min-width: 1024) {
+  .prev,
+  .next {
+    @apply w-[395px];
+  }
+}
+
+.Link {
+  @apply border-none text-base tracking-tight font-sans font-normal text-gray-90 leading-7 cursor-pointer flex items-center transition-all justify-between mt-[14px] !important;
+}
+
+:global(.dark) .Link {
+  @apply text-white !important;
+}
+
+.NextLink {
+  @apply mt-8 sm:mt-0;
+}
+
+.Icon {
+  @apply relative group-hover:scale-105 fill-gray-90;
+}
+
+.BackIcon {
+  @apply mr-2 group-hover:-left-1;
+}
+
+.NextIcon {
+  @apply ml-2 group-hover:-left-1;
+}
+
+:global(.dark) .Icon {
+  @apply fill-white !important;
+}
+
+.Text {
+  @apply grid text-[#AFA8BA] font-medium justify-items-center overflow-scroll !important;
+}
+.Text::-webkit-scrollbar {
+  @apply hidden;
+}
+
+.content {
+  @apply text-color_violet font-medium w-max !important;
+}

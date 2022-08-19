@@ -1,0 +1,41 @@
+.Container {
+  @apply inline-flex items-center;
+}
+
+.Icon {
+  @apply rounded-full p-2 mr-2 text-base leading-none transform flex items-center justify-center w-8 h-8;
+  @apply text-white !important;
+}
+
+.Title {
+  @apply m-0 font-bold text-lg leading-normal tracking-tight;
+}
+
+/* Color modifiers */
+.PinkBackground {
+  @apply bg-pink;
+}
+
+.OrangeBackground {
+  @apply bg-orange-70;
+}
+
+.LightBlueBackground {
+  @apply bg-blue;
+}
+
+.PinkText {
+  @apply text-pink !important;
+}
+
+.OrangeText {
+  @apply text-orange-70 !important;
+}
+
+.LightBlueText {
+  @apply text-blue !important;
+}
+
+:global(.dark) .PinkText {
+  @apply text-white !important;
+}

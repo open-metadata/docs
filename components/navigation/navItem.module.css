@@ -1,0 +1,63 @@
+.HeadingContainer {
+  @apply relative flex items-center transition-all left-auto mb-3;
+}
+
+.HeadingIconContainer {
+  @apply flex items-center p-1 mr-2 mb-0 rounded-md;
+}
+
+.HeadingContainer i {
+  @apply text-color_violet mr-[-5px];
+}
+
+.IconSidebar {
+  @apply text-color_violet;
+}
+
+/* Colors for heading icons */
+.CloudIcon {
+  @apply bg-lightBlue-70;
+}
+
+.CategoryName {
+  @apply m-0 font-sans;
+  @apply text-[#7147E8] !important;
+}
+
+:global(.dark) .CategoryName {
+  @apply text-white !important;
+}
+
+/* Colors for active categories */
+.LibraryCategory {
+  @apply text-indigo-70 !important;
+}
+
+.CloudCategory {
+  @apply text-lightBlue-70 !important;
+}
+
+.KBCategory {
+  @apply text-color_condense_violet !important;
+}
+
+/* Subnav styles */
+.SubNav {
+  @apply block m-0 ml-3 list-none;
+}
+
+.ExpandedSubNav {
+  @apply lg:block;
+}
+
+:global(.dark) .HeadingContainer {
+  @apply stroke-white;
+}
+
+:global(.dark) .dev_icon {
+  @apply fill-white;
+}
+
+.NavItem {
+  @apply my-4 w-full;
+}

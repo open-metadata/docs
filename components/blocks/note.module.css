@@ -1,0 +1,7 @@
+.Note {
+  @apply bg-blue bg-opacity-[calc(60/1000)] border border-blue;
+}
+
+:global(.dark) .Note {
+  background-color: #062633;
+}

@@ -1,0 +1,66 @@
+.Container {
+  @apply text-sm tracking-tight dark:text-white mb-0;
+  @apply leading-none;
+}
+
+.List {
+  @apply list-none m-0 ml-4 border-l;
+  border-color: #d4baec;
+}
+
+.Accordion {
+  @apply flex items-center justify-center h-4 w-4 mr-2;
+}
+
+.AccordionIcon {
+  @apply relative z-10 cursor-pointer text-sm;
+  @apply text-gray-80 !important;
+}
+
+.AccordionIcon close {
+  transform: rotate(0deg);
+}
+
+.ExternalIcon {
+  @apply relative z-10 cursor-pointer text-sm ml-1;
+  @apply text-gray-80 !important;
+}
+
+:global(.dark) .AccordionIcon,
+:global(.dark) .ExternalIcon,
+:global(.dark) .ActivePage {
+  @apply text-white !important;
+}
+
+.LinkContainer {
+  @apply flex items-center cursor-pointer px-[16px] hover:bg-lt_gray  justify-between  group-hover:bg-lt_gray h-10;
+}
+
+.Link {
+  @apply relative flex items-center;
+  @apply text-gray-80 !important;
+}
+
+.Circle {
+  @apply absolute w-2 h-2 -left-4 rounded-full hidden;
+}
+
+:global(.dark) .PageName:not(.ActivePage) {
+  @apply text-[#fff] !important;
+}
+
+:global(.dark) .LinkContainer ul {
+  @apply text-[#fff] !important;
+}
+
+.ActivePage a span {
+  @apply text-[#8D6AF1] !important;
+}
+
+span.ActivePage {
+  @apply bg-[#FFFFFF] border border-r-0 border-[#e1d9f4];
+}
+
+:global(.dark) .LinkContainer {
+  @apply fill-white;
+}

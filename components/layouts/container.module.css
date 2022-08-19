@@ -1,0 +1,57 @@
+.Container {
+  @apply flex flex-wrap;
+}
+
+.InnerContainer {
+  @apply pl-12 pr-12;
+  width: 100vw;
+}
+
+@media screen and (min-width: 1024px) {
+  .InnerContainer {
+    width: calc(100vw - 540px);
+  }
+}
+
+.ArticleContainer {
+  @apply relative;
+}
+
+.updates_button {
+  @apply bg-[#1890FF] !important;
+}
+/* Links inside markdown */
+.ArticleContainer p a,
+.ArticleContainer ol li a,
+.ArticleContainer ul li a {
+  @apply text-color_violet  hover:opacity-80;
+}
+
+:global(.dark) .ArticleContainer p a,
+:global(.dark) .ArticleContainer ol li a,
+:global(.dark) .ArticleContainer ul li a {
+  @apply border-b-white !important;
+}
+.Buttons {
+  @apply flex gap-x-[30px] my-10;
+}
+@media (min-width: 1280px) {
+  .ArticleContainer :global(.toc):not(.advanced-features) {
+    @apply block;
+  }
+
+  .ArticleContainer :global(.toc):not(.advanced-features) ~ .ContentContainer {
+    padding-right: 5rem;
+  }
+}
+
+.Container footer:last-child {
+  width: 100vw;
+}
+
+@media (min-width: 1024px) {
+  .Container footer:last-child {
+    width: calc(100vw - 240px);
+    margin-left: 240px;
+  }
+}

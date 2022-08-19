@@ -1,0 +1,94 @@
+.Container {
+  @apply rounded-md overflow-hidden flex justify-between flex-col cursor-pointer transform transition duration-100 ease-in-out;
+}
+
+.Container:hover {
+  transform: scale(1.01);
+}
+
+.Link {
+  @apply p-3 flex;
+}
+
+.Title {
+  @apply m-0 font-semibold text-lg;
+  @apply text-[#3B454E] !important;
+}
+
+.Text {
+  @apply text-[16px] tracking-tight text-[#37352f] text-left leading-normal !important;
+}
+
+/* Size modifiers */
+.Full {
+  @apply col-span-full;
+}
+
+.Half {
+  @apply col-span-full sm:col-span-2;
+}
+
+.TwoThirds {
+  @apply col-span-full md:col-span-3 lg:col-span-4;
+}
+
+.Third {
+  @apply col-span-full md:col-span-3 lg:col-span-2;
+}
+
+/* Color modifiers */
+.YellowBackground {
+  @apply border border-[#EAA623] col-span-full md:col-span-2 !important;
+}
+
+.BlueBackground {
+  @apply border border-[#1890FF] col-span-full md:col-span-2;
+}
+
+.PinkBackground {
+  @apply border border-[#B02AAC] col-span-full md:col-span-2;
+}
+.GreenBackground {
+  @apply border border-[#008376] col-span-full md:col-span-2;
+}
+.PurpleBackground {
+  @apply border border-color_violet col-span-full md:col-span-2;
+}
+.TransparentBackground i,
+.TransparentBackground p {
+  @apply text-[#37352f] !important;
+}
+
+:global(.dark) .TransparentBackground i,
+:global(.dark) .TransparentBackground h4,
+:global(.dark) .TransparentBackground p {
+  @apply text-white !important;
+}
+
+.YellowBackground h4 {
+  @apply text-[#3B454E] !important;
+}
+
+.YellowBackground i {
+  @apply h-fit mr-[0.625rem] p-[0.625rem] bg-[#FFF3DC] rounded-[6px] text-center text-[#EFAE2F] !important;
+}
+
+.BlueBackground i {
+  @apply h-fit mr-[0.625rem] p-[0.625rem] bg-[#1890FF] bg-opacity-10 text-center rounded-[6px] text-[#1890FF] !important;
+}
+
+.PinkBackground i {
+  @apply h-fit mr-[0.625rem] p-[0.625rem] bg-[#B02AAC] bg-opacity-10 text-center rounded-[6px] text-[#B02AAC] !important;
+}
+
+.GreenBackground i {
+  @apply h-fit mr-[0.625rem] p-[0.625rem] bg-[#008376] bg-opacity-10 text-center rounded-[6px] text-[#008376] !important;
+}
+
+.PurpleBackground i {
+  @apply h-fit mr-[0.625rem] p-[0.625rem]  bg-color_violet bg-opacity-10 text-center rounded-[6px] text-color_violet !important;
+}
+
+.Header {
+  @apply flex items-center;
+}

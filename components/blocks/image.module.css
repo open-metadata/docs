@@ -1,0 +1,47 @@
+.Container {
+  @apply flex justify-center m-auto;
+}
+.InnerContainer {
+  @apply w-5/6 flex flex-col justify-center items-center;
+}
+
+:global(.dark) .InnerContainer {
+  @apply md:bg-gray-90;
+}
+
+.Image {
+  @apply transition duration-100 ease-in-out hover:opacity-80 cursor-pointer mt-6 w-fit shadow;
+}
+
+.Caption {
+  @apply italic text-sm tracking-tight rounded-br-[5px] rounded-bl-[5px] text-center mt-0;
+}
+
+:global(.dark) .Caption {
+  @apply text-white;
+}
+
+.LightBox {
+  @apply fixed z-30 top-0 left-0 w-full h-full flex justify-center items-center overscroll-contain bg-gray-20;
+}
+
+:global(.dark) .LightBox {
+  @apply bg-gray-90;
+}
+
+.ImageContainer {
+  @apply w-11/12 md:w-11/12 2xl:w-7/12 flex flex-col;
+}
+
+.ModalImage {
+  @apply h-full object-contain;
+}
+
+.CloseButton {
+  font-family: "Material Icons";
+  @apply font-normal text-5xl absolute right-0 md:right-8 top-12 cursor-pointer bg-gray-20 z-20 text-gray-90 hover:shadow-none hover:opacity-60 mb-0 px-2 lg:p-4;
+}
+
+:global(.dark) .CloseButton {
+  @apply bg-gray-90 text-white;
+}

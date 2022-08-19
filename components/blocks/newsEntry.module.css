@@ -1,0 +1,42 @@
+.Container {
+  @apply flex flex-col flex-initial items-center my-4 pb-4 border-b border-b-gray-30;
+}
+
+@media screen and (min-width: 500px) {
+  .Container {
+    flex-direction: row;
+  }
+}
+
+.Date {
+  @apply text-xs tracking-tight;
+  @apply text-gray-70 !important;
+}
+
+.Title {
+  @apply my-2 font-bold text-lg;
+  @apply text-gray-90 !important;
+}
+
+:global(.dark) .Title,
+:global(.dark) .Text {
+  @apply text-white !important;
+}
+
+.Text {
+  @apply text-[16px] tracking-tight leading-normal table-row;
+  @apply text-[#37352f] !important;
+}
+
+.Link {
+  @apply text-color_condense_violet;
+}
+
+:global(.dark) .Container {
+  @apply border-b-gray-90;
+}
+
+.blogImage {
+  @apply mr-[16px] h-[136px];
+  box-shadow: 0px 0px 2px rgb(0 0 0 / 30%);
+}

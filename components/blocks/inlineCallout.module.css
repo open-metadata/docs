@@ -1,0 +1,57 @@
+.Container {
+  @apply flex items-start  my-4  border-b border-b-gray-30 px-3 py-4 rounded-[10px];
+}
+
+.IconContainer {
+  @apply flex items-center p-4 mr-4 mb-0 rounded-md;
+}
+
+.Icon {
+  @apply text-3xl leading-none;
+  @apply text-color_violet !important;
+}
+
+.Text {
+  @apply text-[16px] leading-normal tracking-tight m-0;
+}
+
+:global(.dark) .Text {
+  @apply text-white !important;
+}
+
+:global(.dark) .Container {
+  @apply border-b-gray-90 !important;
+}
+
+.Link {
+  @apply flex font-bold border-none hover:border-none hover:opacity-70;
+}
+
+/* Colors for each category */
+.LibraryBackground {
+  @apply bg-color_violet bg-opacity-10;
+}
+
+.CloudBackground {
+  @apply bg-[#1890FF] bg-opacity-10;
+}
+
+.KBBackground {
+  @apply bg-[#FFC34E] bg-opacity-10;
+}
+
+.LibraryText {
+  @apply text-lg text-[#3B454E] !important;
+}
+
+.YellowBackground {
+  @apply border border-[#EAA623] rounded-[10px] !important;
+}
+
+.VioletBackground {
+  @apply border border-color_violet;
+}
+
+.BlueBackground {
+  @apply border border-[#1890FF]  rounded-[10px];
+}

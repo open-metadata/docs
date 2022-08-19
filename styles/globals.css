@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply overflow-x-hidden scroll-pt-12;
+}
+
+body {
+  @apply scroll-m-12;
+}
+
+/* Utility to hide text that only is needed in screen readers */
+.sr-only {
+  @apply absolute top-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-none;
+  clip: rect(0, 0, 0, 0);
+}
+p a {
+  @apply text-color_violet border-b-0 !important;
+}
+section p {
+  @apply text-justify text-[#37352f];
+}
+hr {
+  @apply border-t-[0.5px];
+}
+li {
+  @apply text-[#37352f];
+}
+li a {
+  @apply text-color_violet border-b-0;
+}
