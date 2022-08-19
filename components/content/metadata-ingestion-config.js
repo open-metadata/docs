@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { H2, H3, H4 } from "../blocks/headers";
 import Code from "../blocks/code";
+import Collapse from "../blocks/collape";
 
 const MetadataIngestionConfig = ({
   service,
@@ -215,20 +216,133 @@ const MetadataIngestionConfig = ({
         <a href="https://github.com/open-metadata/OpenMetadata/tree/main/catalog-rest-service/src/main/resources/json/schema/security/client">
           here
         </a>
-        . An example of an Auth0 configuration would be the following:
+        . You can find the different implementation of the ingestion below.
       </p>
+
+      <Collapse title="Configure SSO in the Ingestion Workflows">
+
+      <H3>Auth0 SSO</H3>
+      <Code
+        language="yaml"
+        code={`workflowConfig:
+  openMetadataServerConfig:
+    hostPort: 'http://localhost:8585/api'
+    authProvider: auth0
+    securityConfig:
+      clientId: '{your_client_id}'
+      secretKey: '{your_client_secret}'
+      domain: '{your_domain}'
+`}
+      />
+
+      <H3>Azure SSO</H3>
+      <Code
+        language="yaml"
+        code={`workflowConfig:
+  openMetadataServerConfig:
+    hostPort: 'http://localhost:8585/api'
+    authProvider: azure
+    securityConfig:
+      clientSecret: '{your_client_secret}'
+      authority: '{your_authority_url}'
+      clientId: '{your_client_id}'
+      scopes:
+        - your_scopes
+`}
+      />
+
+      <H3>Custom OIDC SSO</H3>
+      <Code
+        language="yaml"
+        code={`workflowConfig:
+  openMetadataServerConfig:
+    hostPort: 'http://localhost:8585/api'
+    authProvider: custom-oidc
+    securityConfig:
+      clientId: '{your_client_id}'
+      secretKey: '{your_client_secret}'
+      domain: '{your_domain}'
+`}
+      />
+
+      <H3>Google SSO</H3>
+      <Code
+        language="yaml"
+        code={`workflowConfig:
+  openMetadataServerConfig:
+    hostPort: 'http://localhost:8585/api'
+    authProvider: google
+    securityConfig:
+      secretKey: '{path-to-json-creds}'
+`}
+      />
+
+      <H3>Okta SSO</H3>
       <Code
         language="yaml"
         code={`workflowConfig:
   openMetadataServerConfig:
     hostPort: http://localhost:8585/api
-    authProvider: auth0
+    authProvider: okta
     securityConfig:
-      clientId: <client ID>
-      secretKey: <secret key>
-      domain: <domain>
+      clientId: "{CLIENT_ID - SPA APP}"
+      orgURL: "{ISSUER_URL}/v1/token"
+      privateKey: "{public/private keypair}"
+      email: "{email}"
+      scopes:
+      - token
 `}
       />
+
+      <H3>Amazon Cognito SSO</H3>
+      <p>The ingestion can be configured by 
+      <a href="/deployment/security/enable-jwt-tokens">
+      Enabling JWT Tokens
+        </a>
+        </p>
+      <Code
+        language="yaml"
+        code={`workflowConfig:
+  openMetadataServerConfig:
+    hostPort: http://localhost:8585/api
+    authProvider: openmetadata
+    securityConfig:
+        jwtToken:
+`}
+      />
+
+      <H3>One Login SSO</H3>
+      <p>Which uses Custom OIDC for the ingestion</p>
+      <Code
+        language="yaml"
+        code={`workflowConfig:
+  openMetadataServerConfig:
+    hostPort: 'http://localhost:8585/api'
+    authProvider: custom-oidc
+    securityConfig:
+      clientId: '{your_client_id}'
+      secretKey: '{your_client_secret}'
+      domain: '{your_domain}'
+`}
+      />
+
+      <H3>KeyCloak SSO</H3>
+      <p>Which uses Custom OIDC for the ingestion</p>
+      <Code
+        language="yaml"
+        code={`workflowConfig:
+  openMetadataServerConfig:
+    hostPort: 'http://localhost:8585/api'
+    authProvider: custom-oidc
+    securityConfig:
+      clientId: '{your_client_id}'
+      secretKey: '{your_client_secret}'
+      domain: '{your_domain}'
+`}
+      />
+
+    </Collapse>
+
     </section>
   );
 
@@ -427,14 +541,14 @@ with DAG(
         </li>
       </ul>
       <p>
-        Note that the <code>fqnFilterPattern</code> supports regex as includes
+        Note that the filter patterns support regex as includes
         or excludes. E.g.,
       </p>
       <Code
         language="yaml"
-        code={`fqnFilterPattern:
-    includes:
-    - service.database.schema.*`}
+        code={`tableFilterPattern:
+  includes:
+  - *users$`}
       />
       <H4>Processor</H4>
       <p>
@@ -443,25 +557,25 @@ with DAG(
         <Code
           language="yaml"
           code={`processor:
-          type: orm-profiler
-          config:
-            tableConfig:
-              - fullyQualifiedName: <table fqn>
-                profileSample: <number between 0 and 99>
-                columnConfig:
-                  partitionConfig:
-                    partitionField: <field to use as a partition field>
-                    partitionQueryDuration: <for date/datetime partitioning based set the offset from today>
-                    partitionValues: <values to uses as a predicate for the query>
-                  profileQuery: <query to use for sampling data for the profiler>
-                  excludeColumns:
-                    - <column name>
-                  includeColumns:
-                    - columnName: <column name>
-                    - metrics:
-                        - MEAN
-                        - MEDIAN
-                        - ...
+  type: orm-profiler
+  config:
+    tableConfig:
+      - fullyQualifiedName: <table fqn>
+        profileSample: <number between 0 and 99>
+        columnConfig:
+          partitionConfig:
+            partitionField: <field to use as a partition field>
+            partitionQueryDuration: <for date/datetime partitioning based set the offset from today>
+            partitionValues: <values to uses as a predicate for the query>
+          profileQuery: <query to use for sampling data for the profiler>
+          excludeColumns:
+            - <column name>
+          includeColumns:
+            - columnName: <column name>
+            - metrics:
+                - MEAN
+                - MEDIAN
+                - ...
 `}
         />
         <code>tableConfig</code> allows you to set up some configuration at the table level. All the properties are optional. 
