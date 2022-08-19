@@ -16,9 +16,10 @@ module.exports = {
         use: ["@svgr/webpack", "file-loader"],
       },
       {
-          test: /\.ya?ml$/,
-          use: 'js-yaml-loader',
-        },
+        test: /\.ya?ml$/,
+        // use: 'js-yaml-loader', 
+        use: 'raw-loader' // Use raw-loader to load YAML as a string to preserve comments
+      },
     );
     return configuration;
   },

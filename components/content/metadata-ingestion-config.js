@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import { H2, H3, H4 } from "../blocks/headers";
-import YAML from "yaml";
-import yaml from "js-yaml";
 import Code from "../blocks/code";
 
 const MetadataIngestionConfig = ({
@@ -38,10 +36,7 @@ const MetadataIngestionConfig = ({
             `/public/ingestion/connectors/${connector.toLowerCase()}/usage.yaml`
           )
         ).default;
-        const usageYamlData = yaml.safeDump(
-          yaml.safeLoad(JSON.stringify(usage))
-        );
-        setUsageYaml(usageYamlData);
+        setUsageYaml(usage);
       }
 
       if (hasProfiler) {
@@ -50,10 +45,7 @@ const MetadataIngestionConfig = ({
             `/public/ingestion/connectors/${connector.toLowerCase()}/profiler.yaml`
           )
         ).default;
-        const profilerYamlData = yaml.safeDump(
-          yaml.safeLoad(JSON.stringify(profiler))
-        );
-        setProfilerYaml(profilerYamlData);
+        setProfilerYaml(profiler);
       }
     };
     readYaml();
