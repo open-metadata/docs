@@ -12,7 +12,7 @@
     "optionalWords": null,
     "attributesForFaceting": ["filterOnly(version)"],
     "attributesToSnippet": ["content:15"],
-    "attributesToHighlight": ["title", "description", "categories"],
+    "attributesToHighlight": ["title", "description", "categories", "content"],
     "paginationLimitedTo": 1000,
     "attributeForDistinct": null,
     "exactOnSingleWordQuery": "attribute",
