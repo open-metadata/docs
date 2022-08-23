@@ -14,7 +14,7 @@ Build Algolia index based on the content folder
 
 import json
 import os
-import sys
+import re
 from typing import Optional, List
 from pathlib import Path
 
@@ -28,6 +28,8 @@ ALGOLIA_CLIENT_ID = os.environ.get("ALGOLIA_CLIENT_ID")
 ALGOLIA_ADMIN_KEY = os.environ.get("ALGOLIA_ADMIN_KEY")
 ALGOLIA_INDEX = os.environ.get("ALGOLIA_INDEX")
 
+CONTENT_REGEX = re.compile(r'<(.*?)>', re.DOTALL|re.MULTILINE)
+
 
 class AlgoliaDoc(BaseModel):
     objectID: str = Field(
@@ -40,6 +42,15 @@ class AlgoliaDoc(BaseModel):
     categories: List[str] = Field(
         ..., description="Page categories, generated splitting the slug"
     )
+    content: str = Field(..., description="Page content")
+
+
+def get_page_content(content: str) -> str:
+    """
+    Get and clean the page content. We want to get rid of
+    HTML tags and markdown formatting
+    """
+    return CONTENT_REGEX.sub("", content, 0).replace("\n", "").replace("#", "")
 
 
 def get_algolia_doc_from_file(file: Path) -> AlgoliaDoc:
@@ -55,6 +66,7 @@ def get_algolia_doc_from_file(file: Path) -> AlgoliaDoc:
             title=page.metadata["title"],
             description=page.metadata.get("description"),
             categories=page.metadata["slug"].lstrip("/").split("/"),
+            content=get_page_content(page.content),
         )
 
 
