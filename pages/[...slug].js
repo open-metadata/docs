@@ -60,6 +60,10 @@ import PythonMod from "../components/content/python-requirements";
 import MetadataIngestionService from "../components/content/metadata-ingestion-service";
 import ConnectorIntro from "../components/content/connector-intro";
 import IngestionScheduleAndDeploy from "../components/content/ingestion-schedule-and-deploy";
+import DashboardIngestionConfig from "../components/content/ingestion_pipeline/dashboard";
+import DatabaseIngestionConfig from "../components/content/ingestion_pipeline/database";
+import MessagingIngestionConfig from "../components/content/ingestion_pipeline/messaging";
+import PipelineIngestionConfig from "../components/content/ingestion_pipeline/pipeline";
 import ConnectorOutro from "../components/content/connector-outro";
 import MetadataIngestionServiceDev from "../components/content/metadata-ingestion-service-dev";
 import MetadataIngestionConfig from "../components/content/metadata-ingestion-config";
@@ -98,6 +102,10 @@ export default function Article({
     PythonMod,
     MetadataIngestionService,
     ConnectorIntro,
+    DashboardIngestionConfig,
+    DatabaseIngestionConfig,
+    MessagingIngestionConfig,
+    PipelineIngestionConfig,
     IngestionScheduleAndDeploy,
     ConnectorOutro,
     MetadataIngestionServiceDev,
