@@ -47,10 +47,7 @@ To add a new page:
 3. Update the title and slug.
 4. Update the connector name and specify if it has usage with `hasUsage="true"` in the components.
 5. Add the Connection Options in each markdown file.
-6. Add the `ingestion.yaml`, `usage.yaml` (if required) and `profiler.yaml` under `/public/ingestion/connectors/{connector}`.
-7. Add screenshots of `add-new-service.png`, `select-service.png` and `service-connection.png` under `/public/images/openmetadata/ingestion/workflows/metadata/connectors/{connector}`.
-
-If the templates need to be updated, this requires updating the components from the docs repo under `components/content`. For that, follow the steps of [core contributors](#i-am-a-core-contributor).
+6. Add screenshots of `add-new-service.png`, `select-service.png` and `service-connection.png` under `/public/images/openmetadata/ingestion/workflows/metadata/connectors/{connector}`.
 
 ## I am a Core Contributor
 
@@ -62,7 +59,6 @@ In this case, you can:
 
 Note that from the `main` branch we have some dummy content in a couple of directories:
 1. `content/`: with the meny and placeholder directory
-1. `public/ingestion/connectors/`, with a dummy YAML file needed to build the code.
 
 Note that `content`, `public/images` and `public/ingestion` are directories that will be continiously overwritten in the `publish` branch, so do not commit any changes there.
 
@@ -109,7 +105,6 @@ If you are having trouble bringing the server up, a couple of things to check:
 This repo follows a typical Next.js project structure. To contribute, you'll only edit Markdown files within the `content/` folder.
 
 - `components/` Contains JS and MDX files.
-  - `components/content/` Has the templates for building the connector docs. 
 - `content/` This is where all the Markdown files live. This is the only folder you'll edit.
 - `lib/` Contains JS files.
 - `pages/` You'll never have to edit this folder. It contains JSX files that handle the complex index page, mapping of URL slugs, and rendering of Markdown pages in `content/`.

@@ -54,21 +54,6 @@ import YouTube from "../components/blocks/youTube";
 import Collapse from "../components/blocks/collape";
 import styles from "../components/layouts/container.module.css";
 
-// Content Components
-import Requirements from "../components/content/requirements";
-import PythonMod from "../components/content/python-requirements";
-import MetadataIngestionService from "../components/content/metadata-ingestion-service";
-import ConnectorIntro from "../components/content/connector-intro";
-import IngestionScheduleAndDeploy from "../components/content/ingestion-schedule-and-deploy";
-import DashboardIngestionConfig from "../components/content/ingestion_pipeline/dashboard";
-import MlModelIngestionConfig from "../components/content/ingestion_pipeline/ml-model";
-import DatabaseIngestionConfig from "../components/content/ingestion_pipeline/database";
-import MessagingIngestionConfig from "../components/content/ingestion_pipeline/messaging";
-import PipelineIngestionConfig from "../components/content/ingestion_pipeline/pipeline";
-import ConnectorOutro from "../components/content/connector-outro";
-import MetadataIngestionServiceDev from "../components/content/metadata-ingestion-service-dev";
-import MetadataIngestionConfig from "../components/content/metadata-ingestion-config";
-
 export default function Article({
   data,
   source,
@@ -99,19 +84,6 @@ export default function Article({
     InlineCalloutContainer,
     InlineCallout,
     TileContainer,
-    Requirements,
-    PythonMod,
-    MetadataIngestionService,
-    ConnectorIntro,
-    DashboardIngestionConfig,
-    MlModelIngestionConfig,
-    DatabaseIngestionConfig,
-    MessagingIngestionConfig,
-    PipelineIngestionConfig,
-    IngestionScheduleAndDeploy,
-    ConnectorOutro,
-    MetadataIngestionServiceDev,
-    MetadataIngestionConfig,
     Tile,
     Table,
     RefCard,
