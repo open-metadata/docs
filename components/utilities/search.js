@@ -257,7 +257,7 @@ const Search = () => {
                     >
                       <div className="right-panel">
                         <Configure
-                          attributesToSnippet={["content:20"]}
+                          attributesToSnippet={["content:15"]}
                           snippetEllipsisText={"…"}
                         />
                         <SearchBox id="search-box small" />
