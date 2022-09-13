@@ -141,7 +141,14 @@ const Search = () => {
   );
 
   function Hit(props) {
-    const id = props.hit.id ? props.hit.id : "text_snippet";
+    const category = props.hit.categories ? props.hit.categories[0] : "Page";
+    let snippet;
+    if (
+      props.hit._highlightResult &&
+      props.hit._highlightResult.content.matchLevel !== "none"
+    ) {
+      snippet = <Snippet attribute="content" hit={props.hit} />;
+    }
 
     return (
       <article
@@ -151,16 +158,15 @@ const Search = () => {
         )}
         tabIndex="-1"
       >
-        <>
-          {" "}
-          <section className={styles.TextContainer}>
-            <a href={props.hit.objectID}>
-              <h5 className={styles.HitTitle}>
-                <Highlight hit={props.hit} attribute="title"></Highlight>
-              </h5>
-            </a>
-          </section>
-        </>
+        <section className={styles.TextContainer}>
+          <a href={props.hit.objectID}>
+            <p className={styles.HitCategory}>{category}</p>
+            <h5 className={styles.HitTitle}>
+              <Highlight hit={props.hit} attribute="title"></Highlight>
+            </h5>
+          </a>
+          {snippet}
+        </section>
       </article>
     );
   }
@@ -250,6 +256,10 @@ const Search = () => {
                       searchClient={searchClient}
                     >
                       <div className="right-panel">
+                        <Configure
+                          attributesToSnippet={["content:20"]}
+                          snippetEllipsisText={"…"}
+                        />
                         <SearchBox id="search-box small" />
                         <Hits hitComponent={Hit} />
                       </div>

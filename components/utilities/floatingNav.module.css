@@ -1,6 +1,7 @@
 .ListContainer {
-  @apply pt-4 pb-2 w-60 overflow-y-auto bg-white hidden lg:block;
+  @apply pt-4 pb-2 w-60 overflow-y-auto bg-white hidden lg:block fixed top-20 right-0;
   max-height: calc(100vh - 4.5rem);
+  overscroll-behavior-y: contain;
 }
 
 .List {
