@@ -35,9 +35,7 @@ const HeaderLink = ({ name, level, className, children }) => {
     <>
       <a name={hash} className={styles.HashLink} />
 
-      <Header
-        className={classNames(styles.HeaderContainer, "group", className)}
-      >
+      <Header className={classNames(styles.HeaderContainer, className)}>
         {children}
 
         {copied ? (

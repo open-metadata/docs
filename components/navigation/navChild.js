@@ -114,8 +114,10 @@ const NavChild = ({ slug, page, color, className }) => {
 
   return (
     <li className={`${classNames(styles.Container, className)} leading-none`}>
-      {link}
-      {subNav}
+      <a href={url}>
+        {link}
+        {subNav}
+      </a>
     </li>
   );
 };
