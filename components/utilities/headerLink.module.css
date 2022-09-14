@@ -5,6 +5,9 @@
 .HeaderContainer {
   @apply flex text-gray-90 items-center font-bold;
 }
+.HeaderContainer:hover .CopyLink {
+  @apply opacity-90;
+}
 .HeaderContainer li {
   @apply text-[#6B7280] !important;
 }
@@ -52,5 +55,5 @@ h1.HeaderContainer + a + h6 {
 }
 
 .CopyLink {
-  @apply cursor-pointer ml-4 pt-1 opacity-0 flex items-center hover:opacity-90 group-hover:opacity-90;
+  @apply cursor-pointer ml-4 pt-1 opacity-0 flex items-center;
 }
