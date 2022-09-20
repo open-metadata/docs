@@ -149,7 +149,6 @@ const Search = () => {
     ) {
       snippet = <Snippet attribute="content" hit={props.hit} />;
     }
-    console.log(props);
 
     return (
       <article
