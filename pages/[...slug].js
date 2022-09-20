@@ -214,9 +214,9 @@ export default function Article({
             <div className={styles.Buttons}>{arrowContainer}</div>
           </section>
           <FloatingNav slug={slug} menu={menu} className="floatingNav" />
+          <Footer />
         </section>
       </Layout>
-      <Footer />
     </MDXProvider>
   );
 }

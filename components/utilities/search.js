@@ -108,7 +108,7 @@ const Search = () => {
       setIndexFocus(1);
     }
 
-    const results = document.querySelectorAll(".ais");
+    const results = document.querySelectorAll(".ais-Hits-item article");
 
     if (results.length > 0) {
       if (results.length >= index) {
@@ -158,15 +158,20 @@ const Search = () => {
         )}
         tabIndex="-1"
       >
-        <section className={styles.TextContainer}>
-          <a href={props.hit.objectID}>
-            <p className={styles.HitCategory}>{category}</p>
-            <h5 className={styles.HitTitle}>
-              <Highlight hit={props.hit} attribute="title"></Highlight>
-            </h5>
-          </a>
-          {snippet}
-        </section>
+        <a
+          className={classNames("not-link", styles.HitLink)}
+          href={props.hit.objectID}
+        >
+          <section className={styles.TextContainer}>
+            <a href={props.hit.objectID}>
+              <p className={styles.HitCategory}>{category}</p>
+              <h5 className={styles.HitTitle}>
+                <Highlight hit={props.hit} attribute="title"></Highlight>
+              </h5>
+            </a>
+            {snippet}
+          </section>
+        </a>
       </article>
     );
   }
