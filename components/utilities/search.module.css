@@ -78,7 +78,7 @@
 }
 
 .HitLink {
-  @apply flex gap-4 md:gap-6 hover:opacity-100;
+  @apply flex gap-4 md:gap-6 hover:opacity-100 text-gray-80;
 }
 
 .itemContainer em {
