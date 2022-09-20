@@ -15,7 +15,7 @@ const HeaderLink = ({ name, level, className, children }) => {
       return;
     }
 
-    const el = document.querySelector(`[name=${hash}]`);
+    const el = document.querySelector(`[name='${hash}]'`);
     if (el) {
       el.scrollIntoView(true);
     }
