@@ -5,6 +5,7 @@ import { ReactComponent as Knowledge } from "../images/icons/knowledge.svg";
 import { ReactComponent as Deployment } from "../images/icons/Deployment_tile.svg";
 import { ReactComponent as SaaS } from "../images/icons/saas.svg";
 import { ReactComponent as Connectors } from "../images/icons/connectors.svg";
+import { COLLATE_WEBSITE_LINK } from "../Constants/Common.constants";
 
 const SummaryTiles = () => {
   return (
@@ -24,7 +25,7 @@ const SummaryTiles = () => {
         text="Enjoy 100% of OpenMetadata with 0% of the hassle."
         background="purple-70"
         bordercolor="purple-70"
-        link="https://www.getcollate.io/"
+        link={COLLATE_WEBSITE_LINK}
         size="half"
       />
 
