@@ -24,7 +24,7 @@ const SummaryTiles = () => {
         text="Enjoy 100% of OpenMetadata with 0% of the hassle."
         background="purple-70"
         bordercolor="purple-70"
-        link="https://share.hsforms.com/1fstvMCeZRZKTYA4nG1VTPgcq0j9"
+        link="https://www.getcollate.io/"
         size="half"
       />
 
