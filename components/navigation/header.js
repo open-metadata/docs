@@ -17,6 +17,7 @@ const ThemeToggle = dynamic(() => import("../utilities/themeToggle"), {
   ssr: false,
 });
 import Search from "../utilities/search";
+import { COLLATE_WEBSITE_LINK } from "../../Constants/Common.constants";
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -86,7 +87,7 @@ const Header = () => {
             </a>
             <a
               className="btn fw-500 btn-primary rounded-pill"
-              href="https://share.hsforms.com/1fstvMCeZRZKTYA4nG1VTPgcq0j9"
+              href={COLLATE_WEBSITE_LINK}
               target="_blank"
             >
               <button className="bg-[#7147e8]  pl-[1.125] pr-[1.125] rounded-full w-[55.5px] h-[44px] justify-center">
