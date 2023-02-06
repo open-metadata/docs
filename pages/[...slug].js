@@ -71,7 +71,7 @@ export default function Article({
 
   suggestEditURL = sourceFile
     ? sourceFile
-    : "https://github.com/open-metadata/docs/tree/publish" +
+    : "https://github.com/open-metadata/OpenMetadata/tree/main/openmetadata-docs" +
     filename.substring(filename.indexOf("/content/"));
 
   const components = {
