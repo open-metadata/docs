@@ -69,7 +69,10 @@ export default function Article({
   let suggestEditURL;
   const { sourceFile } = useAppContext();
 
-  suggestEditURL = "https://github.com/open-metadata/docs/issues";
+  suggestEditURL = sourceFile
+    ? sourceFile
+    : "https://github.com/open-metadata/docs/tree/publish" +
+    filename.substring(filename.indexOf("/content/"));
 
   const components = {
     Note,
@@ -206,11 +209,10 @@ export default function Article({
             >
               <div className={classNames("content", styles.ContentContainer)}>
                 <MDXRemote {...source} components={components} />
-                {/* <Helpful slug={slug} sourcefile={suggestEditURL} /> */}
+                <Helpful slug={slug} sourcefile={suggestEditURL} />
               </div>
             </article>
             <Psa />
-            <Helpful />
             <div className={styles.Buttons}>{arrowContainer}</div>
           </section>
           <FloatingNav slug={slug} menu={menu} className="floatingNav" />
@@ -263,10 +265,10 @@ export async function getStaticProps(context) {
     props["source"] = source;
     props["currMenuItem"] = current
       ? {
-          name: current.name,
-          url: current.url,
-          isVersioned: !!current.isVersioned,
-        }
+        name: current.name,
+        url: current.url,
+        isVersioned: !!current.isVersioned,
+      }
       : null;
     props["nextMenuItem"] = next ? { name: next.name, url: next.url } : null;
     props["prevMenuItem"] = prev ? { name: prev.name, url: prev.url } : null;
